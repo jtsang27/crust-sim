@@ -1,0 +1,11 @@
+{
+  "patches": [
+    {
+      "version": "v2020_06",
+      "name": "Legacy Baseline",
+      "description": "Initial extraction from JavaScript engine (circa June 2020)",
+      "date": "2020-06-01",
+      "default": true
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+================================================================================
+CLASH ROYALE ENGINE - EXPLORATION SUMMARY
+================================================================================
+
+PROJECT LOCATION: /Users/will/Documents/Projects/clash-royale-engine/
+
+EXPLORATION COMPLETED: October 2025
+THOROUGHNESS LEVEL: Medium (focused on architecture, systems, and extraction points)
+
+================================================================================
+KEY DISCOVERIES
+================================================================================
+
+1. TECHNOLOGY STACK
+   - Processing.js (not Node.js) - Java-like syntax compiled to JavaScript
+   - HTML5 Canvas (600x600) for rendering
+   - Parcel bundler for development
+   - No external dependencies
+   - URL-based game configuration
+
+2. ENTRY POINTS
+   - index.html: Deck/settings selection UI
+   - engine.html: Game simulation canvas
+   - code.txt: Main game engine (1.1MB, Processing.js code)
+
+3. CORE ARCHITECTURE
+   - Single monolithic code.txt file (1,171,736 bytes)
+   - 60 FPS game loop (draw() function at line 2658)
+   - 32x18 tile-based arena
+   - Frame-based timing system
+   - Declarative card format (arrays)
+
+4. CARD DATABASE
+   - ~99 cards in "current" version
+   - 42 cards in "retro" (original release)
+   - 6+ legacy versions (Oct 2019 - Sept 2020)
+   - Card data duplicated across versions
+   - Multiple variants: troops, buildings, spells, spawners
+
+================================================================================
+MAIN GAME SYSTEMS
+================================================================================
+
+A. GAME LOOP (Line 2658)
+   ├─ Initialization & input handling
+   ├─ Physics/Collision system (3 passes, O(n²))
+   ├─ Combat system (targeting, attacks, effects)
+   ├─ Unit management (spawning, lifetime, splitting)
+   ├─ Effect processing (slow, stun, etc.)
+   ├─ Rendering (tiles, troops, UI)
+   └─ Victory/defeat detection
+
+B. ARENA SYSTEM (Line 2334)
+   ├─ 32x18 tile grid
+   ├─ Center at (15.5, 8.5)
+   ├─ 6 tile types: normal, river, bridge, crown, princess, banned
+   ├─ 4 arena themes: default, dark, ice, royal
+   └─ Fixed tower positions for crown/princess zones
+
+C. ELIXIR SYSTEM
+   ├─ Initial: 5 elixir (configurable)
+   ├─ Max: 10 elixir (configurable)
+   ├─ Regeneration: 1/84 per frame (= ~2.5 seconds per elixir)
+   └─ Configurable via URL parameters
+
+D. COMBAT SYSTEM (Line 3024+)
+   ├─ Target acquisition (distance, type matching, proximity)
+   ├─ Attack/reload logic
+   ├─ Projectile creation
+   ├─ Damage application with multipliers
+   └─ Effect application (slow, stun, etc.)
+
+E. EFFECT SYSTEM (Line 23 in unit data)
+   ├─ 20+ effect types (slow, stun, snare, spawner, split, etc.)
+   ├─ Duration-based timers
+   ├─ Stacking rules
+   └─ Special abilities (charge, inferno, jumping, etc.)
+
+F. PHYSICS ENGINE (Line 2859)
+   ├─ Mass-based collision resolution
+   ├─ Boundary checking
+   ├─ River/bridge enforcement
+   └─ Knockback handling
+
+================================================================================
+HARDCODED VALUES (Extraction Candidates)
+================================================================================
+
+LOCATION: code.txt, lines 112-126
+
+Global Settings:
+- regenX = 1 (elixir regen speed)
+- startE = 5 (starting elixir)
+- maxE = 10 (max elixir)
+- spdm = 1800 (speed multiplier)
+- bCardMCool = 60 (card selection cooldown)
+- btMaxCool = 150 (battle cooldown)
+
+Arena Constants:
+- Arena width: 32 tiles
+- Arena height: 18 tiles
+- Center: (15.5, 8.5)
+- Canvas: 600x600 pixels
+- Tile size: 15 pixels rendered
+
+Physics:
+- Mass-based collision (3 passes)
+- Boundary padding calculations
+- Crown/Princess zone coordinates
+
+Card Stats:
+- 99 unique cards in current version
+- HP range: 67 to 4256
+- Damage range: 0 to 1232
+- Speed range: 0 to 120
+- Range: 0 to 11.5
+- Elixir: 1 to 10
+
+================================================================================
+TROOP DATA STRUCTURE
+================================================================================
+
+Location: code.txt, line 241 (format comment)
+
+Array format: [name, health, maxHealth, attack, x, y, size, mass, speed, range,
+               sightRange, cooldown, maxCooldown, ret, target, lock, shield,
+               aoe, type, targetType, penalty, loadTime, deployTime, [effects], [special]]
+
+Types: "ground", "air", "building", "bomb", "spell"
+TargetTypes: "all", "ground", "buildings", "air"
+
+Example: ["spear goblin", 110, 110, 67, 0, 0.5, 1, 1, 120, 5, 5.5, 0, 51, 15,
+          -1, false, 0, 0, "ground", "all", 1, 30, 30, [], []]
+
+================================================================================
+WHAT NEEDS EXTRACTION
+================================================================================
+
+PRIORITY 1 (Immediate Value):
+1. Card database (99+ cards) → JSON files by version
+2. Game constants → Configuration file
+3. Arena geometry → Map data file
+4. Card schema → Validation rules
+
+PRIORITY 2 (System Extraction):
+1. Physics engine → Isolated module
+2. Combat system → Separate logic
+3. Effect system → Declarative config
+4. Collision detection → Optimizable system
+
+PRIORITY 3 (Enhancement):
+1. Rendering layer → Abstraction for multiple renderers
+2. UI system → Configuration interface
+3. AI/behavior → Strategy configs
+4. Balance interface → Admin panel
+
+================================================================================
+CONFIGURATION POINTS (URL Parameters)
+================================================================================
+
+From index.html:
+- ?blueDeck=URL → Clash Royale deck link
+- &redDeck=URL → Red team deck
+- &version=current|legacy-MMYY|retro|dev → Card database version
+- &order=true|false → Randomize deck
+- &maxElixir=1-100 → Max elixir setting
+- &elixirR=0-10 → Elixir regeneration rate
+
+Extensible to in-game configuration
+
+================================================================================
+FILE LOCATIONS REFERENCE
+================================================================================
+
+Main Game Loop:       code.txt, line 2658 (void draw())
+Arena Definition:     code.txt, line 2334 (getTileInfo, getTileFill)
+Card Database:        code.txt, line 253+ (multiple version blocks)
+Physics/Collision:    code.txt, line 2859-3016
+Combat System:        code.txt, line 3024+
+Effect Processing:    code.txt, line 23 in unit data
+Rendering:            code.txt, line 2700+
+Input Handling:       code.txt, line 1780, 2648
+UI/Messages:          code.txt, line 2304+
+
+================================================================================
+KEY INSIGHTS
+================================================================================
+
+1. FRAME-BASED TIMING
+   - All timings in frames (60 FPS assumed)
+   - 1 second = 60 frames
+   - Elixir regeneration = 1/84 per frame = 2.5 sec per elixir
+   - Effects: stun 15-30 frames, slow 60-120 frames
+
+2. COORDINATE SYSTEM
+   - Grid-based (32x18 tiles)
+   - Origin at center (15.5, 8.5)
+   - Distance calculations use "trueI" and "trueJ" (absolute from center)
+   - Render offset: (60, 60) on canvas
+
+3. COLLISION STRATEGY
+   - Three separate O(n²) passes (could be optimized)
+   - Mass-based physics resolution
+   - Type-based matching (ground/air/building)
+   - Special flags bypass (spells, knockback)
+
+4. CARD FORMAT
+   - Declarative arrays (easy to parse)
+   - Duplicated across versions
+   - Can be deduplicated with version control
+   - Schema validation needed
+
+5. RENDERING DEPENDENCY
+   - Tightly coupled to draw loop
+   - Processing.js specific
+   - Candidate for abstraction layer
+   - Could support WebGL, SVG, etc.
+
+================================================================================
+RECOMMENDED NEXT STEPS
+================================================================================
+
+SHORT TERM (1-2 weeks):
+[ ] Extract card JSON files from each version
+[ ] Create card schema with validation
+[ ] Build constants configuration file
+[ ] Document all hardcoded values
+
+MEDIUM TERM (2-4 weeks):
+[ ] Separate physics engine into module
+[ ] Extract combat system logic
+[ ] Create effect system framework
+[ ] Build arena geometry system
+
+LONG TERM (4-8 weeks):
+[ ] Refactor to TypeScript/modular architecture
+[ ] Create rendering abstraction
+[ ] Build configuration/admin interface
+[ ] Add comprehensive testing
+
+================================================================================
+DOCUMENTS GENERATED
+================================================================================
+
+1. CLASH_ROYALE_ENGINE_ANALYSIS.md
+   - Comprehensive system breakdown
+   - Data structures and formats
+   - Game mechanics details
+   - Hardcoded values catalog
+   - Modernization opportunities
+
+2. CLASH_ROYALE_ENGINE_EXTRACTION_GUIDE.md
+   - Code location reference
+   - Extraction templates
+   - Conversion examples
+   - Integration paths
+   - Implementation checklist
+
+3. EXPLORATION_SUMMARY.txt (this file)
+   - Quick reference guide
+   - Key findings summary
+   - Structured overview
+
+================================================================================
