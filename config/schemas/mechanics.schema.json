@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://crust-sim.local/schemas/mechanics.schema.json",
+  "title": "Game Mechanics",
+  "description": "Schema for core game mechanics and constants",
+  "type": "object",
+  "required": ["tick_rate", "elixir", "match", "physics"],
+  "properties": {
+    "tick_rate": {
+      "type": "object",
+      "required": ["fps", "delta_time"],
+      "properties": {
+        "fps": {
+          "type": "integer",
+          "description": "Updates per second",
+          "minimum": 1
+        },
+        "delta_time": {
+          "type": "number",
+          "description": "Time delta per tick in seconds",
+          "minimum": 0,
+          "exclusiveMinimum": true
+        }
+      }
+    },
+    "elixir": {
+      "type": "object",
+      "required": ["starting_amount", "max_amount", "regen_rate"],
+      "properties": {
+        "starting_amount": {
+          "type": "number",
+          "description": "Starting elixir amount",
+          "minimum": 0
+        },
+        "max_amount": {
+          "type": "number",
+          "description": "Maximum elixir capacity",
+          "minimum": 0
+        },
+        "regen_rate": {
+          "type": "number",
+          "description": "Elixir regeneration per second",
+          "minimum": 0
+        },
+        "overtime_regen_rate": {
+          "type": "number",
+          "description": "Elixir regeneration during overtime",
+          "minimum": 0
+        }
+      }
+    },
+    "match": {
+      "type": "object",
+      "required": ["duration", "overtime_duration"],
+      "properties": {
+        "duration": {
+          "type": "number",
+          "description": "Match duration in seconds",
+          "minimum": 0
+        },
+        "overtime_duration": {
+          "type": "number",
+          "description": "Overtime duration in seconds",
+          "minimum": 0
+        },
+        "overtime_start_time": {
+          "type": "number",
+          "description": "When overtime begins",
+          "minimum": 0
+        }
+      }
+    },
+    "physics": {
+      "type": "object",
+      "description": "Physics and collision constants",
+      "properties": {
+        "collision_radius_default": {
+          "type": "number",
+          "minimum": 0
+        },
+        "mass_default": {
+          "type": "number",
+          "minimum": 0
+        },
+        "push_force": {
+          "type": "number",
+          "description": "Force applied during collisions"
+        },
+        "max_velocity": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "combat": {
+      "type": "object",
+      "description": "Combat system constants",
+      "properties": {
+        "tower_range": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tower_damage": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tower_attack_speed": {
+          "type": "number",
+          "minimum": 0
+        },
+        "retarget_delay": {
+          "type": "number",
+          "description": "Delay before retargeting in seconds",
+          "minimum": 0
+        }
+      }
+    },
+    "movement_speeds": {
+      "type": "object",
+      "description": "Movement speed mappings",
+      "properties": {
+        "slow": {
+          "type": "number",
+          "minimum": 0
+        },
+        "medium": {
+          "type": "number",
+          "minimum": 0
+        },
+        "fast": {
+          "type": "number",
+          "minimum": 0
+        },
+        "very_fast": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

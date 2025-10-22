@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://crust-sim.local/schemas/arena.schema.json",
+  "title": "Arena Definition",
+  "description": "Schema for arena layout and geometry",
+  "type": "object",
+  "required": ["width", "height", "tile_size", "tiles", "towers"],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "description": "Arena width in tiles",
+      "minimum": 1
+    },
+    "height": {
+      "type": "integer",
+      "description": "Arena height in tiles",
+      "minimum": 1
+    },
+    "tile_size": {
+      "type": "number",
+      "description": "Size of each tile in world units",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "tiles": {
+      "type": "array",
+      "description": "2D tile grid [y][x]",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["grass", "bridge", "river", "tower", "decoration", "wall"]
+        }
+      }
+    },
+    "towers": {
+      "type": "object",
+      "description": "Tower positions and properties",
+      "required": ["player1", "player2"],
+      "properties": {
+        "player1": {
+          "$ref": "#/definitions/PlayerTowers"
+        },
+        "player2": {
+          "$ref": "#/definitions/PlayerTowers"
+        }
+      }
+    },
+    "spawn_zones": {
+      "type": "object",
+      "description": "Valid spawn zones for each player",
+      "properties": {
+        "player1": {
+          "$ref": "#/definitions/Zone"
+        },
+        "player2": {
+          "$ref": "#/definitions/Zone"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "PlayerTowers": {
+      "type": "object",
+      "required": ["king", "left_princess", "right_princess"],
+      "properties": {
+        "king": {
+          "$ref": "#/definitions/TowerPosition"
+        },
+        "left_princess": {
+          "$ref": "#/definitions/TowerPosition"
+        },
+        "right_princess": {
+          "$ref": "#/definitions/TowerPosition"
+        }
+      }
+    },
+    "TowerPosition": {
+      "type": "object",
+      "required": ["x", "y"],
+      "properties": {
+        "x": {
+          "type": "number",
+          "description": "X position in world coordinates"
+        },
+        "y": {
+          "type": "number",
+          "description": "Y position in world coordinates"
+        },
+        "tile_x": {
+          "type": "integer",
+          "description": "X position in tile coordinates"
+        },
+        "tile_y": {
+          "type": "integer",
+          "description": "Y position in tile coordinates"
+        }
+      }
+    },
+    "Zone": {
+      "type": "object",
+      "required": ["min_x", "min_y", "max_x", "max_y"],
+      "properties": {
+        "min_x": {
+          "type": "number"
+        },
+        "min_y": {
+          "type": "number"
+        },
+        "max_x": {
+          "type": "number"
+        },
+        "max_y": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

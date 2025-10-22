@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://crust-sim.local/schemas/card.schema.json",
+  "title": "Card Definition",
+  "description": "Schema for Clash Royale card definitions",
+  "type": "object",
+  "required": ["id", "name", "type", "rarity", "elixir_cost", "stats"],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Unique card identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "Card display name"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["troop", "spell", "building"],
+      "description": "Card type"
+    },
+    "rarity": {
+      "type": "string",
+      "enum": ["common", "rare", "epic", "legendary", "champion"],
+      "description": "Card rarity"
+    },
+    "elixir_cost": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10,
+      "description": "Elixir cost to play the card"
+    },
+    "stats": {
+      "type": "object",
+      "description": "Card statistics and attributes",
+      "properties": {
+        "hp": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Hit points"
+        },
+        "damage": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Damage per attack"
+        },
+        "dps": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Damage per second"
+        },
+        "attack_speed": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Time between attacks in seconds"
+        },
+        "movement_speed": {
+          "type": "string",
+          "enum": ["slow", "medium", "fast", "very_fast"],
+          "description": "Movement speed category"
+        },
+        "range": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Attack range in tiles"
+        },
+        "deploy_time": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Time to deploy in seconds"
+        },
+        "target": {
+          "type": "string",
+          "enum": ["ground", "air", "both", "buildings"],
+          "description": "What the unit can target"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of units spawned"
+        },
+        "lifetime": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Lifetime in seconds (for buildings/spells)"
+        },
+        "radius": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Effect radius in tiles"
+        },
+        "projectile_speed": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Projectile speed (if ranged)"
+        }
+      }
+    },
+    "effects": {
+      "type": "array",
+      "description": "Special effects this card has",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "slow", "stun", "freeze", "knockback", "rage", "heal",
+              "spawn", "death_damage", "split", "shield", "invisible",
+              "charge", "dash", "area_damage", "splash"
+            ]
+          },
+          "duration": {
+            "type": "number",
+            "minimum": 0
+          },
+          "value": {
+            "type": "number"
+          },
+          "radius": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "legacy_data": {
+      "type": "object",
+      "description": "Original legacy engine data for reference",
+      "properties": {
+        "card_index": {
+          "type": "integer"
+        },
+        "original_name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

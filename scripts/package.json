@@ -1,0 +1,17 @@
+{
+  "name": "crust-sim-extraction-tools",
+  "version": "0.1.0",
+  "description": "Data extraction tools for migrating legacy JS engine to Rust",
+  "type": "module",
+  "scripts": {
+    "extract-cards": "node extract_cards.js",
+    "extract-arena": "node extract_arena.js",
+    "extract-mechanics": "node extract_mechanics.js",
+    "extract-all": "npm run extract-cards && npm run extract-arena && npm run extract-mechanics",
+    "validate": "node validate_configs.js"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0"
+  },
+  "devDependencies": {}
+}

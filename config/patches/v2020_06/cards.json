@@ -1,0 +1,1263 @@
+[
+  {
+    "id": 0,
+    "name": "Spear Goblins",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "Three unarmored ranged attackers. Who the heck taught these guys to throw spears!?! Who thought that was a good idea?!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 0,
+      "line": "[\"Spear Goblins\", \"Three unarmored ranged attackers. Who the heck taught these guys to throw spears!"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Dart Goblin",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Runs fast, shoots far and chews gum. How does he blow darts with a mouth full of Double Trouble gum? Years of didgeridoo lessons.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 1,
+      "line": "[\"Dart Goblin\", \"Runs fast, shoots far and chews gum. How does he blow darts with a mouth full of Do"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Elixir Golem",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Splits into two Elixir Golemites when destroyed, which split into two sentient Blobs when defeated. A Blob gives your opponent 1 Elixir when destroyed!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 2,
+      "line": "[\"Elixir Golem\", \"Splits into two Elixir Golemites when destroyed, which split into two sentient Blo"
+    }
+  },
+  {
+    "id": 3,
+    "name": "X-Bow",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 6,
+    "description": "Nice tower you got there. Would be a shame if this X-Bow whittled it down from this side of the Arena...",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 3,
+      "line": "[\"X-Bow\", \"Nice tower you got there. Would be a shame if this X-Bow whittled it down from this side "
+    }
+  },
+  {
+    "id": 4,
+    "name": "Knight",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 4,
+      "line": "[\"Knight\", \"A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he w"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Giant",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "Slow but durable, only attacks buildings. A real one-man wrecking crew!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 5,
+      "line": "[\"Giant\", \"Slow but durable, only attacks buildings. A real one-man wrecking crew!\", 5, [[\"giant\", 3"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Musketeer",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Don't be fooled by her delicately coiffed hair, the Musketeer is a mean shot with her trusty boomstick.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 6,
+      "line": "[\"Musketeer\", \"Don't be fooled by her delicately coiffed hair, the Musketeer is a mean shot with her"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Skeletons",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 1,
+    "description": "Three fast, very weak melee fighters. Surround your enemies with this pile of bones!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 7,
+      "line": "[\"Skeletons\", \"Three fast, very weak melee fighters. Surround your enemies with this pile of bones!\""
+    }
+  },
+  {
+    "id": 8,
+    "name": "Cannon",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Defensive building. Shoots cannonballs with deadly effect, but cannot target flying troops.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 8,
+      "line": "[\"Cannon\", \"Defensive building. Shoots cannonballs with deadly effect, but cannot target flying troo"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Wizard",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "The most awesome man to ever set foot in the arena, the Wizard will blow you away with his handsomeness... and/or fireballs.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 9,
+      "line": "[\"Wizard\", \"The most awesome man to ever set foot in the arena, the Wizard will blow you away with h"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Fire Spirits",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "These three Fire Spirits are on a kamikaze mission to give you a warm hug. It'd be adorable if they weren't on fire.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 10,
+      "line": "[\"Fire Spirits\", \"These three Fire Spirits are on a kamikaze mission to give you a warm hug. It'd be"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Ice Spirit",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 1,
+    "description": "Spawns one lively little Ice Spirit to freeze a group of enemies. Stay frosty.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 11,
+      "line": "[\"Ice Spirit\", \"Spawns one lively little Ice Spirit to freeze a group of enemies. Stay frosty.\", 1, "
+    }
+  },
+  {
+    "id": 12,
+    "name": "Zappies",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Spawns a pack of miniature Zap machines. Who controls them...? Only the Master Builder knows.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 12,
+      "line": "[\"Zappies\", \"Spawns a pack of miniature Zap machines. Who controls them...? Only the Master Builder "
+    }
+  },
+  {
+    "id": 13,
+    "name": "P.E.K.K.A.",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 7,
+    "description": "A heavily armored, slow melee fighter. Swings from the hip but packs a huge punch.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 13,
+      "line": "[\"P.E.K.K.A.\", \"A heavily armored, slow melee fighter. Swings from the hip but packs a huge punch.\","
+    }
+  },
+  {
+    "id": 14,
+    "name": "Sparky",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 6,
+    "description": "Sparky slowly charges up, then unloads MASSIVE area damage. Overkill isn't in her vocabulary.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 14,
+      "line": "[\"Sparky\", \"Sparky slowly charges up, then unloads MASSIVE area damage. Overkill isn't in her vocabu"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Mini P.E.K.K.A.",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "The Arena is a certified butterfly-free zone. No distractions for P.E.K.K.A, only destruction.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 15,
+      "line": "[\"Mini P.E.K.K.A.\", \"The Arena is a certified butterfly-free zone. No distractions for P.E.K.K.A, on"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Ice Wizard",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 3,
+    "description": "This chill caster throws ice shards that slow down enemies' movement and attack speed. Despite being freezing cold, he has a handlebar mustache that's too hot for TV.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 16,
+      "line": "[\"Ice Wizard\", \"This chill caster throws ice shards that slow down enemies' movement and attack spee"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Goblin Cage",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "When the Goblin Cage is destroyed, a Goblin Brawler is unleashed into the Arena! Goblin Brawler always skips leg day.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 17,
+      "line": "[\"Goblin Cage\", \"When the Goblin Cage is destroyed, a Goblin Brawler is unleashed into the Arena! Go"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Cannon Cart",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "A Cannon on wheels?! Bet they won't see that coming! Once you break its shield, it becomes a Cannon not on wheels.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 18,
+      "line": "[\"Cannon Cart\", \"A Cannon on wheels?! Bet they won't see that coming! Once you break its shield, it "
+    }
+  },
+  {
+    "id": 19,
+    "name": "Mega Minion",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Flying, armored and powerful. What could be its weakness?! Cupcakes.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 19,
+      "line": "[\"Mega Minion\", \"Flying, armored and powerful. What could be its weakness?! Cupcakes.\", 3, [[\"mega m"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Baby Dragon",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Burps fireballs from the sky that deal area damage. Baby dragons hatch cute, hungry and ready for a barbeque.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 20,
+      "line": "[\"Baby Dragon\", \"Burps fireballs from the sky that deal area damage. Baby dragons hatch cute, hungry"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Royal Giant",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 6,
+    "description": "Destroying enemy buildings with his massive cannon is his job; making a raggedy blond beard look good is his passion.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 21,
+      "line": "[\"Royal Giant\", \"Destroying enemy buildings with his massive cannon is his job; making a raggedy blo"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Minions",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Three fast, unarmored flying attackers. Roses are red, minions are blue, they can fly, and will crush you!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 22,
+      "line": "[\"Minions\", \"Three fast, unarmored flying attackers. Roses are red, minions are blue, they can fly, "
+    }
+  },
+  {
+    "id": 23,
+    "name": "Minion Horde",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "Six fast, unarmored flying attackers. Three's a crowd, six is a horde!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 23,
+      "line": "[\"Minion Horde\", \"Six fast, unarmored flying attackers. Three's a crowd, six is a horde!\", 5, [[\"min"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Goblins",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "Three fast, unarmored melee attackers. Small, fast, green and mean!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 24,
+      "line": "[\"Goblins\", \"Three fast, unarmored melee attackers. Small, fast, green and mean!\", 2, [[\"goblin\", 16"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Guards",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Three ruthless bone brothers with shields. Knock off their shields and all that's left are three ruthless bone brothers.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 25,
+      "line": "[\"Guards\", \"Three ruthless bone brothers with shields. Knock off their shields and all that's left a"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Bomber",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Small, lightly protected skeleton that throws bombs. Deals area damage that can wipe out a swarm of enemies.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 26,
+      "line": "[\"Bomber\", \"Small, lightly protected skeleton that throws bombs. Deals area damage that can wipe out"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Flying Machine",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "The Master Builder has sent his first contraption to the Arena! It's a fast and fun flying machine, but fragile!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 27,
+      "line": "[\"Flying Machine\", \"The Master Builder has sent his first contraption to the Arena! It's a fast and "
+    }
+  },
+  {
+    "id": 28,
+    "name": "Elixir Collector",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 6,
+    "description": "You gotta spend Elixir to make Elixir! This building makes 8 Elixir over its Lifetime. Does not appear in your starting hand.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 28,
+      "line": "[\"Elixir Collector\", \"You gotta spend Elixir to make Elixir! This building makes 8 Elixir over its L"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Bats",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "Spawns a handful of tiny flying creatures. Think of them as sweet, purple... balls of DESTRUCTION!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 29,
+      "line": "[\"Bats\", \"Spawns a handful of tiny flying creatures. Think of them as sweet, purple... balls of DEST"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Witch",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "Summons Skeletons, shoots destructo beams, has glowing pink eyes that unfortunately don't shoot lasers.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 30,
+      "line": "[\"Witch\", \"Summons Skeletons, shoots destructo beams, has glowing pink eyes that unfortunately don't"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Night Witch",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 4,
+    "description": "Summons Bats to do her bidding, even after death! If you get too close, she isn't afraid of pitching in with her mean-looking battle staff.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 31,
+      "line": "[\"Night Witch\", \"Summons Bats to do her bidding, even after death! If you get too close, she isn't a"
+    }
+  },
+  {
+    "id": 32,
+    "name": "Goblin Hut",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "Building that spawns Spear Goblins. But don't look inside. You don't want to see how they are made.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 32,
+      "line": "[\"Goblin Hut\", \"Building that spawns Spear Goblins. But don't look inside. You don't want to see how"
+    }
+  },
+  {
+    "id": 33,
+    "name": "Tombstone",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Troop building that periodically deploys Skeletons to fight the enemy... and when destroyed, spawns 3 Skeletons! Creepy.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 33,
+      "line": "[\"Tombstone\", \"Troop building that periodically deploys Skeletons to fight the enemy... and when des"
+    }
+  },
+  {
+    "id": 34,
+    "name": "Inferno Dragon",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 4,
+    "description": "Shoots a focused beam of fire that increases in damage over time. Wears a helmet because flying can be dangerous.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 34,
+      "line": "[\"Inferno Dragon\", \"Shoots a focused beam of fire that increases in damage over time. Wears a helmet"
+    }
+  },
+  {
+    "id": 35,
+    "name": "Inferno Tower",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "Defensive building, roasts targets for damage that increases over time. Burns through even the biggest and toughest enemies!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 35,
+      "line": "[\"Inferno Tower\", \"Defensive building, roasts targets for damage that increases over time. Burns thr"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Prince",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "Don't let the little pony fool you. Once the Prince gets a running start, you WILL be trampled. Deals double damage once he gets charging.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 36,
+      "line": "[\"Prince\", \"Don't let the little pony fool you. Once the Prince gets a running start, you WILL be tr"
+    }
+  },
+  {
+    "id": 37,
+    "name": "Battle Ram",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Two Barbarians holding a big log charge at the nearest building, dealing significant damage if they connect; then they go to town with their swords!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 37,
+      "line": "[\"Battle Ram\", \"Two Barbarians holding a big log charge at the nearest building, dealing significant"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Barbarians",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "A horde of melee attackers with mean mustaches and even meaner tempers.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 38,
+      "line": "[\"Barbarians\", \"A horde of melee attackers with mean mustaches and even meaner tempers.\", 5, [[\"barb"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Electro Dragon",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "Spits out bolts of electricity hitting up to three targets. Suffers from middle child syndrome to boot.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 39,
+      "line": "[\"Electro Dragon\", \"Spits out bolts of electricity hitting up to three targets. Suffers from middle "
+    }
+  },
+  {
+    "id": 40,
+    "name": "Elite Barbarians",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 6,
+    "description": "Spawns a pair of leveled up Barbarians. They're like regular Barbarians, only harder, better, faster and stronger.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 40,
+      "line": "[\"Elite Barbarians\", \"Spawns a pair of leveled up Barbarians. They're like regular Barbarians, only "
+    }
+  },
+  {
+    "id": 41,
+    "name": "Archers",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "A pair of lightly armored ranged attackers. They'll help you take down ground and air units, but you're on your own with hair coloring advice.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 41,
+      "line": "[\"Archers\", \"A pair of lightly armored ranged attackers. They'll help you take down ground and air u"
+    }
+  },
+  {
+    "id": 42,
+    "name": "Three Musketeers",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 9,
+    "description": "Trio of powerful, independent markswomen, fighting for justice and honor. Disrespecting them would not be just a mistake, it would be a cardinal sin!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 42,
+      "line": "[\"Three Musketeers\", \"Trio of powerful, independent markswomen, fighting for justice and honor. Disr"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Rascals",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "Spawns a mischievous trio of Rascals! The boy takes the lead, while the girls pelt enemies from behind... with slingshots full of Double Trouble Gum!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 43,
+      "line": "[\"Rascals\", \"Spawns a mischievous trio of Rascals! The boy takes the lead, while the girls pelt enem"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Fireball",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Annnnnd... Fireball. Incinerates a small area, dealing high damage. Reduced damage to Crown Towers.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 44,
+      "line": "[\"Fireball\", \"Annnnnd... Fireball. Incinerates a small area, dealing high damage. Reduced damage to "
+    }
+  },
+  {
+    "id": 45,
+    "name": "Giant Snowball",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "It\u2019s HUGE! Once it began rolling down Frozen Peak, there was no stopping it. Enemies hit are knocked back and slowed down.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 45,
+      "line": "[\"Giant Snowball\", \"It\u2019s HUGE! Once it began rolling down Frozen Peak, there was no stopping it. Ene"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Arrows",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Arrows pepper a large area, damaging all enemies hit. Reduced damage to Crown Towers.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 46,
+      "line": "[\"Arrows\", \"Arrows pepper a large area, damaging all enemies hit. Reduced damage to Crown Towers.\", "
+    }
+  },
+  {
+    "id": 47,
+    "name": "Rocket",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 6,
+    "description": "Deals high damage to a small area. Looks really awesome doing it. Reduced damage to Crown Towers.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 47,
+      "line": "[\"Rocket\", \"Deals high damage to a small area. Looks really awesome doing it. Reduced damage to Crow"
+    }
+  },
+  {
+    "id": 48,
+    "name": "Zap",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "Zaps enemies, briefly stunning them and dealing damage inside a small radius. Reduced damage to Crown Towers.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 48,
+      "line": "[\"Zap\", \"Zaps enemies, briefly stunning them and dealing damage inside a small radius. Reduced damag"
+    }
+  },
+  {
+    "id": 49,
+    "name": "Freeze",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Freezes and damages troops and buildings, making them unable to move or attack. Everybody chill.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 49,
+      "line": "[\"Freeze\", \"Freezes and damages troops and buildings, making them unable to move or attack. Everybod"
+    }
+  },
+  {
+    "id": 50,
+    "name": "Ice Golem",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "He's tough, targets buildings and explodes when destroyed, slowing nearby enemies. Made entirely out of ice... or is he?! Yes.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 50,
+      "line": "[\"Ice Golem\", \"He's tough, targets buildings and explodes when destroyed, slowing nearby enemies. Ma"
+    }
+  },
+  {
+    "id": 51,
+    "name": "Skeleton Barrel",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "It's a Skeleton party in the sky, until all the balloons pop... then it's a Skeleton party on the ground!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 51,
+      "line": "[\"Skeleton Barrel\", \"It's a Skeleton party in the sky, until all the balloons pop... then it's a Ske"
+    }
+  },
+  {
+    "id": 52,
+    "name": "Poison",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Covers the area in a deadly toxin, damaging enemy troops and buildings over time. Yet somehow leaves the grass green and healthy. Go figure!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 52,
+      "line": "[\"Poison\", \"Covers the area in a deadly toxin, damaging enemy troops and buildings over time. Yet so"
+    }
+  },
+  {
+    "id": 53,
+    "name": "Valkyrie",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can take them all out with a few spins.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 53,
+      "line": "[\"Valkyrie\", \"Tough melee fighter, deals area damage around her. Swarm or horde, no problem! She can"
+    }
+  },
+  {
+    "id": 54,
+    "name": "Wall Breakers",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "A daring duo of dangerous dive bombers. Nothing warms a Wall Breaker's cold and undead heart like blowing up buildings.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 54,
+      "line": "[\"Wall Breakers\", \"A daring duo of dangerous dive bombers. Nothing warms a Wall Breaker's cold and u"
+    }
+  },
+  {
+    "id": 55,
+    "name": "Royal Recruits",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 7,
+    "description": "Deploys a line of recruits armed with spears, shields and wooden buckets. They dream of ponies and one day wearing metal buckets.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 55,
+      "line": "[\"Royal Recruits\", \"Deploys a line of recruits armed with spears, shields and wooden buckets. They d"
+    }
+  },
+  {
+    "id": 56,
+    "name": "Giant Skeleton",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 6,
+    "description": "The bigger the skeleton, the bigger the bomb. Carries a bomb that blows up when the Giant Skeleton dies.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 56,
+      "line": "[\"Giant Skeleton\", \"The bigger the skeleton, the bigger the bomb. Carries a bomb that blows up when "
+    }
+  },
+  {
+    "id": 57,
+    "name": "Balloon",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "As pretty as they are, you won't want a parade of THESE balloons showing up on the horizon. Drops powerful bombs and when shot down, crashes dealing area damage.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 57,
+      "line": "[\"Balloon\", \"As pretty as they are, you won't want a parade of THESE balloons showing up on the hori"
+    }
+  },
+  {
+    "id": 58,
+    "name": "Bomb Tower",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Defensive building that houses a Bomber. Deals area damage to anything dumb enough to stand near it.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 58,
+      "line": "[\"Bomb Tower\", \"Defensive building that houses a Bomber. Deals area damage to anything dumb enough t"
+    }
+  },
+  {
+    "id": 59,
+    "name": "Golem",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 8,
+    "description": "Slow but durable, only attacks buildings. When destroyed, explosively splits into two Golemites and deals area damage!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 59,
+      "line": "[\"Golem\", \"Slow but durable, only attacks buildings. When destroyed, explosively splits into two Gol"
+    }
+  },
+  {
+    "id": 60,
+    "name": "Heal Spirit",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 1,
+    "description": "A mischevious Spirit that leaps at enemies, dealing Damage and leaving behind a powerful healing effect that restores hitpoints to friendly Troops! R.I.P. Heal 2017-2020 Alas, we hardly used ye.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 60,
+      "line": "[\"Heal Spirit\", \"A mischevious Spirit that leaps at enemies, dealing Damage and leaving behind a pow"
+    }
+  },
+  {
+    "id": 61,
+    "name": "Rage",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "Increases troop movement and attack speed. Buildings attack faster and summon troops quicker, too. Chaaaarge!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 61,
+      "line": "[\"Rage\", \"Increases troop movement and attack speed. Buildings attack faster and summon troops quick"
+    }
+  },
+  {
+    "id": 62,
+    "name": "Lumberjack",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 4,
+    "description": "He chops trees by day and hunts The Log by night. His bottle of Rage spills everywhere when he's defeated.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 62,
+      "line": "[\"Lumberjack\", \"He chops trees by day and hunts The Log by night. His bottle of Rage spills everywhe"
+    }
+  },
+  {
+    "id": 63,
+    "name": "Goblin Barrel",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Spawns three Goblins anywhere in the Arena. It's going to be a thrilling ride, boys!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 63,
+      "line": "[\"Goblin Barrel\", \"Spawns three Goblins anywhere in the Arena. It's going to be a thrilling ride, bo"
+    }
+  },
+  {
+    "id": 64,
+    "name": "Princess",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 3,
+    "description": "This stunning Princess shoots flaming arrows from long range. If you're feeling warm feelings towards her, it's probably because you're on fire.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 64,
+      "line": "[\"Princess\", \"This stunning Princess shoots flaming arrows from long range. If you're feeling warm f"
+    }
+  },
+  {
+    "id": 65,
+    "name": "Mortar",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Defensive building with a long range. Shoots big boulders that deal area damage, but cannot hit targets that get very close!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 65,
+      "line": "[\"Mortar\", \"Defensive building with a long range. Shoots big boulders that deal area damage, but can"
+    }
+  },
+  {
+    "id": 66,
+    "name": "Goblin Gang",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Spawns five Goblins - three with knives, two with spears - at a discounted Elixir cost. It's like a Goblin Value Pack!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 66,
+      "line": "[\"Goblin Gang\", \"Spawns five Goblins - three with knives, two with spears - at a discounted Elixir c"
+    }
+  },
+  {
+    "id": 67,
+    "name": "Lava Hound",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 7,
+    "description": "The Lava Hound is a majestic flying beast that attacks buildings. The Lava Pups are less majestic angry babies that attack anything.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 67,
+      "line": "[\"Lava Hound\", \"The Lava Hound is a majestic flying beast that attacks buildings. The Lava Pups are "
+    }
+  },
+  {
+    "id": 68,
+    "name": "Magic Archer",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 4,
+    "description": "Not quite a Wizard, nor an Archer - he shoots a magic arrow that passes through and damages all enemies in its path. It's not a trick, it's magic!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 68,
+      "line": "[\"Magic Archer\", \"Not quite a Wizard, nor an Archer - he shoots a magic arrow that passes through an"
+    }
+  },
+  {
+    "id": 69,
+    "name": "Bowler",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "This big blue dude digs the simple things in life - Dark Elixir drinks and throwing rocks. His massive boulders roll through their target, hitting everything behind for a strike!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 69,
+      "line": "[\"Bowler\", \"This big blue dude digs the simple things in life - Dark Elixir drinks and throwing rock"
+    }
+  },
+  {
+    "id": 70,
+    "name": "Hunter",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "He deals BIG damage up close - not so much at range. What he lacks in accuracy, he makes up for with his impressively bushy eyebrows.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 70,
+      "line": "[\"Hunter\", \"He deals BIG damage up close - not so much at range. What he lacks in accuracy, he makes"
+    }
+  },
+  {
+    "id": 71,
+    "name": "Graveyard",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 5,
+    "description": "Surprise! It's a party. A Skeleton party, anywhere in the Arena. Yay!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 71,
+      "line": "[\"Graveyard\", \"Surprise! It's a party. A Skeleton party, anywhere in the Arena. Yay!\", 5, [[\"graveya"
+    }
+  },
+  {
+    "id": 72,
+    "name": "Executioner",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "He throws his axe like a boomerang, striking all enemies on the way out AND back. It's a miracle he doesn't lose an arm.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 72,
+      "line": "[\"Executioner\", \"He throws his axe like a boomerang, striking all enemies on the way out AND back. I"
+    }
+  },
+  {
+    "id": 73,
+    "name": "Barbarian Hut",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 7,
+    "description": "Troop building that periodically deploys Barbarians to fight the enemy. Time to make the Barbarians",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 73,
+      "line": "[\"Barbarian Hut\", \"Troop building that periodically deploys Barbarians to fight the enemy. Time to m"
+    }
+  },
+  {
+    "id": 74,
+    "name": "Furnace",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "The Furnace spawns two Fire Spirits at a time. It also makes great brick-oven pancakes.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 74,
+      "line": "[\"Furnace\", \"The Furnace spawns two Fire Spirits at a time. It also makes great brick-oven pancakes."
+    }
+  },
+  {
+    "id": 75,
+    "name": "Royal Hogs",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 5,
+    "description": "The King\u2019s personal pets are loose! They love to chomp on apples and towers alike - who let the hogs out?!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 75,
+      "line": "[\"Royal Hogs\", \"The King\u2019s personal pets are loose! They love to chomp on apples and towers alike - "
+    }
+  },
+  {
+    "id": 76,
+    "name": "Royal Ghost",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 3,
+    "description": "He drifts invisibly through the Arena until he's startled by an enemy... then he attacks! Then he's invisible again! Zzzz.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 76,
+      "line": "[\"Royal Ghost\", \"He drifts invisibly through the Arena until he's startled by an enemy... then he at"
+    }
+  },
+  {
+    "id": 77,
+    "name": "Tornado",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Covers the area in a deadly toxin, damaging enemy troops and buildings over time. Yet somehow leaves the grass green and healthy. Go figure!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 77,
+      "line": "[\"Tornado\", \"Covers the area in a deadly toxin, damaging enemy troops and buildings over time. Yet s"
+    }
+  },
+  {
+    "id": 78,
+    "name": "Lightning",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 6,
+    "description": "Bolts of lightning damage and stun up to three enemy troops or buildings with the most hitpoints in the target area. Reduced damage to Crown Towers.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 78,
+      "line": "[\"Lightning\", \"Bolts of lightning damage and stun up to three enemy troops or buildings with the mos"
+    }
+  },
+  {
+    "id": 79,
+    "name": "Earthquake",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Deals Damage per second to Troops and Crown Towers. Deals huge Building Damage! Does not affect flying units (it is an EARTHquake, after all).",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 79,
+      "line": "[\"Earthquake\", \"Deals Damage per second to Troops and Crown Towers. Deals huge Building Damage! Does"
+    }
+  },
+  {
+    "id": 80,
+    "name": "Barbarian Barrel",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 2,
+    "description": "It rolls over and damages anything in its path, then breaks open and out pops a Barbarian! How did he get inside?!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 80,
+      "line": "[\"Barbarian Barrel\", \"It rolls over and damages anything in its path, then breaks open and out pops "
+    }
+  },
+  {
+    "id": 81,
+    "name": "Skeleton Army",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Three fast, very weak melee fighters. Surround your enemies with this pile of bones!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 81,
+      "line": "[\"Skeleton Army\", \"Three fast, very weak melee fighters. Surround your enemies with this pile of bon"
+    }
+  },
+  {
+    "id": 82,
+    "name": "Tesla",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "Defensive building. Whenever it's not zapping the enemy, the power of Electrickery is best kept grounded.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 82,
+      "line": "[\"Tesla\", \"Defensive building. Whenever it's not zapping the enemy, the power of Electrickery is bes"
+    }
+  },
+  {
+    "id": 83,
+    "name": "Goblin Giant",
+    "type": "troop",
+    "rarity": "epic",
+    "elixir_cost": 6,
+    "description": "This jolly green Goblin Giant stomps towards enemy buildings. He carries two Spear Goblins everywhere he goes. It's a weird but functional arrangement.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 83,
+      "line": "[\"Goblin Giant\", \"This jolly green Goblin Giant stomps towards enemy buildings. He carries two Spear"
+    }
+  },
+  {
+    "id": 84,
+    "name": "Ram Rider",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 5,
+    "description": "Together they charge through the Arena; snaring enemies, knocking down towers ... and chewing grass!?",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 84,
+      "line": "[\"Ram Rider\", \"Together they charge through the Arena; snaring enemies, knocking down towers ... and"
+    }
+  },
+  {
+    "id": 85,
+    "name": "Battle Healer",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "With each attack, she unleashes a powerful healing aura that restores Hitpoints to herself and friendly Troops. When she isn't attacking, she passively heals herself!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 85,
+      "line": "[\"Battle Healer\", \"With each attack, she unleashes a powerful healing aura that restores Hitpoints t"
+    }
+  },
+  {
+    "id": 86,
+    "name": "Dark Prince",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "The Dark Prince deals area damage and lets his spiked club do the talking for him - because when he does talk, it sounds like he has a bucket on his head.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 86,
+      "line": "[\"Dark Prince\", \"The Dark Prince deals area damage and lets his spiked club do the talking for him -"
+    }
+  },
+  {
+    "id": 87,
+    "name": "Bandit",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 3,
+    "description": "The Bandit dashes to her target and delivers an extra big hit! While dashing, she can't be touched. The mask keeps her identity safe... and gives her bonus cool points!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 87,
+      "line": "[\"Bandit\", \"The Bandit dashes to her target and delivers an extra big hit! While dashing, she can't "
+    }
+  },
+  {
+    "id": 88,
+    "name": "Mega Knight",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 7,
+    "description": "He lands with the force of 1,000 mustaches, then jumps from one foe to the next dealing huge area damage. Stand aside!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 88,
+      "line": "[\"Mega Knight\", \"He lands with the force of 1,000 mustaches, then jumps from one foe to the next dea"
+    }
+  },
+  {
+    "id": 89,
+    "name": "Miner",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 3,
+    "description": "The Miner can burrow his way underground and appear anywhere in the Arena. It's not magic, it's a shovel.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 89,
+      "line": "[\"Miner\", \"The Miner can burrow his way underground and appear anywhere in the Arena. It's not magic"
+    }
+  },
+  {
+    "id": 90,
+    "name": "Fisherman",
+    "type": "troop",
+    "rarity": "legendary",
+    "elixir_cost": 3,
+    "description": "His Ranged Attack can pull enemies towards him, and pull himself to enemy buildings. He's also mastered the ancient art of 'Fish Slapping'.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 90,
+      "line": "[\"Fisherman\", \"His Ranged Attack can pull enemies towards him, and pull himself to enemy buildings. "
+    }
+  },
+  {
+    "id": 91,
+    "name": "Mirror",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 0,
+    "description": "Mirrors your last card played for +1 Elixir. Will not appear in your starting cards.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 91,
+      "line": "[\"Mirror\", \"Mirrors your last card played for +1 Elixir. Will not appear in your starting cards.\", 0"
+    }
+  },
+  {
+    "id": 92,
+    "name": "Clone",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Duplicates all friendly troops in the target area. Cloned troops are fragile, but pack the same punch as the original! Doesn't affect buildings.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 92,
+      "line": "[\"Clone\", \"Duplicates all friendly troops in the target area. Cloned troops are fragile, but pack th"
+    }
+  },
+  {
+    "id": 93,
+    "name": "Firecracker",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "Shoots a firework that explodes on impact, damaging the target and showering anything behind it with sparks. This is what happens when Archers get bored!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 93,
+      "line": "[\"Firecracker\", \"Shoots a firework that explodes on impact, damaging the target and showering anythi"
+    }
+  },
+  {
+    "id": 94,
+    "name": "Royal Delivery",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 3,
+    "description": "No need to sign for this package! Dropped from the sky, it damages and knocks back enemy Troops before delivering a Royal Recruit. The empty box is also handy for espionage.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 94,
+      "line": "[\"Royal Delivery\", \"No need to sign for this package! Dropped from the sky, it damages and knocks ba"
+    }
+  },
+  {
+    "id": 95,
+    "name": "Skeleton Dragons",
+    "type": "troop",
+    "rarity": "rare",
+    "elixir_cost": 4,
+    "description": "A pair of former dragons that deal splash damage. They are fragile!",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 95,
+      "line": "[\"Skeleton Dragons\", \"A pair of former dragons that deal splash damage. They are fragile!\", 4, [[\"sk"
+    }
+  },
+  {
+    "id": 96,
+    "name": "Electro Spirit",
+    "type": "troop",
+    "rarity": "common",
+    "elixir_cost": 1,
+    "description": "Jumps on enemies, dealing Area Damage and stunning up to 9 enemy troops. Locked in an eternal battle with the Knight for the best mustache.",
+    "stats": {},
+    "legacy_data": {
+      "card_index": 96,
+      "line": "[\"Electro Spirit\", \"Jumps on enemies, dealing Area Damage and stunning up to 9 enemy troops. Locked "
+    }
+  }
+]
