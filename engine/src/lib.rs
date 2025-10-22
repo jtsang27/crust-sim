@@ -8,6 +8,7 @@
 
 pub mod action;
 pub mod arena;
+pub mod card;
 pub mod entities;
 pub mod rng;
 pub mod state;
@@ -15,6 +16,7 @@ pub mod systems;
 
 pub use action::Action;
 pub use arena::Arena;
+pub use card::{Card, CardId};
 pub use rng::Rng;
 pub use state::GameState;
 
@@ -45,8 +47,9 @@ pub fn step(state: &mut GameState, actions: &[Action]) -> Result<()> {
     systems::combat::update(state, DELTA_TIME);
     systems::lifecycle::update(state, DELTA_TIME);
 
-    // Increment tick counter
+    // Increment tick counter and match time
     state.tick += 1;
+    state.advance_time(DELTA_TIME);
 
     Ok(())
 }
