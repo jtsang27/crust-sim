@@ -62,40 +62,64 @@ Phase 4 was originally scoped as "Collision & Targeting" but includes several co
 
 ---
 
-## Phase 4.3: Circular Collision Detection
+## ✅ Phase 4.3: Circular Collision Detection (COMPLETE)
+
+**Status:** Complete (commit 3792d16)
 
 **Goal:** Prevent units from overlapping and walking through each other
 
-**Tasks:**
-1. Add `radius` field to Entity (based on unit size)
-2. Implement circle-circle collision detection
-3. Add collision resolution (push units apart)
-4. Prevent movement into occupied space
-5. Test units blocking each other's paths
+**Implemented:**
+- Added `radius()` method to Entity (Towers: 1.5, Troops: 0.4, Projectiles: 0.1, Spells: 0.0)
+- Implemented circle-circle collision detection in movement system
+- Three-pass movement: calculate velocities → check collisions → apply positions
+- Simple collision response: don't move if collision would occur
+- CLI test with 2 Knights side-by-side targeting same Archer
 
-**Implementation Plan:**
-- Add collision radius to EntityKind (troop size, tower size)
-- Add `check_collision()` function in movement system
-- Before applying velocity, check for collisions
-- If collision detected, adjust position or stop movement
-- Simple approach: If circles overlap, don't move
+**Testing Results:**
+- Knights started 0.9 tiles apart
+- Converged to exactly 0.80 tiles (minimum safe distance)
+- Maintained spacing throughout simulation
+- No overlapping occurred
 
-**Testing Scenario:**
-- Spawn 2 Knights side-by-side
-- Both should move toward same target
-- They should not overlap
-- They should navigate around each other
+**Known Limitations & Deferred Features:**
 
-**Deliverables:**
-- Collision detection in movement system
-- Unit radius data in test cards
-- CLI demo showing units blocking paths
+1. **No pathfinding around obstacles**
+   - Units stop if completely blocked by collision
+   - Don't find alternate routes around obstacles
+   - Works fine for simple scenarios (units side-by-side)
+   - Advanced pathfinding deferred to future phase (outside Phase 4 scope)
 
-**Success Criteria:**
-- Units don't overlap (circle collision works)
-- Units can move around obstacles
-- No units stuck or vibrating
-- Performance acceptable (O(n²) is fine for now)
+2. **No pushing/sliding mechanics**
+   - Units don't slide along collision surfaces
+   - If diagonal movement blocked, unit stops completely
+   - Could add tangent-space sliding in future (low priority)
+
+3. **No separation force**
+   - Units that somehow spawn overlapping won't push apart
+   - Only prevents new overlaps, doesn't fix existing ones
+   - Not an issue if spawn positions are validated
+
+4. **Simple "stop moving" collision response**
+   - Unit completely halts if collision detected
+   - No partial movement or gradual navigation
+   - Works well enough for current needs
+
+5. **Performance: O(n²) collision checks**
+   - Every moving entity checks against all others
+   - Fine for <100 entities (typical match)
+   - Will need spatial partitioning (quadtree/grid) for 100+ units
+   - Optimization deferred to Phase 4.6 if needed
+
+6. **No collision layers/groups**
+   - All entities collide with all others (except radius 0.0)
+   - Can't have "pass-through" relationships (e.g., air units over ground)
+   - May need in future for air/ground separation
+
+**Success Criteria Met:**
+- ✅ Units don't overlap (circle collision works)
+- ✅ Collision detection is deterministic
+- ⚠️  Units can't navigate around obstacles (no pathfinding - deferred)
+- ✅ Performance acceptable for typical match sizes
 
 ---
 

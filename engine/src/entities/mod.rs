@@ -96,6 +96,16 @@ impl Entity {
     pub fn can_move(&self) -> bool {
         matches!(self.kind, EntityKind::Troop(_))
     }
+
+    /// Returns the collision radius for this entity (in tiles).
+    pub fn radius(&self) -> f32 {
+        match &self.kind {
+            EntityKind::Tower(_) => 1.5,      // Towers are large
+            EntityKind::Troop(_) => 0.4,       // Troops are medium (about 1 tile wide for 2 side-by-side)
+            EntityKind::Projectile(_) => 0.1,  // Projectiles are small
+            EntityKind::Spell(_) => 0.0,       // Spells have no collision
+        }
+    }
 }
 
 /// Different types of entities in the game.

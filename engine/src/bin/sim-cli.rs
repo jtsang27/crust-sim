@@ -1,6 +1,7 @@
 //! CLI binary for running simulations.
 
 use engine::{step, Action, GameState};
+use engine::state::EntityId;
 use shared::{PlayerId, Position};
 
 fn main() {
@@ -122,14 +123,19 @@ fn main() {
         step(&mut state, &[]).unwrap();
     }
 
-    // Movement test: Position units far apart to test movement AI
-    println!("\n=== Movement AI Test ===");
-    println!("Spawning Knight and Archers 10 tiles apart...\n");
+    // Collision test: Spawn 2 Knights side-by-side trying to reach same target
+    println!("\n=== Collision Detection Test ===");
+    println!("Spawning 2 Knights side-by-side and 1 Archer as target...\n");
 
-    // Clear existing entities for clean movement test
+    // Clear existing entities for clean collision test
     state.entities.clear();
 
-    // Player 1: Knight at position (10, 10)
+    // Reset elixir for testing
+    state.players.get_mut(&PlayerId::Player1).unwrap().elixir = 10.0;
+    state.players.get_mut(&PlayerId::Player2).unwrap().elixir = 10.0;
+
+    // Player 1: Two Knights side-by-side at (10, 10) and (10, 10.6)
+    // Troop radius is 0.4, so spacing of 0.6 should make them barely NOT overlapping
     step(
         &mut state,
         &[Action::PlayCard {
@@ -141,31 +147,45 @@ fn main() {
     )
     .unwrap();
 
-    // Player 2: Archers at position (20, 10) - 10 tiles away (far out of melee range)
-    // Knight range: 1.2, Archer range: 5.0, Distance: 10.0
+    step(
+        &mut state,
+        &[Action::PlayCard {
+            player: PlayerId::Player1,
+            card_name: "Knight".to_string(),
+            level: 11,
+            position: Position::new(10.0, 10.9), // 0.9 tiles apart (should not overlap with radius 0.4 each)
+        }],
+    )
+    .unwrap();
+
+    // Player 2: Archer at position (20, 10.5) - in between the two Knights' Y positions
     step(
         &mut state,
         &[Action::PlayCard {
             player: PlayerId::Player2,
             card_name: "Archers".to_string(),
             level: 11,
-            position: Position::new(20.0, 10.0),
+            position: Position::new(20.0, 10.45),
         }],
     )
     .unwrap();
 
-    println!("[Tick {}] Knight (P1) spawned at (10, 10)", state.tick);
-    println!("           HP: 1452, Range: 1.2, Damage: 167, Move Speed: 1.0 tiles/s");
-    println!("[Tick {}] Archers (P2) spawned at (20, 10)", state.tick);
-    println!("           HP: 252 each (x2), Range: 5.0, Damage: 100, Move Speed: 1.0 tiles/s");
-    println!("           Initial distance: 10.0 tiles\n");
-    println!("Expected: Knight should walk toward Archers, stop at ~1.2 range, then fight\n");
+    println!("[Tick {}] Knight 1 (P1) spawned at (10.0, 10.0)", state.tick);
+    println!("[Tick {}] Knight 2 (P1) spawned at (10.0, 10.9)", state.tick);
+    println!("[Tick {}] Archers (P2) spawned at (20.0, 10.45)", state.tick);
+    println!("           Troop collision radius: 0.4 tiles");
+    println!("           Knights are 0.9 tiles apart (should NOT overlap)");
+    println!("\nExpected: Knights walk toward Archer without overlapping each other\n");
 
-    // Find the Knight entity (Player1's troop)
-    let knight_id = state.entities.iter()
-        .find(|(_, e)| e.owner == PlayerId::Player1)
+    // Find both Knight entities
+    let mut knight_ids: Vec<EntityId> = state.entities.iter()
+        .filter(|(_, e)| e.owner == PlayerId::Player1)
         .map(|(id, _)| *id)
-        .expect("Knight not found");
+        .collect();
+    knight_ids.sort_by_key(|id| id.as_u32());
+
+    let knight1_id = knight_ids[0];
+    let knight2_id = knight_ids[1];
 
     let mut position_samples = Vec::new();
 
@@ -178,8 +198,10 @@ fn main() {
 
         // Sample positions every 60 ticks (1 second)
         if i % 60 == 0 {
-            if let Some(knight) = state.entities.get(&knight_id) {
-                position_samples.push((state.tick, knight.position.x, knight.position.y));
+            if let (Some(k1), Some(k2)) = (state.entities.get(&knight1_id), state.entities.get(&knight2_id)) {
+                // Store both knight positions and distance between them
+                let dist_between = k1.position.distance_to(&k2.position);
+                position_samples.push((state.tick, k1.position.x, k1.position.y, k2.position.x, k2.position.y, dist_between));
             }
         }
 
@@ -192,9 +214,23 @@ fn main() {
 
     // Report movement
     println!("=== Knight Movement (sampled every 1s) ===");
-    for (tick, x, y) in &position_samples {
-        let distance_to_target = ((20.0 - x) * (20.0 - x) + (10.0 - y) * (10.0 - y)).sqrt();
-        println!("[Tick {}] Position: ({:.2}, {:.2}), Distance to Archers: {:.2}", tick, x, y, distance_to_target);
+    for (tick, k1_x, k1_y, k2_x, k2_y, dist_between) in &position_samples {
+        println!("[Tick {}] Knight1: ({:.2}, {:.2}), Knight2: ({:.2}, {:.2}), Distance between: {:.2}",
+            tick, k1_x, k1_y, k2_x, k2_y, dist_between);
+    }
+
+    // Check if they ever overlapped (distance < sum of radii = 0.8)
+    let min_distance = position_samples.iter()
+        .map(|(_, _, _, _, _, dist)| dist)
+        .min_by(|a, b| a.partial_cmp(b).unwrap())
+        .unwrap_or(&999.0);
+
+    println!("\nMinimum distance between Knights: {:.2} tiles", min_distance);
+    println!("Expected minimum: 0.80 tiles (radius 0.4 + radius 0.4)");
+    if *min_distance < 0.79 {
+        println!("⚠️  WARNING: Knights overlapped! (distance < 0.79)");
+    } else {
+        println!("✅ Knights maintained proper spacing (collision detection working)");
     }
 
     // Report combat events

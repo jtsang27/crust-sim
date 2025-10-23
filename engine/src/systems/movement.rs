@@ -1,7 +1,7 @@
 //! Movement system for entities.
 
 use crate::state::{EntityId, GameState};
-use shared::Velocity;
+use shared::{Position, Velocity};
 
 /// Updates entity movement - sets velocity toward targets and applies movement.
 pub fn update(state: &mut GameState, dt: f32) {
@@ -53,11 +53,64 @@ pub fn update(state: &mut GameState, dt: f32) {
         }
     }
 
-    // Second pass: Apply velocities to positions
-    for entity in state.entities.values_mut() {
-        entity.position.x += entity.velocity.x * dt;
-        entity.position.y += entity.velocity.y * dt;
+    // Second pass: Apply velocities to positions with collision detection
+    let mut position_updates: Vec<(EntityId, Position)> = Vec::new();
 
-        // TODO: Add collision detection
+    for (id, entity) in &state.entities {
+        // Skip if not moving
+        if entity.velocity.x == 0.0 && entity.velocity.y == 0.0 {
+            continue;
+        }
+
+        // Calculate new position
+        let new_x = entity.position.x + entity.velocity.x * dt;
+        let new_y = entity.position.y + entity.velocity.y * dt;
+        let new_position = Position::new(new_x, new_y);
+
+        // Check for collisions with other entities
+        let would_collide = check_collision(state, *id, &new_position);
+
+        if !would_collide {
+            position_updates.push((*id, new_position));
+        }
+        // If collision detected, don't move (stay in current position)
     }
+
+    // Apply position updates
+    for (id, position) in position_updates {
+        if let Some(entity) = state.entities.get_mut(&id) {
+            entity.position = position;
+        }
+    }
+}
+
+/// Checks if moving an entity to a new position would cause a collision.
+fn check_collision(state: &GameState, moving_entity_id: EntityId, new_position: &Position) -> bool {
+    let moving_entity = &state.entities[&moving_entity_id];
+    let moving_radius = moving_entity.radius();
+
+    // Check against all other entities
+    for (other_id, other_entity) in &state.entities {
+        // Skip self
+        if *other_id == moving_entity_id {
+            continue;
+        }
+
+        // Skip entities with no collision radius
+        let other_radius = other_entity.radius();
+        if other_radius == 0.0 {
+            continue;
+        }
+
+        // Calculate distance between centers
+        let distance = new_position.distance_to(&other_entity.position);
+        let min_distance = moving_radius + other_radius;
+
+        // Collision if circles overlap
+        if distance < min_distance {
+            return true;
+        }
+    }
+
+    false
 }
