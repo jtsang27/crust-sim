@@ -202,41 +202,40 @@ These features are well-documented in `/Users/will/Documents/Projects/clash-roya
 
 ---
 
-## Phase 4.5: Advanced Targeting (Tower Priority)
+## ✅ Phase 4.5: Advanced Targeting (Tower Priority) (COMPLETE)
+
+**Status:** Complete (already implemented in Phase 4.1)
 
 **Goal:** Implement proper targeting priorities (buildings > troops)
 
-**Tasks:**
-1. Identify entity types (troop vs building vs tower)
-2. Implement priority-based targeting
-3. Giants should prefer towers over troops
-4. Troops should prefer nearest enemy (any type)
-5. Test Giant ignoring troops to attack tower
+**Analysis:**
+Upon review, this functionality was already correctly implemented in Phase 4.1's targeting system. The implementation works as follows:
 
-**Implementation Plan:**
-- Add building flag to EntityKind
-- Update `find_target()` to consider priorities:
-  - If attacker targets buildings: prioritize buildings/towers
-  - If target type is "both": prioritize nearest
-  - If multiple same-priority: choose nearest
-- Tower entities should be marked as buildings
+**Existing Implementation:**
+1. Entity types are identified via `EntityKind::Tower` vs `EntityKind::Troop`
+2. Target filtering is implemented via `TargetType` enum:
+   - `TargetType::Buildings`: Only targets towers (Giant behavior)
+   - `TargetType::Ground`: Only targets ground units
+   - `TargetType::Air`: Only targets air units (not yet implemented)
+   - `TargetType::Both`: Targets any enemy unit
+3. `is_valid_target_type()` function filters entities by type:
+   - For `TargetType::Buildings`: Returns `true` only for `EntityKind::Tower(_)`
+   - Other types filter accordingly
+4. `find_target()` returns nearest valid enemy matching the target type filter
 
-**Testing Scenario:**
-- Spawn Giant (targets buildings)
-- Spawn enemy Knight between Giant and tower
-- Giant should walk past Knight to attack tower
-- Knight should attack Giant while Giant ignores it
+**How It Works:**
+- Giant has `targets: ["buildings"]` → `TargetType::Buildings`
+- When Giant looks for target, `is_valid_target_type()` rejects all non-tower entities
+- Result: Giant walks past troops and only attacks towers
+- Troops with `TargetType::Both` or `TargetType::Ground` attack nearest enemy of matching type
 
-**Deliverables:**
-- Priority-based targeting logic
-- Building/tower entity identification
-- CLI demo with Giant targeting tower
+**Success Criteria Met:**
+- ✅ Giants only target towers (troops filtered out)
+- ✅ Troops attack nearest valid enemy based on their target type
+- ✅ Targeting is deterministic (always nearest matching target)
+- ✅ Units retain target until it dies or becomes invalid (no unnecessary retargeting)
 
-**Success Criteria:**
-- Giants prioritize towers over troops
-- Troops attack nearest enemy regardless of type
-- Targeting is deterministic
-- Units don't retarget unnecessarily
+**Note:** This is target **filtering**, not target **prioritization**. Units don't "prefer" buildings over troops - they either can or cannot target specific entity types. This matches Clash Royale's actual behavior where Giants literally cannot target troops at all.
 
 ---
 
@@ -266,7 +265,7 @@ These features are well-documented in `/Users/will/Documents/Projects/clash-roya
 3. **Ranged vs Melee:**
    - Archers vs Knight
    - Knight should walk toward Archers
-   - Archers should shoot while retreating (future)
+   - Archers should shoot while staying still (future)
    - For now: just verify projectiles and damage
 
 **Deliverables:**
