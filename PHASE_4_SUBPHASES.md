@@ -272,13 +272,73 @@ Upon review, this functionality was already correctly implemented in Phase 4.1's
 - Comprehensive combat test suite
 - Performance benchmarks
 - Known issues documented
-- Phase 4 complete summary
+- Phase 4 partial summary
 
 **Success Criteria:**
 - All sub-phases working together
 - No crashes or infinite loops
 - Deterministic results
+- Ready for Phase 4.7 (Arena Navigation)
+
+---
+
+## Phase 4.7: Arena Navigation
+
+**Goal:** Implement river/bridge mechanics and tile-based movement constraints
+
+**Background:**
+Currently units can walk through rivers and ignore terrain. The legacy engine has:
+- River tiles (impassable water at x=15-16)
+- Bridge tiles (crossings at y=4-6)
+- "jumping" special ability (allows some units to cross rivers)
+
+**Tasks:**
+1. Add tile type checking to Arena module
+2. Implement river blocking in movement system
+3. Add bridge passability at specific coordinates
+4. Create "can_cross_river" flag for jumping units
+5. Test units navigating around/over river
+6. Add visual indication of blocked paths (optional)
+
+**Implementation Plan:**
+- Update Arena to expose `get_tile_type(x, y)` function
+- Tile types: Normal, River, Bridge, Crown, Princess, Banned
+- Modify movement system:
+  - Before moving, check if destination tile is passable
+  - River tiles blocked unless:
+    - Tile is a bridge (y=4-6 in river zone)
+    - Unit has "jumping" ability
+  - Stop movement if blocked (similar to collision)
+- Add jumping ability to entity special effects (future)
+
+**Testing Scenario:**
+- Spawn Knight at (10, 10) - Blue side
+- Spawn Archers at (20, 10) - Red side (across river)
+- Knight should path toward bridge (y=4-6) to cross river
+- Knight should NOT walk directly through river at y=9 or y=11
+- (Advanced) Units with jumping ability ignore river blocking
+
+**Deliverables:**
+- Tile-based movement validation
+- River/bridge mechanics working
+- CLI demo showing units navigating to bridges
+- Documentation of tile types in arena.json
+
+**Success Criteria:**
+- Units cannot walk through river (except at bridges)
+- Units path correctly toward bridge crossings
+- Jumping units (if implemented) can cross anywhere
+- Movement is still deterministic
 - Ready for Phase 5 (Replay & Serialization)
+
+**Known Limitations (Deferred):**
+- No pathfinding algorithm (A*) - units may get stuck against river
+- Units don't intelligently choose shortest path to bridge
+- Just blocks illegal moves, doesn't guide movement
+- Advanced pathfinding deferred to future phase (outside Phase 4 scope)
+
+**Notes:**
+This is a **constraint system**, not full pathfinding. Units will attempt to move toward target, and movement will be blocked if they hit a river tile. This matches the legacy engine's simple approach and is sufficient for Phase 4.
 
 ---
 
@@ -288,15 +348,18 @@ Upon review, this functionality was already correctly implemented in Phase 4.1's
 - **Phase 4.2:** ✅ Complete (2-3 hours)
 - **Phase 4.3:** ✅ Complete (3-4 hours)
 - **Phase 4.4:** ✅ Complete (3-4 hours)
-- **Phase 4.5:** 1-2 hours (targeting priority is mostly logic)
+- **Phase 4.5:** ✅ Complete (0 hours - already implemented)
 - **Phase 4.6:** 2-3 hours (integration testing and documentation)
+- **Phase 4.7:** 2-3 hours (river/bridge navigation constraints)
 
-**Total:** ~11-16 hours for complete Phase 4
+**Total:** ~13-19 hours for complete Phase 4
 
 ---
 
 ## Next Step
 
-Currently on: **Phase 4.5 - Advanced Targeting (Tower Priority)**
+Currently on: **Phase 4.6 - Integration Testing**
+
+After 4.6, we'll implement Phase 4.7 (Arena Navigation) before moving to Phase 5.
 
 Ready to start when you are!
