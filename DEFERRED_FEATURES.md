@@ -76,12 +76,16 @@ This document tracks card features and mechanics that were intentionally exclude
 
 **Status:** Deferred - Unique unlock mechanics
 
-**Special Tower Troops Excluded (3 cards):**
+**All Tower Troops (4 cards - stored separately in `towers.json`):**
 - Cannoneer
 - Dagger Duchess
 - Royal Chef
+- Tower Princess
 
-**Note:** Tower Princess (base tower troop) is INCLUDED as it's available to all players.
+**Note:** Tower troops are stored separately from playable cards because they:
+- Don't have elixir costs (they replace towers, not played from hand)
+- Use a separate `Tower` struct instead of `Card` struct
+- Require special tower replacement mechanics
 
 **Why Deferred:**
 - Special unlock requirements

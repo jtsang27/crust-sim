@@ -48,12 +48,18 @@ impl GameState {
         players.insert(PlayerId::Player1, PlayerState::new(PlayerId::Player1));
         players.insert(PlayerId::Player2, PlayerState::new(PlayerId::Player2));
 
+        // Load test cards
+        let mut cards = HashMap::new();
+        for card in crate::card::get_test_cards() {
+            cards.insert(card.name.clone(), card);
+        }
+
         Self {
             tick: 0,
             rng: Rng::new(seed),
             entities: HashMap::new(),
             players,
-            cards: HashMap::new(), // Cards will be loaded separately
+            cards,
             next_entity_id: 1,
             match_time: 0.0,
             max_match_time: 180.0, // 3 minutes (will be configurable)
@@ -71,6 +77,28 @@ impl GameState {
     /// Gets a card by name.
     pub fn get_card_by_name(&self, name: &str) -> Option<&Card> {
         self.cards.get(name)
+    }
+
+    /// Initializes a player's deck with the given card names.
+    /// The deck will be shuffled deterministically using the game's RNG.
+    pub fn set_player_deck(&mut self, player_id: PlayerId, deck: Vec<String>) -> Result<()> {
+        let player = self
+            .players
+            .get_mut(&player_id)
+            .ok_or_else(|| shared::Error::InvalidAction("Player not found".to_string()))?;
+
+        // Validate that all cards exist
+        for card_name in &deck {
+            if !self.cards.contains_key(card_name) {
+                return Err(shared::Error::InvalidAction(format!(
+                    "Card '{}' not found in available cards",
+                    card_name
+                )));
+            }
+        }
+
+        player.set_deck(deck, &mut self.rng);
+        Ok(())
     }
 
     /// Applies a player action to the game state.
@@ -127,9 +155,20 @@ pub struct PlayerState {
     pub max_elixir: f32,
     pub elixir_regen_rate: f32,
     pub tower_hp: HashMap<TowerType, f32>,
+
+    /// The player's 8-card deck (card names).
+    pub deck: Vec<String>,
+
+    /// Current hand (4 card indices into the cycle).
+    pub hand: Vec<usize>,
+
+    /// Current position in the deck cycle (0-7, wraps around).
+    pub next_card_index: usize,
 }
 
 impl PlayerState {
+    /// Creates a new player state with an empty deck.
+    /// Use `set_deck()` to initialize the deck and hand.
     pub fn new(id: PlayerId) -> Self {
         let mut tower_hp = HashMap::new();
         tower_hp.insert(TowerType::King, 2400.0);
@@ -142,7 +181,52 @@ impl PlayerState {
             max_elixir: 10.0,
             elixir_regen_rate: 1.0, // 1 elixir per second (will be configurable)
             tower_hp,
+            deck: Vec::new(),
+            hand: Vec::new(),
+            next_card_index: 0,
         }
+    }
+
+    /// Sets the player's deck and initializes the hand with the first 4 cards.
+    /// The deck should contain exactly 8 card names.
+    pub fn set_deck(&mut self, deck: Vec<String>, rng: &mut crate::rng::Rng) {
+        assert_eq!(deck.len(), 8, "Deck must contain exactly 8 cards");
+        self.deck = deck;
+
+        // Shuffle the initial deck order using RNG for determinism
+        for i in (1..self.deck.len()).rev() {
+            let j = rng.rand_int_range(0, i as i32 + 1) as usize;
+            self.deck.swap(i, j);
+        }
+
+        // Initialize hand with first 4 cards (indices 0-3)
+        self.hand = vec![0, 1, 2, 3];
+        self.next_card_index = 4; // Next card to draw is at index 4
+    }
+
+    /// Gets the card name at the given hand index (0-3).
+    pub fn get_hand_card(&self, hand_index: usize) -> Option<&String> {
+        self.hand.get(hand_index).and_then(|&deck_index| self.deck.get(deck_index))
+    }
+
+    /// Plays a card from the hand and cycles in the next card.
+    /// Returns the card name that was played.
+    pub fn play_card_from_hand(&mut self, hand_index: usize) -> Option<String> {
+        if hand_index >= self.hand.len() {
+            return None;
+        }
+
+        // Get the card name before removing it
+        let deck_index = self.hand[hand_index];
+        let card_name = self.deck.get(deck_index)?.clone();
+
+        // Replace this hand slot with the next card in the cycle
+        self.hand[hand_index] = self.next_card_index;
+
+        // Advance the cycle (wraps around to 0 after 7)
+        self.next_card_index = (self.next_card_index + 1) % 8;
+
+        Some(card_name)
     }
 
     /// Checks if this player has been defeated (King tower destroyed).

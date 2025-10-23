@@ -13,12 +13,14 @@ pub mod entities;
 pub mod rng;
 pub mod state;
 pub mod systems;
+pub mod tower;
 
 pub use action::Action;
 pub use arena::Arena;
 pub use card::{load_cards_from_json, Card, CardLevelStats, Rarity};
 pub use rng::Rng;
 pub use state::GameState;
+pub use tower::{load_towers_from_json, Tower, TowerLevelStats};
 
 use shared::Result;
 

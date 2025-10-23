@@ -515,24 +515,40 @@ def main():
             all_cards.append(card_data)
         print(f"  Progress: {i+1}/{len(card_links)}")
 
-    # Filter out champions and special tower troops (they require special ability implementation)
-    # Keep Tower Princess as it's the base tower troop everyone has
-    special_tower_troops = ['Cannoneer', 'Dagger Duchess', 'Royal Chef']
+    # Separate cards and towers
+    # Tower troops go into a separate file (towers.json)
+    # Champions and evolution cards are excluded
     base_cards = [
         card for card in all_cards
         if card.get('rarity') != 'champion'
-        and card.get('name') not in special_tower_troops
+        and card.get('card_type') != 'tower troop'
+        and not card.get('name', '').endswith(' Evolution')
     ]
-    excluded_count = len(all_cards) - len(base_cards)
+
+    tower_troops = [
+        card for card in all_cards
+        if card.get('card_type') == 'tower troop'
+    ]
+
+    excluded_count = len(all_cards) - len(base_cards) - len(tower_troops)
     if excluded_count > 0:
-        print(f"\n  Excluded {excluded_count} champion/special tower troop cards (require custom ability code)")
+        print(f"\n  Excluded {excluded_count} champion/evolution cards (require custom ability code)")
+    if tower_troops:
+        print(f"  Separated {len(tower_troops)} tower troops into towers.json")
 
     # Step 3: Save to JSON
-    print(f"\nStep 3: Saving {len(base_cards)} cards to JSON...")
+    print(f"\nStep 3: Saving {len(base_cards)} cards and {len(tower_troops)} towers to JSON...")
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(base_cards, indent=2))
 
-    print(f"✅ Scraping complete! Saved to {OUTPUT_PATH}")
+    # Save towers to separate file
+    if tower_troops:
+        towers_path = OUTPUT_PATH.parent / "towers.json"
+        towers_path.write_text(json.dumps(tower_troops, indent=2))
+        print(f"✅ Cards saved to {OUTPUT_PATH}")
+        print(f"✅ Towers saved to {towers_path}")
+    else:
+        print(f"✅ Scraping complete! Saved to {OUTPUT_PATH}")
 
     # Print summary
     print("\n=== Summary ===")

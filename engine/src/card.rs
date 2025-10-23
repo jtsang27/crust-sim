@@ -14,7 +14,7 @@ pub struct Card {
     pub elixir_cost: f32,
     pub rarity: Rarity,
     #[serde(rename = "card_type")]
-    pub type_name: String, // "troop", "spell", "building", "tower troop"
+    pub type_name: String, // "troop", "spell", "building"
 
     // Card-level properties (constant across levels)
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -199,5 +199,176 @@ pub fn load_cards_from_json(path: &str) -> Result<Vec<Card>> {
         .map_err(|e| shared::Error::InvalidAction(format!("Failed to parse cards JSON: {}", e)))?;
 
     Ok(cards)
+}
+
+/// Get basic test cards for development.
+pub fn get_test_cards() -> Vec<Card> {
+    vec![
+        // Knight - 3 elixir melee tank
+        Card {
+            name: "Knight".to_string(),
+            url: None,
+            elixir_cost: 3.0,
+            rarity: Rarity::Common,
+            type_name: "troop".to_string(),
+            attack_speed: Some(1.2),
+            first_hit_speed: None,
+            movement_speed: Some("medium".to_string()),
+            movement_speed_value: Some(1.0),
+            deploy_time: Some(1.0),
+            range: Some(1.2),
+            projectile_speed: None,
+            targets: Some(vec!["ground".to_string()]),
+            count: Some(1),
+            transport: Some("ground".to_string()),
+            duration: None,
+            radius: None,
+            effects: None,
+            levels: vec![
+                CardLevelStats {
+                    level: 11,
+                    hp: Some(1452.0),
+                    damage: Some(167.0),
+                    dps: None,
+                    area_damage: None,
+                    spawn_damage: None,
+                    shield_hp: None,
+                    healing: None,
+                }
+            ],
+        },
+        // Archers - 3 elixir ranged duo
+        Card {
+            name: "Archers".to_string(),
+            url: None,
+            elixir_cost: 3.0,
+            rarity: Rarity::Common,
+            type_name: "troop".to_string(),
+            attack_speed: Some(1.2),
+            first_hit_speed: None,
+            movement_speed: Some("medium".to_string()),
+            movement_speed_value: Some(1.0),
+            deploy_time: Some(1.0),
+            range: Some(5.0),
+            projectile_speed: None,
+            targets: Some(vec!["air".to_string(), "ground".to_string()]),
+            count: Some(2),
+            transport: Some("ground".to_string()),
+            duration: None,
+            radius: None,
+            effects: None,
+            levels: vec![
+                CardLevelStats {
+                    level: 11,
+                    hp: Some(252.0),
+                    damage: Some(100.0),
+                    dps: None,
+                    area_damage: None,
+                    spawn_damage: None,
+                    shield_hp: None,
+                    healing: None,
+                }
+            ],
+        },
+        // Giant - 5 elixir tank (targets buildings)
+        Card {
+            name: "Giant".to_string(),
+            url: None,
+            elixir_cost: 5.0,
+            rarity: Rarity::Rare,
+            type_name: "troop".to_string(),
+            attack_speed: Some(1.5),
+            first_hit_speed: None,
+            movement_speed: Some("slow".to_string()),
+            movement_speed_value: Some(0.75),
+            deploy_time: Some(1.0),
+            range: Some(1.2),
+            projectile_speed: None,
+            targets: Some(vec!["buildings".to_string()]),
+            count: Some(1),
+            transport: Some("ground".to_string()),
+            duration: None,
+            radius: None,
+            effects: None,
+            levels: vec![
+                CardLevelStats {
+                    level: 11,
+                    hp: Some(3275.0),
+                    damage: Some(211.0),
+                    dps: None,
+                    area_damage: None,
+                    spawn_damage: None,
+                    shield_hp: None,
+                    healing: None,
+                }
+            ],
+        },
+        // Fireball - 4 elixir damage spell
+        Card {
+            name: "Fireball".to_string(),
+            url: None,
+            elixir_cost: 4.0,
+            rarity: Rarity::Rare,
+            type_name: "spell".to_string(),
+            attack_speed: None,
+            first_hit_speed: None,
+            movement_speed: None,
+            movement_speed_value: None,
+            deploy_time: Some(0.0),
+            range: None,
+            projectile_speed: None,
+            targets: Some(vec!["air".to_string(), "ground".to_string()]),
+            count: None,
+            transport: None,
+            duration: None,
+            radius: Some(2.5),
+            effects: Some(vec!["damage".to_string()]),
+            levels: vec![
+                CardLevelStats {
+                    level: 11,
+                    hp: Some(0.0),
+                    damage: Some(572.0),
+                    dps: None,
+                    area_damage: None,
+                    spawn_damage: None,
+                    shield_hp: None,
+                    healing: None,
+                }
+            ],
+        },
+        // Arrows - 3 elixir area damage spell
+        Card {
+            name: "Arrows".to_string(),
+            url: None,
+            elixir_cost: 3.0,
+            rarity: Rarity::Common,
+            type_name: "spell".to_string(),
+            attack_speed: None,
+            first_hit_speed: None,
+            movement_speed: None,
+            movement_speed_value: None,
+            deploy_time: Some(0.0),
+            range: None,
+            projectile_speed: None,
+            targets: Some(vec!["air".to_string(), "ground".to_string()]),
+            count: None,
+            transport: None,
+            duration: None,
+            radius: Some(4.0),
+            effects: Some(vec!["damage".to_string()]),
+            levels: vec![
+                CardLevelStats {
+                    level: 11,
+                    hp: Some(0.0),
+                    damage: Some(144.0),
+                    dps: None,
+                    area_damage: None,
+                    spawn_damage: None,
+                    shield_hp: None,
+                    healing: None,
+                }
+            ],
+        },
+    ]
 }
 
