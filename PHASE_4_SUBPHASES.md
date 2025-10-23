@@ -358,8 +358,8 @@ This is a **constraint system**, not full pathfinding. Units will attempt to mov
 
 ## Next Step
 
-Currently on: **Phase 4.6 - Integration Testing**
+Currently on: **Phase 4.7 - Arena Navigation**
 
-After 4.6, we'll implement Phase 4.7 (Arena Navigation) before moving to Phase 5.
+Note: Implementing 4.7 before 4.6 so that integration testing (4.6) includes river/bridge mechanics.
 
 Ready to start when you are!
