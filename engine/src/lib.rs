@@ -47,6 +47,7 @@ pub fn step(state: &mut GameState, actions: &[Action]) -> Result<()> {
     systems::elixir::update(state, DELTA_TIME);
     systems::combat::update(state, DELTA_TIME); // Combat first to assign targets
     systems::movement::update(state, DELTA_TIME); // Movement uses targets from combat
+    systems::projectile::update(state, DELTA_TIME); // Projectiles move toward targets
     systems::lifecycle::update(state, DELTA_TIME);
 
     // Increment tick counter and match time

@@ -239,6 +239,101 @@ fn main() {
         println!("[Tick {}] Entity died ({} remaining)", tick, count);
     }
 
+    // Projectile test: Archers shooting at Knight
+    println!("\n=== Projectile System Test ===");
+    println!("Testing ranged attacks with Archers shooting at Knight...\n");
+
+    // Clear entities and reset
+    state.entities.clear();
+    state.players.get_mut(&PlayerId::Player1).unwrap().elixir = 10.0;
+    state.players.get_mut(&PlayerId::Player2).unwrap().elixir = 10.0;
+
+    // Spawn Archers (Player 1) at (10, 10)
+    step(
+        &mut state,
+        &[Action::PlayCard {
+            player: PlayerId::Player1,
+            card_name: "Archers".to_string(),
+            level: 11,
+            position: Position::new(10.0, 10.0),
+        }],
+    )
+    .unwrap();
+
+    // Spawn Knight (Player 2) at (15, 10) - within Archer range (5.0)
+    step(
+        &mut state,
+        &[Action::PlayCard {
+            player: PlayerId::Player2,
+            card_name: "Knight".to_string(),
+            level: 11,
+            position: Position::new(15.0, 10.0),
+        }],
+    )
+    .unwrap();
+
+    println!("[Tick {}] Archers (P1) spawned at (10.0, 10.0)", state.tick);
+    println!("[Tick {}] Knight (P2) spawned at (15.0, 10.0)", state.tick);
+    println!("           Archer range: 5.0 tiles");
+    println!("           Distance: 5.0 tiles (just in range)");
+    println!("\nExpected: Archers shoot arrows (projectiles) at Knight\n");
+
+    // Track projectile events
+    let mut projectile_events = Vec::new();
+    let mut knight_hp_samples = Vec::new();
+
+    // Run simulation for 300 ticks (5 seconds)
+    for i in 0..300 {
+        let projectile_count_before = state.entities.values()
+            .filter(|e| matches!(e.kind, engine::entities::EntityKind::Projectile(_)))
+            .count();
+
+        step(&mut state, &[]).unwrap();
+
+        let projectile_count_after = state.entities.values()
+            .filter(|e| matches!(e.kind, engine::entities::EntityKind::Projectile(_)))
+            .count();
+
+        // Track when projectiles spawn or hit
+        if projectile_count_after > projectile_count_before {
+            projectile_events.push((state.tick, "Projectile spawned", projectile_count_after));
+        } else if projectile_count_after < projectile_count_before {
+            projectile_events.push((state.tick, "Projectile hit", projectile_count_after));
+        }
+
+        // Sample Knight HP every 60 ticks
+        if i % 60 == 0 {
+            if let Some(knight) = state.entities.values()
+                .find(|e| e.owner == PlayerId::Player2 && matches!(e.kind, engine::entities::EntityKind::Troop(_))) {
+                knight_hp_samples.push((state.tick, knight.hp, knight.max_hp));
+            }
+        }
+    }
+
+    // Report projectile events
+    println!("=== Projectile Events (first 20) ===");
+    for (tick, event, count) in projectile_events.iter().take(20) {
+        println!("[Tick {}] {} (active projectiles: {})", tick, event, count);
+    }
+    println!("... ({} total projectile events)", projectile_events.len());
+
+    // Report Knight HP damage
+    println!("\n=== Knight HP Over Time ===");
+    for (tick, hp, max_hp) in &knight_hp_samples {
+        println!("[Tick {}] Knight HP: {:.0}/{:.0}", tick, hp, max_hp);
+    }
+
+    // Check if damage was dealt
+    if let Some((_, last_hp, max_hp)) = knight_hp_samples.last() {
+        let damage_taken = max_hp - last_hp;
+        println!("\nKnight took {:.0} damage", damage_taken);
+        if damage_taken > 0.0 {
+            println!("✅ Projectiles successfully dealt damage!");
+        } else {
+            println!("⚠️  WARNING: No damage dealt - projectile system may not be working");
+        }
+    }
+
     // Final state
     println!("\n=== Match Summary ===");
     println!("Total ticks: {}", state.tick);

@@ -106,6 +106,34 @@ impl Entity {
             EntityKind::Spell(_) => 0.0,       // Spells have no collision
         }
     }
+
+    /// Returns the collision shape for this entity.
+    /// Towers use rectangular hitboxes, everything else uses circular.
+    pub fn collision_shape(&self) -> CollisionShape {
+        match &self.kind {
+            EntityKind::Tower(_) => CollisionShape::Rectangle { half_width: 2.0, half_height: 2.0 },
+            EntityKind::Troop(_) => CollisionShape::Circle { radius: 0.4 },
+            EntityKind::Projectile(_) => CollisionShape::Circle { radius: 0.1 },
+            EntityKind::Spell(_) => CollisionShape::None,
+        }
+    }
+
+    /// Returns true if this entity uses ranged attacks (spawns projectiles).
+    pub fn is_ranged(&self) -> bool {
+        match &self.kind {
+            EntityKind::Troop(data) => data.is_ranged,
+            EntityKind::Tower(_) => true, // Towers always shoot projectiles
+            _ => false,
+        }
+    }
+}
+
+/// Collision shape for entities.
+#[derive(Debug, Clone, Copy)]
+pub enum CollisionShape {
+    Circle { radius: f32 },
+    Rectangle { half_width: f32, half_height: f32 },
+    None,
 }
 
 /// Different types of entities in the game.
@@ -151,6 +179,7 @@ pub struct TroopData {
     pub attack_speed: f32,
     pub movement_speed: f32,
     pub target_type: TargetType,
+    pub is_ranged: bool, // true = spawns projectiles, false = instant melee damage
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

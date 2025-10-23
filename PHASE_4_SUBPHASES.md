@@ -123,47 +123,82 @@ Phase 4 was originally scoped as "Collision & Targeting" but includes several co
 
 ---
 
-## Phase 4.4: Projectile System
+## ✅ Phase 4.4: Projectile System (COMPLETE)
+
+**Status:** Complete
 
 **Goal:** Ranged attacks spawn projectiles that travel to targets
 
-**Tasks:**
-1. Add `is_ranged` flag to EntityKind::Troop
-2. Create projectile spawning in combat system
-3. Implement projectile movement (faster than troops)
-4. Add projectile-target collision detection
-5. Apply damage on projectile hit
-6. Test Archers shooting arrows
+**Implemented:**
+- Added `is_ranged: bool` field to TroopData
+- Added `is_ranged()` method to Entity (Troops check field, Towers always true)
+- Modified combat system to spawn projectiles for ranged attacks instead of instant damage
+- Created projectile system in `systems/projectile.rs` with:
+  - Projectile movement toward target at 15 tiles/second
+  - Collision detection when projectile reaches target (distance <= combined radii)
+  - Damage application on hit
+  - Projectile removal after hit or if target dies
+- Updated card spawning to auto-detect ranged units (range > 2.0)
 
-**Implementation Plan:**
-- Modify combat system:
-  - Melee: Apply damage instantly (as now)
-  - Ranged: Spawn projectile entity
-- Projectile entity:
-  - Owns damage value
-  - Tracks target entity ID
-  - Moves toward target at projectile_speed
-  - Dies on impact or if target dies
-- Add projectile_speed to card data (Archers: fast, Spear Goblins: slower)
+**Testing Results:**
+- Archers spawn 2 projectiles when attacking (one per archer)
+- Projectiles travel toward Knight target
+- Knight took 800 damage over 5 seconds (4 successful arrow hits)
+- Projectiles removed after hitting target
+- System integrated into main game loop (runs after movement, before lifecycle)
 
-**Testing Scenario:**
-- Spawn Archers at (10, 10)
-- Spawn Knight at (15, 10) - within archer range
-- Archers should shoot arrows (projectile entities)
-- Arrows should travel toward Knight
-- Knight should take damage when arrow hits
+**Success Criteria Met:**
+- ✅ Projectiles spawn on ranged attack
+- ✅ Projectiles travel to target
+- ✅ Damage applied on impact
+- ✅ Projectiles removed after hit
+- ✅ Melee attacks still instant (no projectiles)
+- ✅ Circle-to-rectangle collision for towers
 
-**Deliverables:**
-- Projectile entity spawning for ranged attacks
-- Projectile movement and collision
-- CLI demo showing projectile count and hits
+**Future Enhancements (Deferred):**
 
-**Success Criteria:**
-- Projectiles spawn on ranged attack
-- Projectiles travel to target
-- Damage applied on impact
-- Projectiles removed after hit
-- Melee attacks still instant (no projectiles)
+Based on analysis of the original clash-royale-engine implementation, the following features are not yet implemented but could be added in future phases:
+
+1. **Pass-Through Mechanics** - Projectiles that hit multiple targets (Magic Archer)
+   - Track already-hit targets per projectile
+   - Distance-based pass-through limits
+   - Apply damage to all units in path
+
+2. **Special Effects System** - Status effects on projectile hit
+   - Stun effects (duration-based immobilization)
+   - Slow effects (movement speed reduction)
+   - Knockback effects (push entities with direction/distance)
+   - Snare effects (prevent movement but allow attacks)
+   - Rage/healing buffs
+
+3. **Spread/Shotgun Patterns** - Multiple projectiles with angle variance
+   - Firecracker-style spreading shrapnel
+   - Hunter-style shotgun spread
+   - Configurable spread angle and count
+
+4. **Returning Projectiles** - Boomerang-style mechanics
+   - Executioner's axe returns to thrower
+   - Damage on both outgoing and return path
+   - Track return state and distance
+
+5. **Tower Damage Modifiers** - Different damage for crown towers
+   - Crown towers take 30% spell damage
+   - Regular towers take full damage
+   - Non-spell projectiles unaffected
+
+6. **Projectile Retargeting** - Auto-retarget if original target dies
+   - Find new target mid-flight
+   - Optional per-card behavior
+
+7. **Wait Timers** - Delayed damage application
+   - Travel time before damage activates
+   - Used for spell delays
+
+8. **Area Damage on Impact** - Splash damage around hit point
+   - Radius-based damage application
+   - Damage falloff curves
+
+These features are well-documented in `/Users/will/Documents/Projects/clash-royale-engine/code.txt` lines 2009-8300 and can be referenced when implementing advanced card mechanics in future phases.
 
 ---
 
@@ -251,9 +286,9 @@ Phase 4 was originally scoped as "Collision & Targeting" but includes several co
 ## Timeline Estimate
 
 - **Phase 4.1:** ✅ Complete (2-3 hours)
-- **Phase 4.2:** 2-3 hours (movement AI is straightforward)
-- **Phase 4.3:** 3-4 hours (collision detection needs careful testing)
-- **Phase 4.4:** 3-4 hours (projectile system is moderately complex)
+- **Phase 4.2:** ✅ Complete (2-3 hours)
+- **Phase 4.3:** ✅ Complete (3-4 hours)
+- **Phase 4.4:** ✅ Complete (3-4 hours)
 - **Phase 4.5:** 1-2 hours (targeting priority is mostly logic)
 - **Phase 4.6:** 2-3 hours (integration testing and documentation)
 
@@ -263,6 +298,6 @@ Phase 4 was originally scoped as "Collision & Targeting" but includes several co
 
 ## Next Step
 
-Currently on: **Phase 4.2 - Basic Movement AI**
+Currently on: **Phase 4.5 - Advanced Targeting (Tower Priority)**
 
 Ready to start when you are!

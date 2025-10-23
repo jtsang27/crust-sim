@@ -136,6 +136,11 @@ impl Card {
         let count = self.count.unwrap_or(1);
         let hp = level_stats.hp.unwrap_or(100.0);
         let damage = level_stats.damage.unwrap_or(10.0);
+        let range = self.range.unwrap_or(1.0);
+
+        // Determine if this is a ranged unit based on attack range
+        // Melee units have range <= 2.0, ranged units have range > 2.0
+        let is_ranged = range > 2.0;
 
         for _ in 0..count {
             let entity = Entity::new(
@@ -144,10 +149,11 @@ impl Card {
                 EntityKind::Troop(TroopData {
                     base_hp: hp,
                     damage,
-                    range: self.range.unwrap_or(1.0),
+                    range,
                     attack_speed: self.attack_speed.unwrap_or(1.0),
                     movement_speed: self.movement_speed_value.unwrap_or(60.0),
                     target_type: self.get_target_type(),
+                    is_ranged,
                 }),
             );
             state.add_entity(entity);

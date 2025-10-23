@@ -70,9 +70,17 @@ pub fn update(state: &mut GameState, dt: f32) {
 
     // Apply attacks
     for (attacker_id, target_id, damage, attack_speed) in attacks {
-        // Apply damage to target
-        if let Some(target) = state.entities.get_mut(&target_id) {
-            target.take_damage(damage);
+        let attacker = &state.entities[&attacker_id];
+
+        // Check if this is a ranged attack
+        if attacker.is_ranged() {
+            // Spawn projectile
+            spawn_projectile(state, attacker_id, target_id, damage);
+        } else {
+            // Melee: Apply damage instantly
+            if let Some(target) = state.entities.get_mut(&target_id) {
+                target.take_damage(damage);
+            }
         }
 
         // Set cooldown
@@ -80,6 +88,25 @@ pub fn update(state: &mut GameState, dt: f32) {
             attacker.attack_cooldown = attack_speed;
         }
     }
+}
+
+/// Spawns a projectile from attacker toward target.
+fn spawn_projectile(state: &mut GameState, attacker_id: EntityId, target_id: EntityId, damage: f32) {
+    use crate::entities::{Entity, EntityKind, ProjectileData};
+
+    let attacker = &state.entities[&attacker_id];
+
+    let projectile = Entity::new(
+        attacker.owner,
+        attacker.position, // Start at attacker's position
+        EntityKind::Projectile(ProjectileData {
+            damage,
+            speed: 15.0, // Projectiles move at 15 tiles/second (fast)
+            target_id: Some(target_id.as_u32()),
+        }),
+    );
+
+    state.add_entity(projectile);
 }
 
 /// Finds the best target for an attacker.
