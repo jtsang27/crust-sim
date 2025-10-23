@@ -1,7 +1,7 @@
 //! Game state management and serialization.
 
 use crate::action::Action;
-use crate::card::{Card, CardId};
+use crate::card::Card;
 use crate::entities::Entity;
 use crate::rng::Rng;
 use serde::{Deserialize, Serialize};
@@ -28,8 +28,8 @@ pub struct GameState {
     /// Player-specific state (elixir, deck, etc.).
     pub players: HashMap<PlayerId, PlayerState>,
 
-    /// Available cards (loaded at game start).
-    cards: HashMap<CardId, Card>,
+    /// Available cards (loaded at game start, indexed by card name).
+    cards: HashMap<String, Card>,
 
     /// Next entity ID to assign.
     next_entity_id: u32,
@@ -48,27 +48,29 @@ impl GameState {
         players.insert(PlayerId::Player1, PlayerState::new(PlayerId::Player1));
         players.insert(PlayerId::Player2, PlayerState::new(PlayerId::Player2));
 
-        // Load test cards
-        let mut cards = HashMap::new();
-        for card in crate::card::get_test_cards() {
-            cards.insert(card.id, card);
-        }
-
         Self {
             tick: 0,
             rng: Rng::new(seed),
             entities: HashMap::new(),
             players,
-            cards,
+            cards: HashMap::new(), // Cards will be loaded separately
             next_entity_id: 1,
             match_time: 0.0,
             max_match_time: 180.0, // 3 minutes (will be configurable)
         }
     }
 
-    /// Gets a card by ID.
-    pub fn get_card(&self, id: CardId) -> Option<&Card> {
-        self.cards.get(&id)
+    /// Loads cards from a JSON file.
+    pub fn load_cards(&mut self, cards: Vec<Card>) {
+        self.cards.clear();
+        for card in cards {
+            self.cards.insert(card.name.clone(), card);
+        }
+    }
+
+    /// Gets a card by name.
+    pub fn get_card_by_name(&self, name: &str) -> Option<&Card> {
+        self.cards.get(name)
     }
 
     /// Applies a player action to the game state.

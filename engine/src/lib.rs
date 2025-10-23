@@ -16,7 +16,7 @@ pub mod systems;
 
 pub use action::Action;
 pub use arena::Arena;
-pub use card::{Card, CardId};
+pub use card::{load_cards_from_json, Card, CardLevelStats, Rarity};
 pub use rng::Rng;
 pub use state::GameState;
 

@@ -8,28 +8,122 @@ use shared::{PlayerId, Position, Result};
 /// A card that can be played by a player.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Card {
-    pub id: CardId,
     pub name: String,
-    pub elixir_cost: u32,
-    pub card_type: CardType,
-    pub stats: CardStats,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub url: Option<String>,
+    pub elixir_cost: f32,
+    pub rarity: Rarity,
+    #[serde(rename = "card_type")]
+    pub type_name: String, // "troop", "spell", "building", "tower troop"
+
+    // Card-level properties (constant across levels)
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub attack_speed: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub first_hit_speed: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub movement_speed: Option<String>, // "slow", "medium", "fast", "very_fast"
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub movement_speed_value: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub deploy_time: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub range: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub projectile_speed: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub targets: Option<Vec<String>>, // ["air", "ground", "buildings"]
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub count: Option<u32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub transport: Option<String>, // "ground", "air"
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub duration: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub radius: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub effects: Option<Vec<String>>, // ["freeze", "knockback", "spawn", etc.]
+
+    // Level-based stats
+    pub levels: Vec<CardLevelStats>,
+}
+
+/// Stats that vary by card level.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct CardLevelStats {
+    pub level: u32,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub hp: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub damage: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub dps: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub area_damage: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub spawn_damage: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub shield_hp: Option<f32>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub healing: Option<f32>,
 }
 
 impl Card {
-    /// Spawns entities when this card is played.
-    pub fn spawn(&self, state: &mut GameState, owner: PlayerId, position: Position) -> Result<()> {
-        match self.card_type {
-            CardType::Troop { ref troop } => {
-                self.spawn_troop(state, owner, position, troop)?;
+    /// Spawns entities when this card is played at a specific level.
+    pub fn spawn(&self, state: &mut GameState, owner: PlayerId, position: Position, level: u32) -> Result<()> {
+        // Get stats for the requested level
+        let level_stats = self.get_level_stats(level)?;
+
+        match self.type_name.as_str() {
+            "troop" | "tower troop" => {
+                self.spawn_troop(state, owner, position, level_stats)?;
             }
-            CardType::Spell { ref effect } => {
-                self.apply_spell(state, owner, position, effect)?;
+            "spell" => {
+                self.apply_spell(state, owner, position, level_stats)?;
             }
-            CardType::Building { ref building } => {
-                self.spawn_building(state, owner, position, building)?;
+            "building" => {
+                self.spawn_building(state, owner, position, level_stats)?;
+            }
+            _ => {
+                return Err(shared::Error::InvalidAction(format!(
+                    "Unknown card type: {}",
+                    self.type_name
+                )));
             }
         }
         Ok(())
+    }
+
+    /// Get stats for a specific card level.
+    pub fn get_level_stats(&self, level: u32) -> Result<&CardLevelStats> {
+        self.levels
+            .iter()
+            .find(|stats| stats.level == level)
+            .ok_or_else(|| {
+                shared::Error::InvalidAction(format!("Level {} not found for {}", level, self.name))
+            })
+    }
+
+    /// Get the target type from the targets list.
+    fn get_target_type(&self) -> TargetType {
+        match &self.targets {
+            Some(targets) => {
+                let has_air = targets.iter().any(|t| t == "air");
+                let has_ground = targets.iter().any(|t| t == "ground");
+                let has_buildings = targets.iter().any(|t| t == "buildings");
+
+                if has_buildings {
+                    TargetType::Buildings
+                } else if has_air && has_ground {
+                    TargetType::Both
+                } else if has_air {
+                    TargetType::Air
+                } else {
+                    TargetType::Ground
+                }
+            }
+            None => TargetType::Both, // Default
+        }
     }
 
     fn spawn_troop(
@@ -37,19 +131,23 @@ impl Card {
         state: &mut GameState,
         owner: PlayerId,
         position: Position,
-        troop: &TroopStats,
+        level_stats: &CardLevelStats,
     ) -> Result<()> {
-        for _ in 0..troop.count {
+        let count = self.count.unwrap_or(1);
+        let hp = level_stats.hp.unwrap_or(100.0);
+        let damage = level_stats.damage.unwrap_or(10.0);
+
+        for _ in 0..count {
             let entity = Entity::new(
                 owner,
                 position,
                 EntityKind::Troop(TroopData {
-                    base_hp: troop.hp,
-                    damage: troop.damage,
-                    range: troop.range,
-                    attack_speed: troop.attack_speed,
-                    movement_speed: troop.movement_speed,
-                    target_type: troop.targets,
+                    base_hp: hp,
+                    damage,
+                    range: self.range.unwrap_or(1.0),
+                    attack_speed: self.attack_speed.unwrap_or(1.0),
+                    movement_speed: self.movement_speed_value.unwrap_or(60.0),
+                    target_type: self.get_target_type(),
                 }),
             );
             state.add_entity(entity);
@@ -62,7 +160,7 @@ impl Card {
         state: &mut GameState,
         owner: PlayerId,
         position: Position,
-        _building: &BuildingStats,
+        _level_stats: &CardLevelStats,
     ) -> Result<()> {
         // TODO: Implement building spawning
         let _ = (state, owner, position);
@@ -74,71 +172,17 @@ impl Card {
         state: &mut GameState,
         owner: PlayerId,
         position: Position,
-        _effect: &SpellEffect,
+        level_stats: &CardLevelStats,
     ) -> Result<()> {
-        // TODO: Implement spell effects
-        let _ = (state, owner, position);
+        // TODO: Implement spell effects using level_stats.area_damage or .damage
+        let _ = (state, owner, position, level_stats);
         Ok(())
     }
 }
 
-/// Unique card identifier.
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]
-pub enum CardId {
-    Knight,
-    Archers,
-    Giant,
-    Fireball,
-    Arrows,
-}
-
-/// Type of card and its specific properties.
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub enum CardType {
-    Troop { troop: TroopStats },
-    Spell { effect: SpellEffect },
-    Building { building: BuildingStats },
-}
-
-/// Stats for troop cards.
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct TroopStats {
-    pub hp: f32,
-    pub damage: f32,
-    pub attack_speed: f32, // Seconds between attacks
-    pub movement_speed: f32,
-    pub range: f32,
-    pub targets: TargetType,
-    pub count: u32, // Number of troops spawned
-}
-
-/// Stats for building cards.
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct BuildingStats {
-    pub hp: f32,
-    pub lifetime: f32, // Seconds
-    pub damage: Option<f32>,
-    pub attack_speed: Option<f32>,
-    pub range: Option<f32>,
-}
-
-/// Spell effect data.
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct SpellEffect {
-    pub damage: f32,
-    pub radius: f32,
-    pub duration: Option<f32>,
-}
-
-/// General card stats (shared across all types).
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct CardStats {
-    pub rarity: Rarity,
-    pub deploy_time: f32, // Seconds
-}
-
 /// Card rarity.
-#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "lowercase")]
 pub enum Rarity {
     Common,
     Rare,
@@ -146,105 +190,14 @@ pub enum Rarity {
     Legendary,
 }
 
-/// Pre-defined test cards for Phase 2.
-pub fn get_test_cards() -> Vec<Card> {
-    vec![
-        // Knight - 3 elixir melee tank
-        Card {
-            id: CardId::Knight,
-            name: "Knight".to_string(),
-            elixir_cost: 3,
-            card_type: CardType::Troop {
-                troop: TroopStats {
-                    hp: 1452.0,
-                    damage: 167.0,
-                    attack_speed: 1.2,
-                    movement_speed: 1.0, // Medium
-                    range: 1.2,          // Melee
-                    targets: TargetType::Ground,
-                    count: 1,
-                },
-            },
-            stats: CardStats {
-                rarity: Rarity::Common,
-                deploy_time: 1.0,
-            },
-        },
-        // Archers - 3 elixir ranged duo
-        Card {
-            id: CardId::Archers,
-            name: "Archers".to_string(),
-            elixir_cost: 3,
-            card_type: CardType::Troop {
-                troop: TroopStats {
-                    hp: 252.0,
-                    damage: 100.0,
-                    attack_speed: 1.2,
-                    movement_speed: 1.0,
-                    range: 5.0,
-                    targets: TargetType::Both,
-                    count: 2,
-                },
-            },
-            stats: CardStats {
-                rarity: Rarity::Common,
-                deploy_time: 1.0,
-            },
-        },
-        // Giant - 5 elixir tank (targets buildings)
-        Card {
-            id: CardId::Giant,
-            name: "Giant".to_string(),
-            elixir_cost: 5,
-            card_type: CardType::Troop {
-                troop: TroopStats {
-                    hp: 3275.0,
-                    damage: 211.0,
-                    attack_speed: 1.5,
-                    movement_speed: 0.75, // Slow
-                    range: 1.2,
-                    targets: TargetType::Buildings,
-                    count: 1,
-                },
-            },
-            stats: CardStats {
-                rarity: Rarity::Rare,
-                deploy_time: 1.0,
-            },
-        },
-        // Fireball - 4 elixir damage spell
-        Card {
-            id: CardId::Fireball,
-            name: "Fireball".to_string(),
-            elixir_cost: 4,
-            card_type: CardType::Spell {
-                effect: SpellEffect {
-                    damage: 572.0,
-                    radius: 2.5,
-                    duration: None,
-                },
-            },
-            stats: CardStats {
-                rarity: Rarity::Rare,
-                deploy_time: 0.0, // Instant
-            },
-        },
-        // Arrows - 3 elixir area damage spell
-        Card {
-            id: CardId::Arrows,
-            name: "Arrows".to_string(),
-            elixir_cost: 3,
-            card_type: CardType::Spell {
-                effect: SpellEffect {
-                    damage: 144.0,
-                    radius: 4.0,
-                    duration: None,
-                },
-            },
-            stats: CardStats {
-                rarity: Rarity::Common,
-                deploy_time: 0.0,
-            },
-        },
-    ]
+/// Load cards from JSON file.
+pub fn load_cards_from_json(path: &str) -> Result<Vec<Card>> {
+    let data = std::fs::read_to_string(path)
+        .map_err(|e| shared::Error::InvalidAction(format!("Failed to read cards file: {}", e)))?;
+
+    let cards: Vec<Card> = serde_json::from_str(&data)
+        .map_err(|e| shared::Error::InvalidAction(format!("Failed to parse cards JSON: {}", e)))?;
+
+    Ok(cards)
 }
+

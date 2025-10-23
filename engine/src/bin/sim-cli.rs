@@ -1,6 +1,6 @@
 //! CLI binary for running simulations.
 
-use engine::{step, Action, CardId, GameState};
+use engine::{load_cards_from_json, step, Action, GameState};
 use shared::{PlayerId, Position};
 
 fn main() {
@@ -9,6 +9,13 @@ fn main() {
     // Create game state with deterministic seed
     let seed = 42;
     let mut state = GameState::new(seed);
+
+    // Load cards from JSON
+    println!("Loading cards from JSON...");
+    let cards_path = "../config/patches/v2025_current/cards_complete.json";
+    let cards = load_cards_from_json(cards_path).expect("Failed to load cards");
+    println!("Loaded {} cards", cards.len());
+    state.load_cards(cards);
 
     println!("Game initialized with seed: {}", seed);
     println!("Player 1 starting elixir: {}", state.players[&PlayerId::Player1].elixir);
@@ -20,16 +27,17 @@ fn main() {
     // Tick 0: Start
     println!("[Tick {}] Match begins", state.tick);
 
-    // Tick 60: Player 1 plays Knight (3 elixir) at center
+    // Tick 60: Player 1 plays Knight (3 elixir) at center, level 11
     for _ in 0..60 {
         step(&mut state, &[]).unwrap();
     }
-    println!("[Tick {}] Player 1 plays Knight at (16, 8)", state.tick);
+    println!("[Tick {}] Player 1 plays Knight (level 11) at (16, 8)", state.tick);
     step(
         &mut state,
         &[Action::PlayCard {
             player: PlayerId::Player1,
-            card_id: CardId::Knight,
+            card_name: "Knight".to_string(),
+            level: 11,
             position: Position::new(16.0, 8.0),
         }],
     )
@@ -37,16 +45,17 @@ fn main() {
     println!("  Elixir remaining: {}", state.players[&PlayerId::Player1].elixir);
     println!("  Entities spawned: {}", state.entities.len());
 
-    // Tick 120: Player 2 plays Archers (3 elixir)
+    // Tick 120: Player 2 plays Archers (3 elixir), level 11
     for _ in 0..59 {
         step(&mut state, &[]).unwrap();
     }
-    println!("\n[Tick {}] Player 2 plays Archers at (16, 10)", state.tick);
+    println!("\n[Tick {}] Player 2 plays Archers (level 11) at (16, 10)", state.tick);
     step(
         &mut state,
         &[Action::PlayCard {
             player: PlayerId::Player2,
-            card_id: CardId::Archers,
+            card_name: "Archers".to_string(),
+            level: 11,
             position: Position::new(16.0, 10.0),
         }],
     )
@@ -54,16 +63,17 @@ fn main() {
     println!("  Elixir remaining: {}", state.players[&PlayerId::Player2].elixir);
     println!("  Entities spawned: {}", state.entities.len());
 
-    // Tick 180: Player 1 plays Giant (5 elixir)
+    // Tick 180: Player 1 plays Giant (5 elixir), level 11
     for _ in 0..59 {
         step(&mut state, &[]).unwrap();
     }
-    println!("\n[Tick {}] Player 1 plays Giant at (16, 6)", state.tick);
+    println!("\n[Tick {}] Player 1 plays Giant (level 11) at (16, 6)", state.tick);
     step(
         &mut state,
         &[Action::PlayCard {
             player: PlayerId::Player1,
-            card_id: CardId::Giant,
+            card_name: "Giant".to_string(),
+            level: 11,
             position: Position::new(16.0, 6.0),
         }],
     )

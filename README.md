@@ -28,13 +28,14 @@ python3 scripts/extract_mechanics.py
 
 ## Project Status
 
-**Current Phase:** Phase 1 Complete ✅
-**Next Milestone:** Phase 2 - Core Engine Enhancement
+**Current Phase:** Phase 2 Complete ✅, Phase 3 In Progress 🔄
+**Next Milestone:** Phase 3 - Complete Cards and Elixir System
 
 - ✅ Pre-Phase 1: Rust workspace setup, RNG, basic GameState
-- ✅ Phase 1: Data extraction (97 cards, arena, mechanics)
-- 🔄 Phase 2: Core engine skeleton with 5+ test cards
-- ⏳ Phase 3-8: See [ROADMAP.md](ROADMAP.md)
+- ✅ Phase 1: Data extraction (112 cards from Fandom wiki, arena, mechanics)
+- ✅ Phase 2: Core engine skeleton with deterministic step function
+- 🔄 Phase 3: Cards and elixir system (card loading complete, deck system pending)
+- ⏳ Phase 4-8: See [ROADMAP.md](ROADMAP.md)
 
 ## Documentation
 

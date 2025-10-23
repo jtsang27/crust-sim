@@ -1,0 +1,9941 @@
+[
+  {
+    "name": "Archers",
+    "url": "https://clashroyale.fandom.com/wiki/Archers",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 0.9,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 5.0,
+    "projectile_speed": 600.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 2,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 119.0,
+        "damage": 39.0,
+        "dps": 43.0
+      },
+      {
+        "level": 2,
+        "hp": 130.0,
+        "damage": 43.0,
+        "dps": 47.0
+      },
+      {
+        "level": 3,
+        "hp": 143.0,
+        "damage": 48.0,
+        "dps": 53.0
+      },
+      {
+        "level": 4,
+        "hp": 158.0,
+        "damage": 54.0,
+        "dps": 60.0
+      },
+      {
+        "level": 5,
+        "hp": 173.0,
+        "damage": 60.0,
+        "dps": 66.0
+      },
+      {
+        "level": 6,
+        "hp": 190.0,
+        "damage": 66.0,
+        "dps": 73.0
+      },
+      {
+        "level": 7,
+        "hp": 209.0,
+        "damage": 73.0,
+        "dps": 81.0
+      },
+      {
+        "level": 8,
+        "hp": 229.0,
+        "damage": 82.0,
+        "dps": 91.0
+      },
+      {
+        "level": 9,
+        "hp": 252.0,
+        "damage": 91.0,
+        "dps": 101.0
+      },
+      {
+        "level": 10,
+        "hp": 277.0,
+        "damage": 101.0,
+        "dps": 112.0
+      },
+      {
+        "level": 11,
+        "hp": 304.0,
+        "damage": 112.0,
+        "dps": 124.0
+      },
+      {
+        "level": 12,
+        "hp": 334.0,
+        "damage": 123.0,
+        "dps": 136.0
+      },
+      {
+        "level": 13,
+        "hp": 367.0,
+        "damage": 136.0,
+        "dps": 151.0
+      },
+      {
+        "level": 14,
+        "hp": 403.0,
+        "damage": 149.0,
+        "dps": 165.0
+      },
+      {
+        "level": 15,
+        "hp": 442.0,
+        "damage": 164.0,
+        "dps": 182.0
+      }
+    ]
+  },
+  {
+    "name": "Baby Dragon",
+    "url": "https://clashroyale.fandom.com/wiki/Baby_Dragon",
+    "elixir_cost": 4.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.5,
+    "first_hit_speed": 0.3,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 3.5,
+    "radius": 1.5,
+    "projectile_speed": 500.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 720.0,
+        "area_damage": 100.0,
+        "dps": 66.0
+      },
+      {
+        "level": 7,
+        "hp": 792.0,
+        "area_damage": 110.0,
+        "dps": 73.0
+      },
+      {
+        "level": 8,
+        "hp": 868.0,
+        "area_damage": 121.0,
+        "dps": 80.0
+      },
+      {
+        "level": 9,
+        "hp": 954.0,
+        "area_damage": 133.0,
+        "dps": 88.0
+      },
+      {
+        "level": 10,
+        "hp": 1048.0,
+        "area_damage": 146.0,
+        "dps": 97.0
+      },
+      {
+        "level": 11,
+        "hp": 1152.0,
+        "area_damage": 161.0,
+        "dps": 107.0
+      },
+      {
+        "level": 12,
+        "hp": 1264.0,
+        "area_damage": 177.0,
+        "dps": 118.0
+      },
+      {
+        "level": 13,
+        "hp": 1390.0,
+        "area_damage": 194.0,
+        "dps": 129.0
+      },
+      {
+        "level": 14,
+        "hp": 1525.0,
+        "area_damage": 213.0,
+        "dps": 142.0
+      },
+      {
+        "level": 15,
+        "hp": 1674.0,
+        "area_damage": 234.0,
+        "dps": 156.0
+      }
+    ]
+  },
+  {
+    "name": "Balloon",
+    "url": "https://clashroyale.fandom.com/wiki/Balloon",
+    "elixir_cost": 5.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 2.0,
+    "first_hit_speed": 0.2,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 0.1,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 1049.0,
+        "damage": 150.0,
+        "dps": 200.0
+      },
+      {
+        "level": 7,
+        "hp": 1154.0,
+        "damage": 165.0,
+        "dps": 220.0
+      },
+      {
+        "level": 8,
+        "hp": 1266.0,
+        "damage": 181.0,
+        "dps": 241.0
+      },
+      {
+        "level": 9,
+        "hp": 1390.0,
+        "damage": 199.0,
+        "dps": 265.0
+      },
+      {
+        "level": 10,
+        "hp": 1528.0,
+        "damage": 219.0,
+        "dps": 291.0
+      },
+      {
+        "level": 11,
+        "hp": 1679.0,
+        "damage": 240.0,
+        "dps": 320.0
+      },
+      {
+        "level": 12,
+        "hp": 1843.0,
+        "damage": 264.0,
+        "dps": 351.0
+      },
+      {
+        "level": 13,
+        "hp": 2027.0,
+        "damage": 290.0,
+        "dps": 386.0
+      },
+      {
+        "level": 14,
+        "hp": 2223.0,
+        "damage": 318.0,
+        "dps": 423.0
+      },
+      {
+        "level": 15,
+        "hp": 2440.0,
+        "damage": 349.0,
+        "dps": 465.0
+      }
+    ]
+  },
+  {
+    "name": "Bandit",
+    "url": "https://clashroyale.fandom.com/wiki/Bandit",
+    "elixir_cost": 3.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.0,
+    "first_hit_speed": 0.4,
+    "movement_speed": "fast",
+    "movement_speed_value": 500.0,
+    "deploy_time": 1.0,
+    "range": 3.5,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 750.0,
+        "damage": 322.0,
+        "dps": 161.0
+      },
+      {
+        "level": 10,
+        "hp": 824.0,
+        "damage": 354.0,
+        "dps": 176.0
+      },
+      {
+        "level": 11,
+        "hp": 906.0,
+        "damage": 389.0,
+        "dps": 194.0
+      },
+      {
+        "level": 12,
+        "hp": 994.0,
+        "damage": 427.0,
+        "dps": 213.0
+      },
+      {
+        "level": 13,
+        "hp": 1093.0,
+        "damage": 469.0,
+        "dps": 234.0
+      },
+      {
+        "level": 14,
+        "hp": 1200.0,
+        "damage": 515.0,
+        "dps": 257.0
+      },
+      {
+        "level": 15,
+        "hp": 1316.0,
+        "damage": 565.0,
+        "dps": 282.0
+      }
+    ]
+  },
+  {
+    "name": "Barbarians",
+    "url": "https://clashroyale.fandom.com/wiki/Barbarians",
+    "elixir_cost": 5.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.4,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 0.7,
+    "targets": [
+      "ground"
+    ],
+    "count": 5,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 262.0,
+        "damage": 75.0,
+        "dps": 57.0
+      },
+      {
+        "level": 2,
+        "hp": 288.0,
+        "damage": 82.0,
+        "dps": 63.0
+      },
+      {
+        "level": 3,
+        "hp": 317.0,
+        "damage": 90.0,
+        "dps": 69.0
+      },
+      {
+        "level": 4,
+        "hp": 348.0,
+        "damage": 99.0,
+        "dps": 76.0
+      },
+      {
+        "level": 5,
+        "hp": 382.0,
+        "damage": 109.0,
+        "dps": 83.0
+      },
+      {
+        "level": 6,
+        "hp": 419.0,
+        "damage": 120.0,
+        "dps": 92.0
+      },
+      {
+        "level": 7,
+        "hp": 461.0,
+        "damage": 132.0,
+        "dps": 101.0
+      },
+      {
+        "level": 8,
+        "hp": 505.0,
+        "damage": 144.0,
+        "dps": 110.0
+      },
+      {
+        "level": 9,
+        "hp": 555.0,
+        "damage": 159.0,
+        "dps": 122.0
+      },
+      {
+        "level": 10,
+        "hp": 610.0,
+        "damage": 174.0,
+        "dps": 133.0
+      },
+      {
+        "level": 11,
+        "hp": 670.0,
+        "damage": 192.0,
+        "dps": 147.0
+      },
+      {
+        "level": 12,
+        "hp": 736.0,
+        "damage": 210.0,
+        "dps": 161.0
+      },
+      {
+        "level": 13,
+        "hp": 809.0,
+        "damage": 231.0,
+        "dps": 177.0
+      },
+      {
+        "level": 14,
+        "hp": 888.0,
+        "damage": 254.0,
+        "dps": 195.0
+      },
+      {
+        "level": 15,
+        "hp": 974.0,
+        "damage": 279.0,
+        "dps": 214.0
+      }
+    ]
+  },
+  {
+    "name": "Bats",
+    "url": "https://clashroyale.fandom.com/wiki/Bats",
+    "elixir_cost": 2.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.6,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 5,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 32.0,
+        "damage": 32.0,
+        "dps": 24.0
+      },
+      {
+        "level": 2,
+        "hp": 35.0,
+        "damage": 35.0,
+        "dps": 26.0
+      },
+      {
+        "level": 3,
+        "hp": 38.0,
+        "damage": 38.0,
+        "dps": 29.0
+      },
+      {
+        "level": 4,
+        "hp": 42.0,
+        "damage": 42.0,
+        "dps": 32.0
+      },
+      {
+        "level": 5,
+        "hp": 46.0,
+        "damage": 46.0,
+        "dps": 35.0
+      },
+      {
+        "level": 6,
+        "hp": 51.0,
+        "damage": 51.0,
+        "dps": 39.0
+      },
+      {
+        "level": 7,
+        "hp": 56.0,
+        "damage": 56.0,
+        "dps": 43.0
+      },
+      {
+        "level": 8,
+        "hp": 61.0,
+        "damage": 61.0,
+        "dps": 46.0
+      },
+      {
+        "level": 9,
+        "hp": 67.0,
+        "damage": 67.0,
+        "dps": 51.0
+      },
+      {
+        "level": 10,
+        "hp": 74.0,
+        "damage": 74.0,
+        "dps": 56.0
+      },
+      {
+        "level": 11,
+        "hp": 81.0,
+        "damage": 81.0,
+        "dps": 62.0
+      },
+      {
+        "level": 12,
+        "hp": 89.0,
+        "damage": 89.0,
+        "dps": 68.0
+      },
+      {
+        "level": 13,
+        "hp": 98.0,
+        "damage": 98.0,
+        "dps": 75.0
+      },
+      {
+        "level": 14,
+        "hp": 108.0,
+        "damage": 108.0,
+        "dps": 83.0
+      },
+      {
+        "level": 15,
+        "hp": 119.0,
+        "damage": 119.0,
+        "dps": 91.0
+      }
+    ]
+  },
+  {
+    "name": "Battle Healer",
+    "url": "https://clashroyale.fandom.com/wiki/Battle_Healer",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 1.6,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 811.0,
+        "damage": 70.0,
+        "dps": 46.0,
+        "healing": 95.0
+      },
+      {
+        "level": 4,
+        "hp": 892.0,
+        "damage": 77.0,
+        "dps": 51.0,
+        "healing": 53.0
+      },
+      {
+        "level": 5,
+        "hp": 979.0,
+        "damage": 84.0,
+        "dps": 56.0,
+        "healing": 58.0
+      },
+      {
+        "level": 6,
+        "hp": 1073.0,
+        "damage": 92.0,
+        "dps": 61.0,
+        "healing": 280.0
+      },
+      {
+        "level": 7,
+        "hp": 1180.0,
+        "damage": 102.0,
+        "dps": 68.0,
+        "healing": 70.0
+      },
+      {
+        "level": 8,
+        "hp": 1295.0,
+        "damage": 111.0,
+        "dps": 74.0,
+        "healing": 77.0
+      },
+      {
+        "level": 9,
+        "hp": 1422.0,
+        "damage": 122.0,
+        "dps": 81.0,
+        "healing": 84.0
+      },
+      {
+        "level": 10,
+        "hp": 1563.0,
+        "damage": 135.0,
+        "dps": 90.0,
+        "healing": 93.0
+      },
+      {
+        "level": 11,
+        "hp": 1717.0,
+        "damage": 148.0,
+        "dps": 98.0,
+        "healing": 102.0
+      },
+      {
+        "level": 12,
+        "hp": 1885.0,
+        "damage": 162.0,
+        "dps": 108.0,
+        "healing": 112.0
+      },
+      {
+        "level": 13,
+        "hp": 2073.0,
+        "damage": 179.0,
+        "dps": 119.0,
+        "healing": 123.0
+      },
+      {
+        "level": 14,
+        "hp": 2274.0,
+        "damage": 196.0,
+        "dps": 130.0,
+        "healing": 135.0
+      },
+      {
+        "level": 15,
+        "hp": 2496.0,
+        "damage": 215.0,
+        "dps": 143.0,
+        "healing": 148.0
+      }
+    ],
+    "effects": [
+      "heal",
+      "spawn"
+    ]
+  },
+  {
+    "name": "Battle Ram",
+    "url": "https://clashroyale.fandom.com/wiki/Battle_Ram",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 0.7,
+    "targets": [
+      "ground"
+    ],
+    "count": 2,
+    "transport": "ground",
+    "attack_speed": 1.3,
+    "levels": [
+      {
+        "level": 3,
+        "hp": 317.0,
+        "damage": 90.0,
+        "dps": 69.0
+      },
+      {
+        "level": 4,
+        "hp": 348.0,
+        "damage": 99.0,
+        "dps": 76.0
+      },
+      {
+        "level": 5,
+        "hp": 382.0,
+        "damage": 109.0,
+        "dps": 83.0
+      },
+      {
+        "level": 6,
+        "hp": 419.0,
+        "damage": 120.0,
+        "dps": 92.0
+      },
+      {
+        "level": 7,
+        "hp": 461.0,
+        "damage": 132.0,
+        "dps": 101.0
+      },
+      {
+        "level": 8,
+        "hp": 505.0,
+        "damage": 144.0,
+        "dps": 110.0
+      },
+      {
+        "level": 9,
+        "hp": 555.0,
+        "damage": 159.0,
+        "dps": 122.0
+      },
+      {
+        "level": 10,
+        "hp": 610.0,
+        "damage": 174.0,
+        "dps": 133.0
+      },
+      {
+        "level": 11,
+        "hp": 670.0,
+        "damage": 192.0,
+        "dps": 147.0
+      },
+      {
+        "level": 12,
+        "hp": 736.0,
+        "damage": 210.0,
+        "dps": 161.0
+      },
+      {
+        "level": 13,
+        "hp": 809.0,
+        "damage": 231.0,
+        "dps": 177.0
+      },
+      {
+        "level": 14,
+        "hp": 888.0,
+        "damage": 254.0,
+        "dps": 195.0
+      },
+      {
+        "level": 15,
+        "hp": 974.0,
+        "damage": 279.0,
+        "dps": 214.0
+      }
+    ]
+  },
+  {
+    "name": "Berserker",
+    "url": "https://clashroyale.fandom.com/wiki/Berserker",
+    "elixir_cost": 2.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 0.6,
+    "first_hit_speed": 0.2,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 0.8,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 350.0,
+        "damage": 40.0,
+        "dps": 66.0
+      },
+      {
+        "level": 2,
+        "hp": 385.0,
+        "damage": 44.0,
+        "dps": 73.0
+      },
+      {
+        "level": 3,
+        "hp": 423.0,
+        "damage": 48.0,
+        "dps": 80.0
+      },
+      {
+        "level": 4,
+        "hp": 465.0,
+        "damage": 53.0,
+        "dps": 88.0
+      },
+      {
+        "level": 5,
+        "hp": 511.0,
+        "damage": 58.0,
+        "dps": 96.0
+      },
+      {
+        "level": 6,
+        "hp": 560.0,
+        "damage": 64.0,
+        "dps": 106.0
+      },
+      {
+        "level": 7,
+        "hp": 616.0,
+        "damage": 70.0,
+        "dps": 116.0
+      },
+      {
+        "level": 8,
+        "hp": 675.0,
+        "damage": 77.0,
+        "dps": 128.0
+      },
+      {
+        "level": 9,
+        "hp": 742.0,
+        "damage": 85.0,
+        "dps": 141.0
+      },
+      {
+        "level": 10,
+        "hp": 815.0,
+        "damage": 93.0,
+        "dps": 155.0
+      },
+      {
+        "level": 11,
+        "hp": 896.0,
+        "damage": 102.0,
+        "dps": 170.0
+      },
+      {
+        "level": 12,
+        "hp": 983.0,
+        "damage": 112.0,
+        "dps": 186.0
+      },
+      {
+        "level": 13,
+        "hp": 1081.0,
+        "damage": 123.0,
+        "dps": 205.0
+      },
+      {
+        "level": 14,
+        "hp": 1186.0,
+        "damage": 135.0,
+        "dps": 225.0
+      },
+      {
+        "level": 15,
+        "hp": 1302.0,
+        "damage": 148.0,
+        "dps": 246.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Bomber",
+    "url": "https://clashroyale.fandom.com/wiki/Bomber",
+    "elixir_cost": 2.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.8,
+    "first_hit_speed": 0.2,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 4.5,
+    "radius": 1.5,
+    "projectile_speed": 400.0,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 119.0,
+        "area_damage": 88.0,
+        "dps": 48.0
+      },
+      {
+        "level": 2,
+        "hp": 130.0,
+        "area_damage": 96.0,
+        "dps": 53.0
+      },
+      {
+        "level": 3,
+        "hp": 143.0,
+        "area_damage": 106.0,
+        "dps": 58.0
+      },
+      {
+        "level": 4,
+        "hp": 158.0,
+        "area_damage": 117.0,
+        "dps": 65.0
+      },
+      {
+        "level": 5,
+        "hp": 173.0,
+        "area_damage": 128.0,
+        "dps": 71.0
+      },
+      {
+        "level": 6,
+        "hp": 190.0,
+        "area_damage": 140.0,
+        "dps": 77.0
+      },
+      {
+        "level": 7,
+        "hp": 209.0,
+        "area_damage": 154.0,
+        "dps": 85.0
+      },
+      {
+        "level": 8,
+        "hp": 229.0,
+        "area_damage": 169.0,
+        "dps": 93.0
+      },
+      {
+        "level": 9,
+        "hp": 252.0,
+        "area_damage": 186.0,
+        "dps": 103.0
+      },
+      {
+        "level": 10,
+        "hp": 277.0,
+        "area_damage": 205.0,
+        "dps": 113.0
+      },
+      {
+        "level": 11,
+        "hp": 304.0,
+        "area_damage": 225.0,
+        "dps": 125.0
+      },
+      {
+        "level": 12,
+        "hp": 334.0,
+        "area_damage": 247.0,
+        "dps": 137.0
+      },
+      {
+        "level": 13,
+        "hp": 367.0,
+        "area_damage": 271.0,
+        "dps": 150.0
+      },
+      {
+        "level": 14,
+        "hp": 403.0,
+        "area_damage": 298.0,
+        "dps": 165.0
+      },
+      {
+        "level": 15,
+        "hp": 442.0,
+        "area_damage": 327.0,
+        "dps": 181.0
+      }
+    ]
+  },
+  {
+    "name": "Bowler",
+    "url": "https://clashroyale.fandom.com/wiki/Bowler",
+    "elixir_cost": 5.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 2.5,
+    "first_hit_speed": 0.5,
+    "movement_speed": "slow",
+    "movement_speed_value": 45.0,
+    "deploy_time": 1.0,
+    "range": 7.5,
+    "projectile_speed": 170.0,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 1300.0,
+        "area_damage": 180.0,
+        "dps": 72.0
+      },
+      {
+        "level": 7,
+        "hp": 1430.0,
+        "area_damage": 198.0,
+        "dps": 79.0
+      },
+      {
+        "level": 8,
+        "hp": 1569.0,
+        "area_damage": 218.0,
+        "dps": 87.0
+      },
+      {
+        "level": 9,
+        "hp": 1723.0,
+        "area_damage": 239.0,
+        "dps": 95.0
+      },
+      {
+        "level": 10,
+        "hp": 1894.0,
+        "area_damage": 263.0,
+        "dps": 105.0
+      },
+      {
+        "level": 11,
+        "hp": 2081.0,
+        "area_damage": 289.0,
+        "dps": 115.0
+      },
+      {
+        "level": 12,
+        "hp": 2284.0,
+        "area_damage": 317.0,
+        "dps": 126.0
+      },
+      {
+        "level": 13,
+        "hp": 2512.0,
+        "area_damage": 349.0,
+        "dps": 139.0
+      },
+      {
+        "level": 14,
+        "hp": 2756.0,
+        "area_damage": 383.0,
+        "dps": 153.0
+      },
+      {
+        "level": 15,
+        "hp": 3024.0,
+        "area_damage": 420.0,
+        "dps": 168.0
+      }
+    ]
+  },
+  {
+    "name": "Bush Goblins",
+    "url": "https://clashroyale.fandom.com/wiki/Suspicious_Bush",
+    "elixir_cost": 2.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 0.8,
+    "targets": [
+      "ground"
+    ],
+    "count": 2,
+    "transport": "ground",
+    "attack_speed": 1.4,
+    "levels": [
+      {
+        "level": 3,
+        "hp": 143.0,
+        "damage": 121.0,
+        "dps": 86.0
+      },
+      {
+        "level": 4,
+        "hp": 158.0,
+        "damage": 133.0,
+        "dps": 95.0
+      },
+      {
+        "level": 5,
+        "hp": 173.0,
+        "damage": 146.0,
+        "dps": 104.0
+      },
+      {
+        "level": 6,
+        "hp": 190.0,
+        "damage": 160.0,
+        "dps": 114.0
+      },
+      {
+        "level": 7,
+        "hp": 209.0,
+        "damage": 176.0,
+        "dps": 125.0
+      },
+      {
+        "level": 8,
+        "hp": 229.0,
+        "damage": 193.0,
+        "dps": 137.0
+      },
+      {
+        "level": 9,
+        "hp": 252.0,
+        "damage": 212.0,
+        "dps": 151.0
+      },
+      {
+        "level": 10,
+        "hp": 277.0,
+        "damage": 233.0,
+        "dps": 166.0
+      },
+      {
+        "level": 11,
+        "hp": 304.0,
+        "damage": 256.0,
+        "dps": 182.0
+      },
+      {
+        "level": 12,
+        "hp": 334.0,
+        "damage": 281.0,
+        "dps": 200.0
+      },
+      {
+        "level": 13,
+        "hp": 367.0,
+        "damage": 309.0,
+        "dps": 220.0
+      },
+      {
+        "level": 14,
+        "hp": 403.0,
+        "damage": 339.0,
+        "dps": 242.0
+      },
+      {
+        "level": 15,
+        "hp": 442.0,
+        "damage": 372.0,
+        "dps": 265.0
+      }
+    ],
+    "effects": [
+      "spawn",
+      "invisibility"
+    ]
+  },
+  {
+    "name": "Cannon Cart",
+    "url": "https://clashroyale.fandom.com/wiki/Cannon_Cart",
+    "elixir_cost": 5.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 0.9,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 5.5,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "duration": 15.0,
+    "levels": [
+      {
+        "level": 6,
+        "hp": 18.85,
+        "damage": 132.0,
+        "dps": 146.0
+      },
+      {
+        "level": 7,
+        "hp": 20.73,
+        "damage": 146.0,
+        "dps": 162.0
+      },
+      {
+        "level": 8,
+        "hp": 22.73,
+        "damage": 160.0,
+        "dps": 187.0
+      },
+      {
+        "level": 9,
+        "hp": 24.96,
+        "damage": 175.0,
+        "dps": 194.0
+      },
+      {
+        "level": 10,
+        "hp": 27.45,
+        "damage": 193.0,
+        "dps": 215.0
+      },
+      {
+        "level": 11,
+        "hp": 30.15,
+        "damage": 212.0,
+        "dps": 235.0
+      },
+      {
+        "level": 12,
+        "hp": 33.1,
+        "damage": 233.0,
+        "dps": 258.0
+      },
+      {
+        "level": 13,
+        "hp": 36.4,
+        "damage": 256.0,
+        "dps": 284.0
+      },
+      {
+        "level": 14,
+        "hp": 39.93,
+        "damage": 281.0,
+        "dps": 312.0
+      },
+      {
+        "level": 15,
+        "hp": 43.83,
+        "damage": 308.0,
+        "dps": 342.0
+      }
+    ]
+  },
+  {
+    "name": "Cursed Hog",
+    "url": "https://clashroyale.fandom.com/wiki/Mother_Witch",
+    "elixir_cost": 4.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.2,
+    "first_hit_speed": 0.25,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 0.2,
+    "duration": 5.0,
+    "range": 0.75,
+    "projectile_speed": 600.0,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 521.0,
+        "damage": 44.0,
+        "dps": 36.0
+      },
+      {
+        "level": 10,
+        "hp": 573.0,
+        "damage": 48.0,
+        "dps": 40.0
+      },
+      {
+        "level": 11,
+        "hp": 629.0,
+        "damage": 53.0,
+        "dps": 44.0
+      },
+      {
+        "level": 12,
+        "hp": 691.0,
+        "damage": 59.0,
+        "dps": 49.0
+      },
+      {
+        "level": 13,
+        "hp": 760.0,
+        "damage": 64.0,
+        "dps": 53.0
+      },
+      {
+        "level": 14,
+        "hp": 833.0,
+        "damage": 71.0,
+        "dps": 59.0
+      },
+      {
+        "level": 15,
+        "hp": 915.0,
+        "damage": 78.0,
+        "dps": 65.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Dark Prince",
+    "url": "https://clashroyale.fandom.com/wiki/Dark_Prince",
+    "elixir_cost": 4.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.4,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 3.0,
+    "radius": 1.1,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 150.0,
+        "area_damage": 166.0,
+        "damage": 333.0,
+        "dps": 127.0
+      },
+      {
+        "level": 7,
+        "hp": 165.0,
+        "area_damage": 183.0,
+        "damage": 366.0,
+        "dps": 140.0
+      },
+      {
+        "level": 8,
+        "hp": 181.0,
+        "area_damage": 201.0,
+        "damage": 402.0,
+        "dps": 139.0
+      },
+      {
+        "level": 9,
+        "hp": 199.0,
+        "area_damage": 221.0,
+        "damage": 442.0,
+        "dps": 170.0
+      },
+      {
+        "level": 10,
+        "hp": 219.0,
+        "area_damage": 243.0,
+        "damage": 486.0,
+        "dps": 186.0
+      },
+      {
+        "level": 11,
+        "hp": 240.0,
+        "area_damage": 266.0,
+        "damage": 532.0,
+        "dps": 204.0
+      },
+      {
+        "level": 12,
+        "hp": 264.0,
+        "area_damage": 293.0,
+        "damage": 586.0,
+        "dps": 225.0
+      },
+      {
+        "level": 13,
+        "hp": 290.0,
+        "area_damage": 321.0,
+        "damage": 642.0,
+        "dps": 246.0
+      },
+      {
+        "level": 14,
+        "hp": 318.0,
+        "area_damage": 352.0,
+        "damage": 705.0,
+        "dps": 270.0
+      },
+      {
+        "level": 15,
+        "hp": 349.0,
+        "area_damage": 387.0,
+        "damage": 775.0,
+        "dps": 297.0
+      }
+    ],
+    "effects": [
+      "spawn",
+      "shield",
+      "charge",
+      "area"
+    ]
+  },
+  {
+    "name": "Dart Goblin",
+    "url": "https://clashroyale.fandom.com/wiki/Dart_Goblin",
+    "elixir_cost": 3.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 0.8,
+    "first_hit_speed": 0.35,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 6.5,
+    "projectile_speed": 800.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 123.0,
+        "damage": 67.0,
+        "dps": 83.0
+      },
+      {
+        "level": 4,
+        "hp": 135.0,
+        "damage": 75.0,
+        "dps": 93.0
+      },
+      {
+        "level": 5,
+        "hp": 148.0,
+        "damage": 83.0,
+        "dps": 103.0
+      },
+      {
+        "level": 6,
+        "hp": 163.0,
+        "damage": 92.0,
+        "dps": 115.0
+      },
+      {
+        "level": 7,
+        "hp": 179.0,
+        "damage": 102.0,
+        "dps": 127.0
+      },
+      {
+        "level": 8,
+        "hp": 196.0,
+        "damage": 114.0,
+        "dps": 142.0
+      },
+      {
+        "level": 9,
+        "hp": 216.0,
+        "damage": 126.0,
+        "dps": 157.0
+      },
+      {
+        "level": 10,
+        "hp": 237.0,
+        "damage": 140.0,
+        "dps": 175.0
+      },
+      {
+        "level": 11,
+        "hp": 261.0,
+        "damage": 156.0,
+        "dps": 195.0
+      },
+      {
+        "level": 12,
+        "hp": 286.0,
+        "damage": 172.0,
+        "dps": 215.0
+      },
+      {
+        "level": 13,
+        "hp": 315.0,
+        "damage": 189.0,
+        "dps": 236.0
+      },
+      {
+        "level": 14,
+        "hp": 345.0,
+        "damage": 208.0,
+        "dps": 260.0
+      },
+      {
+        "level": 15,
+        "hp": 379.0,
+        "damage": 228.0,
+        "dps": 285.0
+      }
+    ]
+  },
+  {
+    "name": "Electro Dragon",
+    "url": "https://clashroyale.fandom.com/wiki/Electro_Dragon",
+    "elixir_cost": 5.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 2.1,
+    "first_hit_speed": 0.7,
+    "duration": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 3.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 593.0,
+        "damage": null,
+        "dps": 57.0
+      },
+      {
+        "level": 7,
+        "hp": 652.0,
+        "damage": null,
+        "dps": 62.0
+      },
+      {
+        "level": 8,
+        "hp": 716.0,
+        "damage": null,
+        "dps": 68.0
+      },
+      {
+        "level": 9,
+        "hp": 786.0,
+        "damage": null,
+        "dps": 75.0
+      },
+      {
+        "level": 10,
+        "hp": 864.0,
+        "damage": null,
+        "dps": 82.0
+      },
+      {
+        "level": 11,
+        "hp": 949.0,
+        "damage": null,
+        "dps": 91.0
+      },
+      {
+        "level": 12,
+        "hp": 1042.0,
+        "damage": null,
+        "dps": 100.0
+      },
+      {
+        "level": 13,
+        "hp": 1146.0,
+        "damage": null,
+        "dps": 110.0
+      },
+      {
+        "level": 14,
+        "hp": 1257.0,
+        "damage": null,
+        "dps": 120.0
+      },
+      {
+        "level": 15,
+        "hp": 1380.0,
+        "damage": null,
+        "dps": 132.0
+      }
+    ]
+  },
+  {
+    "name": "Electro Giant",
+    "url": "https://clashroyale.fandom.com/wiki/Electro_Giant",
+    "elixir_cost": 7.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 2.1,
+    "first_hit_speed": 1.5,
+    "movement_speed": "slow",
+    "movement_speed_value": 45.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 2409.0,
+        "damage": 80.0,
+        "dps": 48.0
+      },
+      {
+        "level": 7,
+        "hp": 2650.0,
+        "damage": 88.0,
+        "dps": 53.0
+      },
+      {
+        "level": 8,
+        "hp": 2906.0,
+        "damage": 96.0,
+        "dps": 58.0
+      },
+      {
+        "level": 9,
+        "hp": 3192.0,
+        "damage": 106.0,
+        "dps": 64.0
+      },
+      {
+        "level": 10,
+        "hp": 3508.0,
+        "damage": 116.0,
+        "dps": 70.0
+      },
+      {
+        "level": 11,
+        "hp": 3855.0,
+        "damage": 128.0,
+        "dps": 77.0
+      },
+      {
+        "level": 12,
+        "hp": 4231.0,
+        "damage": 140.0,
+        "dps": 85.0
+      },
+      {
+        "level": 13,
+        "hp": 4653.0,
+        "damage": 154.0,
+        "dps": 93.0
+      },
+      {
+        "level": 14,
+        "hp": 5105.0,
+        "damage": 169.0,
+        "dps": 102.0
+      },
+      {
+        "level": 15,
+        "hp": 5602.0,
+        "damage": 186.0,
+        "dps": 113.0
+      }
+    ]
+  },
+  {
+    "name": "Electro Spirit",
+    "url": "https://clashroyale.fandom.com/wiki/Electro_Spirit",
+    "elixir_cost": 1.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "duration": 0.5,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 2.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 90.0,
+        "damage": null
+      },
+      {
+        "level": 2,
+        "hp": 99.0,
+        "damage": null
+      },
+      {
+        "level": 3,
+        "hp": 108.0,
+        "damage": null
+      },
+      {
+        "level": 4,
+        "hp": 119.0,
+        "damage": null
+      },
+      {
+        "level": 5,
+        "hp": 131.0,
+        "damage": null
+      },
+      {
+        "level": 6,
+        "hp": 144.0,
+        "damage": null
+      },
+      {
+        "level": 7,
+        "hp": 158.0,
+        "damage": null
+      },
+      {
+        "level": 8,
+        "hp": 173.0,
+        "damage": null
+      },
+      {
+        "level": 9,
+        "hp": 190.0,
+        "damage": null
+      },
+      {
+        "level": 10,
+        "hp": 209.0,
+        "damage": null
+      },
+      {
+        "level": 11,
+        "hp": 230.0,
+        "damage": null
+      },
+      {
+        "level": 12,
+        "hp": 252.0,
+        "damage": null
+      },
+      {
+        "level": 13,
+        "hp": 278.0,
+        "damage": null
+      },
+      {
+        "level": 14,
+        "hp": 305.0,
+        "damage": null
+      },
+      {
+        "level": 15,
+        "hp": 334.0,
+        "damage": null
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Electro Wizard",
+    "url": "https://clashroyale.fandom.com/wiki/Electro_Wizard",
+    "elixir_cost": 4.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.8,
+    "first_hit_speed": 0.6,
+    "duration": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 5.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 591.0,
+        "damage": 159.0,
+        "dps": 105.0
+      },
+      {
+        "level": 10,
+        "hp": 650.0,
+        "damage": 174.0,
+        "dps": 115.0
+      },
+      {
+        "level": 11,
+        "hp": 714.0,
+        "damage": 192.0,
+        "dps": 127.0
+      },
+      {
+        "level": 12,
+        "hp": 783.0,
+        "damage": 210.0,
+        "dps": 140.0
+      },
+      {
+        "level": 13,
+        "hp": 862.0,
+        "damage": 231.0,
+        "dps": 154.0
+      },
+      {
+        "level": 14,
+        "hp": 945.0,
+        "damage": 254.0,
+        "dps": 168.0
+      },
+      {
+        "level": 15,
+        "hp": 1037.0,
+        "damage": 279.0,
+        "dps": 185.0
+      }
+    ]
+  },
+  {
+    "name": "Elite Barbarians",
+    "url": "https://clashroyale.fandom.com/wiki/Elite_Barbarians",
+    "elixir_cost": 6.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.4,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "ground"
+    ],
+    "count": 2,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 524.0,
+        "damage": 150.0,
+        "dps": 107.0
+      },
+      {
+        "level": 2,
+        "hp": 576.0,
+        "damage": 165.0,
+        "dps": 117.0
+      },
+      {
+        "level": 3,
+        "hp": 634.0,
+        "damage": 181.0,
+        "dps": 129.0
+      },
+      {
+        "level": 4,
+        "hp": 696.0,
+        "damage": 199.0,
+        "dps": 142.0
+      },
+      {
+        "level": 5,
+        "hp": 765.0,
+        "damage": 219.0,
+        "dps": 156.0
+      },
+      {
+        "level": 6,
+        "hp": 838.0,
+        "damage": 240.0,
+        "dps": 171.0
+      },
+      {
+        "level": 7,
+        "hp": 922.0,
+        "damage": 264.0,
+        "dps": 188.0
+      },
+      {
+        "level": 8,
+        "hp": 1011.0,
+        "damage": 289.0,
+        "dps": 206.0
+      },
+      {
+        "level": 9,
+        "hp": 1110.0,
+        "damage": 318.0,
+        "dps": 227.0
+      },
+      {
+        "level": 10,
+        "hp": 1220.0,
+        "damage": 349.0,
+        "dps": 249.0
+      },
+      {
+        "level": 11,
+        "hp": 1341.0,
+        "damage": 384.0,
+        "dps": 274.0
+      },
+      {
+        "level": 12,
+        "hp": 1472.0,
+        "damage": 421.0,
+        "dps": 300.0
+      },
+      {
+        "level": 13,
+        "hp": 1619.0,
+        "damage": 463.0,
+        "dps": 330.0
+      },
+      {
+        "level": 14,
+        "hp": 1776.0,
+        "damage": 508.0,
+        "dps": 362.0
+      },
+      {
+        "level": 15,
+        "hp": 1949.0,
+        "damage": 558.0,
+        "dps": 398.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Elixir Blob",
+    "url": "https://clashroyale.fandom.com/wiki/Elixir_Golem",
+    "elixir_cost": 3.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.8,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 0.8,
+    "targets": [
+      "buildings"
+    ],
+    "count": 4,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 170.0,
+        "damage": 30.0,
+        "dps": 27.0
+      },
+      {
+        "level": 4,
+        "hp": 187.0,
+        "damage": 33.0,
+        "dps": 29.0
+      },
+      {
+        "level": 5,
+        "hp": 205.0,
+        "damage": 36.0,
+        "dps": 32.0
+      },
+      {
+        "level": 6,
+        "hp": 225.0,
+        "damage": 40.0,
+        "dps": 36.0
+      },
+      {
+        "level": 7,
+        "hp": 248.0,
+        "damage": 44.0,
+        "dps": 40.0
+      },
+      {
+        "level": 8,
+        "hp": 272.0,
+        "damage": 48.0,
+        "dps": 43.0
+      },
+      {
+        "level": 9,
+        "hp": 298.0,
+        "damage": 53.0,
+        "dps": 48.0
+      },
+      {
+        "level": 10,
+        "hp": 328.0,
+        "damage": 58.0,
+        "dps": 52.0
+      },
+      {
+        "level": 11,
+        "hp": 360.0,
+        "damage": 64.0,
+        "dps": 58.0
+      },
+      {
+        "level": 12,
+        "hp": 396.0,
+        "damage": 70.0,
+        "dps": 63.0
+      },
+      {
+        "level": 13,
+        "hp": 435.0,
+        "damage": 77.0,
+        "dps": 70.0
+      },
+      {
+        "level": 14,
+        "hp": 477.0,
+        "damage": 84.0,
+        "dps": 76.0
+      },
+      {
+        "level": 15,
+        "hp": 524.0,
+        "damage": 93.0,
+        "dps": 84.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Executioner",
+    "url": "https://clashroyale.fandom.com/wiki/Executioner",
+    "elixir_cost": 5.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 0.9,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 7.5,
+    "projectile_speed": 550.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 800.0,
+        "area_damage": null,
+        "dps": 87.0
+      },
+      {
+        "level": 7,
+        "hp": 880.0,
+        "area_damage": null,
+        "dps": 96.0
+      },
+      {
+        "level": 8,
+        "hp": 965.0,
+        "area_damage": null,
+        "dps": 105.0
+      },
+      {
+        "level": 9,
+        "hp": 1060.0,
+        "area_damage": null,
+        "dps": 115.0
+      },
+      {
+        "level": 10,
+        "hp": 1165.0,
+        "area_damage": null,
+        "dps": 127.0
+      },
+      {
+        "level": 11,
+        "hp": 1280.0,
+        "area_damage": null,
+        "dps": 140.0
+      },
+      {
+        "level": 12,
+        "hp": 1405.0,
+        "area_damage": null,
+        "dps": 154.0
+      },
+      {
+        "level": 13,
+        "hp": 1545.0,
+        "area_damage": null,
+        "dps": 169.0
+      },
+      {
+        "level": 14,
+        "hp": 1695.0,
+        "area_damage": null,
+        "dps": 185.0
+      },
+      {
+        "level": 15,
+        "hp": 1860.0,
+        "area_damage": null,
+        "dps": 204.0
+      }
+    ]
+  },
+  {
+    "name": "Firecracker",
+    "url": "https://clashroyale.fandom.com/wiki/Firecracker",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 3.0,
+    "first_hit_speed": 0.65,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 11.0,
+    "radius": 0.4,
+    "projectile_speed": 550.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 119.0,
+        "area_damage": null,
+        "dps": 41.0
+      },
+      {
+        "level": 2,
+        "hp": 130.0,
+        "area_damage": null,
+        "dps": 45.0
+      },
+      {
+        "level": 3,
+        "hp": 143.0,
+        "area_damage": null,
+        "dps": 50.0
+      },
+      {
+        "level": 4,
+        "hp": 158.0,
+        "area_damage": null,
+        "dps": 55.0
+      },
+      {
+        "level": 5,
+        "hp": 173.0,
+        "area_damage": null,
+        "dps": 60.0
+      },
+      {
+        "level": 6,
+        "hp": 190.0,
+        "area_damage": null,
+        "dps": 66.0
+      },
+      {
+        "level": 7,
+        "hp": 209.0,
+        "area_damage": null,
+        "dps": 73.0
+      },
+      {
+        "level": 8,
+        "hp": 229.0,
+        "area_damage": null,
+        "dps": 80.0
+      },
+      {
+        "level": 9,
+        "hp": 252.0,
+        "area_damage": null,
+        "dps": 88.0
+      },
+      {
+        "level": 10,
+        "hp": 277.0,
+        "area_damage": null,
+        "dps": 96.0
+      },
+      {
+        "level": 11,
+        "hp": 304.0,
+        "area_damage": null,
+        "dps": 106.0
+      },
+      {
+        "level": 12,
+        "hp": 334.0,
+        "area_damage": null,
+        "dps": 116.0
+      },
+      {
+        "level": 13,
+        "hp": 367.0,
+        "area_damage": null,
+        "dps": 128.0
+      },
+      {
+        "level": 14,
+        "hp": 403.0,
+        "area_damage": null,
+        "dps": 140.0
+      },
+      {
+        "level": 15,
+        "hp": 442.0,
+        "area_damage": null,
+        "dps": 155.0
+      }
+    ]
+  },
+  {
+    "name": "Fire Spirit",
+    "url": "https://clashroyale.fandom.com/wiki/Fire_Spirit",
+    "elixir_cost": 1.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 2.5,
+    "radius": 2.3,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 90.0,
+        "area_damage": 81.0
+      },
+      {
+        "level": 2,
+        "hp": 99.0,
+        "area_damage": 89.0
+      },
+      {
+        "level": 3,
+        "hp": 108.0,
+        "area_damage": 98.0
+      },
+      {
+        "level": 4,
+        "hp": 119.0,
+        "area_damage": 107.0
+      },
+      {
+        "level": 5,
+        "hp": 131.0,
+        "area_damage": 118.0
+      },
+      {
+        "level": 6,
+        "hp": 144.0,
+        "area_damage": 129.0
+      },
+      {
+        "level": 7,
+        "hp": 158.0,
+        "area_damage": 142.0
+      },
+      {
+        "level": 8,
+        "hp": 173.0,
+        "area_damage": 156.0
+      },
+      {
+        "level": 9,
+        "hp": 190.0,
+        "area_damage": 171.0
+      },
+      {
+        "level": 10,
+        "hp": 209.0,
+        "area_damage": 188.0
+      },
+      {
+        "level": 11,
+        "hp": 230.0,
+        "area_damage": 207.0
+      },
+      {
+        "level": 12,
+        "hp": 252.0,
+        "area_damage": 227.0
+      },
+      {
+        "level": 13,
+        "hp": 278.0,
+        "area_damage": 250.0
+      },
+      {
+        "level": 14,
+        "hp": 305.0,
+        "area_damage": 274.0
+      },
+      {
+        "level": 15,
+        "hp": 334.0,
+        "area_damage": 301.0
+      }
+    ]
+  },
+  {
+    "name": "Fisherman",
+    "url": "https://clashroyale.fandom.com/wiki/Fisherman",
+    "elixir_cost": 3.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.1,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 3.5,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "projectile_speed": 800.0,
+    "duration": 1.5,
+    "levels": [
+      {
+        "level": 9,
+        "hp": 720.0,
+        "damage": 161.0,
+        "dps": 123.0
+      },
+      {
+        "level": 10,
+        "hp": 792.0,
+        "damage": 176.0,
+        "dps": 135.0
+      },
+      {
+        "level": 11,
+        "hp": 870.0,
+        "damage": 194.0,
+        "dps": 149.0
+      },
+      {
+        "level": 12,
+        "hp": 955.0,
+        "damage": 213.0,
+        "dps": 163.0
+      },
+      {
+        "level": 13,
+        "hp": 1050.0,
+        "damage": 234.0,
+        "dps": 180.0
+      },
+      {
+        "level": 14,
+        "hp": 1152.0,
+        "damage": 257.0,
+        "dps": 197.0
+      },
+      {
+        "level": 15,
+        "hp": 1264.0,
+        "damage": 282.0,
+        "dps": 216.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Flying Machine",
+    "url": "https://clashroyale.fandom.com/wiki/Flying_Machine",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 6.0,
+    "projectile_speed": 800.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 290.0,
+        "damage": 81.0,
+        "dps": 73.0
+      },
+      {
+        "level": 4,
+        "hp": 319.0,
+        "damage": 89.0,
+        "dps": 80.0
+      },
+      {
+        "level": 5,
+        "hp": 350.0,
+        "damage": 97.0,
+        "dps": 88.0
+      },
+      {
+        "level": 6,
+        "hp": 384.0,
+        "damage": 107.0,
+        "dps": 97.0
+      },
+      {
+        "level": 7,
+        "hp": 422.0,
+        "damage": 117.0,
+        "dps": 106.0
+      },
+      {
+        "level": 8,
+        "hp": 463.0,
+        "damage": 129.0,
+        "dps": 117.0
+      },
+      {
+        "level": 9,
+        "hp": 508.0,
+        "damage": 142.0,
+        "dps": 129.0
+      },
+      {
+        "level": 10,
+        "hp": 559.0,
+        "damage": 156.0,
+        "dps": 141.0
+      },
+      {
+        "level": 11,
+        "hp": 614.0,
+        "damage": 171.0,
+        "dps": 155.0
+      },
+      {
+        "level": 12,
+        "hp": 674.0,
+        "damage": 188.0,
+        "dps": 170.0
+      },
+      {
+        "level": 13,
+        "hp": 741.0,
+        "damage": 207.0,
+        "dps": 188.0
+      },
+      {
+        "level": 14,
+        "hp": 813.0,
+        "damage": 227.0,
+        "dps": 206.0
+      },
+      {
+        "level": 15,
+        "hp": 892.0,
+        "damage": 249.0,
+        "dps": 226.0
+      }
+    ]
+  },
+  {
+    "name": "Furnace",
+    "url": "https://clashroyale.fandom.com/wiki/Furnace",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.8,
+    "movement_speed": "medium",
+    "movement_speed_value": 7.0,
+    "deploy_time": 1.0,
+    "range": 6.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 108.0,
+        "damage": 84.0,
+        "dps": 46.0,
+        "area_damage": 98.0
+      },
+      {
+        "level": 4,
+        "hp": 119.0,
+        "damage": 93.0,
+        "dps": 51.0,
+        "area_damage": 107.0
+      },
+      {
+        "level": 5,
+        "hp": 131.0,
+        "damage": 102.0,
+        "dps": 56.0,
+        "area_damage": 118.0
+      },
+      {
+        "level": 6,
+        "hp": 144.0,
+        "damage": 112.0,
+        "dps": 62.0,
+        "area_damage": 129.0
+      },
+      {
+        "level": 7,
+        "hp": 158.0,
+        "damage": 123.0,
+        "dps": 68.0,
+        "area_damage": 142.0
+      },
+      {
+        "level": 8,
+        "hp": 173.0,
+        "damage": 135.0,
+        "dps": 75.0,
+        "area_damage": 156.0
+      },
+      {
+        "level": 9,
+        "hp": 190.0,
+        "damage": 148.0,
+        "dps": 82.0,
+        "area_damage": 171.0
+      },
+      {
+        "level": 10,
+        "hp": 209.0,
+        "damage": 163.0,
+        "dps": 90.0,
+        "area_damage": 188.0
+      },
+      {
+        "level": 11,
+        "hp": 230.0,
+        "damage": 179.0,
+        "dps": 99.0,
+        "area_damage": 207.0
+      },
+      {
+        "level": 12,
+        "hp": 252.0,
+        "damage": 196.0,
+        "dps": 108.0,
+        "area_damage": 227.0
+      },
+      {
+        "level": 13,
+        "hp": 278.0,
+        "damage": 216.0,
+        "dps": 120.0,
+        "area_damage": 250.0
+      },
+      {
+        "level": 14,
+        "hp": 305.0,
+        "damage": 237.0,
+        "dps": 131.0,
+        "area_damage": 274.0
+      },
+      {
+        "level": 15,
+        "hp": 334.0,
+        "damage": 260.0,
+        "dps": 144.0,
+        "area_damage": 301.0
+      }
+    ]
+  },
+  {
+    "name": "Giant",
+    "url": "https://clashroyale.fandom.com/wiki/Giant",
+    "elixir_cost": 5.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.5,
+    "first_hit_speed": 0.5,
+    "movement_speed": "slow",
+    "movement_speed_value": 45.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 1933.0,
+        "damage": 119.0,
+        "dps": 79.0
+      },
+      {
+        "level": 4,
+        "hp": 2125.0,
+        "damage": 131.0,
+        "dps": 87.0
+      },
+      {
+        "level": 5,
+        "hp": 2333.0,
+        "damage": 144.0,
+        "dps": 96.0
+      },
+      {
+        "level": 6,
+        "hp": 2556.0,
+        "damage": 158.0,
+        "dps": 105.0
+      },
+      {
+        "level": 7,
+        "hp": 2812.0,
+        "damage": 174.0,
+        "dps": 116.0
+      },
+      {
+        "level": 8,
+        "hp": 3084.0,
+        "damage": 191.0,
+        "dps": 127.0
+      },
+      {
+        "level": 9,
+        "hp": 3387.0,
+        "damage": 209.0,
+        "dps": 139.0
+      },
+      {
+        "level": 10,
+        "hp": 3723.0,
+        "damage": 230.0,
+        "dps": 153.0
+      },
+      {
+        "level": 11,
+        "hp": 4090.0,
+        "damage": 253.0,
+        "dps": 168.0
+      },
+      {
+        "level": 12,
+        "hp": 4490.0,
+        "damage": 278.0,
+        "dps": 185.0
+      },
+      {
+        "level": 13,
+        "hp": 4937.0,
+        "damage": 305.0,
+        "dps": 203.0
+      },
+      {
+        "level": 14,
+        "hp": 5417.0,
+        "damage": 335.0,
+        "dps": 223.0
+      },
+      {
+        "level": 15,
+        "hp": 5944.0,
+        "damage": 368.0,
+        "dps": 245.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Giant Skeleton",
+    "url": "https://clashroyale.fandom.com/wiki/Giant_Skeleton",
+    "elixir_cost": 6.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.4,
+    "first_hit_speed": 0.3,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 0.8,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 2260.0,
+        "damage": 668.0,
+        "dps": 118.0
+      },
+      {
+        "level": 7,
+        "hp": 2486.0,
+        "damage": 734.0,
+        "dps": 130.0
+      },
+      {
+        "level": 8,
+        "hp": 2727.0,
+        "damage": 808.0,
+        "dps": 142.0
+      },
+      {
+        "level": 9,
+        "hp": 2995.0,
+        "damage": 888.0,
+        "dps": 157.0
+      },
+      {
+        "level": 10,
+        "hp": 3292.0,
+        "damage": 974.0,
+        "dps": 172.0
+      },
+      {
+        "level": 11,
+        "hp": 3617.0,
+        "damage": 1068.0,
+        "dps": 190.0
+      },
+      {
+        "level": 12,
+        "hp": 3970.0,
+        "damage": 1174.0,
+        "dps": 208.0
+      },
+      {
+        "level": 13,
+        "hp": 4366.0,
+        "damage": 1288.0,
+        "dps": 229.0
+      },
+      {
+        "level": 14,
+        "hp": 4790.0,
+        "damage": 1416.0,
+        "dps": 251.0
+      },
+      {
+        "level": 15,
+        "hp": 5256.0,
+        "damage": 1556.0,
+        "dps": 275.0
+      }
+    ]
+  },
+  {
+    "name": "Goblin Brawler",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Cage",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "building",
+    "deploy_time": 1.0,
+    "duration": 20.0,
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.2,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "range": 0.8,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 510.0,
+        "damage": 159.0,
+        "dps": 144.0
+      },
+      {
+        "level": 4,
+        "hp": 561.0,
+        "damage": 175.0,
+        "dps": 159.0
+      },
+      {
+        "level": 5,
+        "hp": 616.0,
+        "damage": 192.0,
+        "dps": 174.0
+      },
+      {
+        "level": 6,
+        "hp": 675.0,
+        "damage": 211.0,
+        "dps": 191.0
+      },
+      {
+        "level": 7,
+        "hp": 742.0,
+        "damage": 232.0,
+        "dps": 210.0
+      },
+      {
+        "level": 8,
+        "hp": 814.0,
+        "damage": 254.0,
+        "dps": 230.0
+      },
+      {
+        "level": 9,
+        "hp": 894.0,
+        "damage": 279.0,
+        "dps": 253.0
+      },
+      {
+        "level": 10,
+        "hp": 983.0,
+        "damage": 307.0,
+        "dps": 279.0
+      },
+      {
+        "level": 11,
+        "hp": 1080.0,
+        "damage": 337.0,
+        "dps": 306.0
+      },
+      {
+        "level": 12,
+        "hp": 1185.0,
+        "damage": 370.0,
+        "dps": 336.0
+      },
+      {
+        "level": 13,
+        "hp": 1303.0,
+        "damage": 407.0,
+        "dps": 369.0
+      },
+      {
+        "level": 14,
+        "hp": 1430.0,
+        "damage": 447.0,
+        "dps": 406.0
+      },
+      {
+        "level": 15,
+        "hp": 1569.0,
+        "damage": 491.0,
+        "dps": 446.0
+      }
+    ]
+  },
+  {
+    "name": "Goblin Gang",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Gang",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.7,
+    "first_hit_speed": 0.5,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "range": 5.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 3,
+    "transport": "ground",
+    "projectile_speed": 500.0,
+    "levels": [
+      {
+        "level": 1,
+        "hp": 52.0,
+        "damage": 32.0,
+        "dps": 18.0
+      },
+      {
+        "level": 2,
+        "hp": 57.0,
+        "damage": 35.0,
+        "dps": 20.0
+      },
+      {
+        "level": 3,
+        "hp": 62.0,
+        "damage": 38.0,
+        "dps": 22.0
+      },
+      {
+        "level": 4,
+        "hp": 69.0,
+        "damage": 42.0,
+        "dps": 24.0
+      },
+      {
+        "level": 5,
+        "hp": 75.0,
+        "damage": 46.0,
+        "dps": 27.0
+      },
+      {
+        "level": 6,
+        "hp": 83.0,
+        "damage": 51.0,
+        "dps": 30.0
+      },
+      {
+        "level": 7,
+        "hp": 91.0,
+        "damage": 56.0,
+        "dps": 32.0
+      },
+      {
+        "level": 8,
+        "hp": 100.0,
+        "damage": 61.0,
+        "dps": 35.0
+      },
+      {
+        "level": 9,
+        "hp": 110.0,
+        "damage": 67.0,
+        "dps": 39.0
+      },
+      {
+        "level": 10,
+        "hp": 121.0,
+        "damage": 74.0,
+        "dps": 43.0
+      },
+      {
+        "level": 11,
+        "hp": 133.0,
+        "damage": 81.0,
+        "dps": 47.0
+      },
+      {
+        "level": 12,
+        "hp": 146.0,
+        "damage": 89.0,
+        "dps": 52.0
+      },
+      {
+        "level": 13,
+        "hp": 160.0,
+        "damage": 98.0,
+        "dps": 57.0
+      },
+      {
+        "level": 14,
+        "hp": 176.0,
+        "damage": 108.0,
+        "dps": 63.0
+      },
+      {
+        "level": 15,
+        "hp": 193.0,
+        "damage": 119.0,
+        "dps": 70.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Goblin Demolisher",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Demolisher",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.2,
+    "first_hit_speed": 0.5,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 0.5,
+    "radius": 2.5,
+    "projectile_speed": 400.0,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "duration": 10.0,
+    "levels": [
+      {
+        "level": 3,
+        "hp": 30.7,
+        "area_damage": 88.0,
+        "dps": 73.0,
+        "damage": 191.0
+      },
+      {
+        "level": 4,
+        "hp": 33.75,
+        "area_damage": 97.0,
+        "dps": 80.0,
+        "damage": 210.0
+      },
+      {
+        "level": 5,
+        "hp": 37.05,
+        "area_damage": 106.0,
+        "dps": 88.0,
+        "damage": 230.0
+      },
+      {
+        "level": 6,
+        "hp": 40.6,
+        "area_damage": 116.0,
+        "dps": 96.0,
+        "damage": 252.0
+      },
+      {
+        "level": 7,
+        "hp": 44.7,
+        "area_damage": 128.0,
+        "dps": 106.0,
+        "damage": 278.0
+      },
+      {
+        "level": 8,
+        "hp": 49.0,
+        "area_damage": 140.0,
+        "dps": 116.0,
+        "damage": 304.0
+      },
+      {
+        "level": 9,
+        "hp": 53.8,
+        "area_damage": 154.0,
+        "dps": 128.0,
+        "damage": 334.0
+      },
+      {
+        "level": 10,
+        "hp": 59.15,
+        "area_damage": 170.0,
+        "dps": 141.0,
+        "damage": 368.0
+      },
+      {
+        "level": 11,
+        "hp": 65.0,
+        "area_damage": 186.0,
+        "dps": 155.0,
+        "damage": 404.0
+      },
+      {
+        "level": 12,
+        "hp": 71.35,
+        "area_damage": 205.0,
+        "dps": 170.0,
+        "damage": 443.0
+      },
+      {
+        "level": 13,
+        "hp": 78.45,
+        "area_damage": 225.0,
+        "dps": 187.0,
+        "damage": 488.0
+      },
+      {
+        "level": 14,
+        "hp": 86.1,
+        "area_damage": 247.0,
+        "dps": 205.0,
+        "damage": 535.0
+      },
+      {
+        "level": 15,
+        "hp": 94.45,
+        "area_damage": 271.0,
+        "dps": 225.0,
+        "damage": 587.0
+      }
+    ],
+    "effects": [
+      "spawn",
+      "knockback",
+      "charge",
+      "area"
+    ]
+  },
+  {
+    "name": "Goblin Giant",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Giant",
+    "elixir_cost": 6.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.7,
+    "first_hit_speed": 0.5,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 0.7,
+    "range": 5.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 2,
+    "transport": "ground",
+    "projectile_speed": 500.0,
+    "levels": [
+      {
+        "level": 6,
+        "hp": 83.0,
+        "damage": 51.0,
+        "dps": 30.0
+      },
+      {
+        "level": 7,
+        "hp": 91.0,
+        "damage": 56.0,
+        "dps": 32.0
+      },
+      {
+        "level": 8,
+        "hp": 100.0,
+        "damage": 61.0,
+        "dps": 35.0
+      },
+      {
+        "level": 9,
+        "hp": 110.0,
+        "damage": 67.0,
+        "dps": 39.0
+      },
+      {
+        "level": 10,
+        "hp": 121.0,
+        "damage": 74.0,
+        "dps": 43.0
+      },
+      {
+        "level": 11,
+        "hp": 133.0,
+        "damage": 81.0,
+        "dps": 47.0
+      },
+      {
+        "level": 12,
+        "hp": 146.0,
+        "damage": 89.0,
+        "dps": 52.0
+      },
+      {
+        "level": 13,
+        "hp": 160.0,
+        "damage": 98.0,
+        "dps": 57.0
+      },
+      {
+        "level": 14,
+        "hp": 176.0,
+        "damage": 108.0,
+        "dps": 63.0
+      },
+      {
+        "level": 15,
+        "hp": 193.0,
+        "damage": 119.0,
+        "dps": 70.0
+      }
+    ]
+  },
+  {
+    "name": "Goblin Machine",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Machine",
+    "elixir_cost": 5.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 3.5,
+    "first_hit_speed": 1.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 2.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "radius": 1.5,
+    "projectile_speed": 250.0,
+    "levels": [
+      {
+        "level": 9,
+        "hp": 1780.0,
+        "damage": 126.0,
+        "dps": 72.0
+      },
+      {
+        "level": 10,
+        "hp": 1957.0,
+        "damage": 139.0,
+        "dps": 79.0
+      },
+      {
+        "level": 11,
+        "hp": 2150.0,
+        "damage": 152.0,
+        "dps": 86.0
+      },
+      {
+        "level": 12,
+        "hp": 2360.0,
+        "damage": 167.0,
+        "dps": 95.0
+      },
+      {
+        "level": 13,
+        "hp": 2595.0,
+        "damage": 184.0,
+        "dps": 104.0
+      },
+      {
+        "level": 14,
+        "hp": 2847.0,
+        "damage": 202.0,
+        "dps": 115.0
+      },
+      {
+        "level": 15,
+        "hp": 3124.0,
+        "damage": 221.0,
+        "dps": 126.0
+      }
+    ]
+  },
+  {
+    "name": "Goblins",
+    "url": "https://clashroyale.fandom.com/wiki/Goblins",
+    "elixir_cost": 2.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.6,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "count": 4,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 79.0,
+        "damage": 47.0,
+        "dps": 42.0
+      },
+      {
+        "level": 2,
+        "hp": 86.0,
+        "damage": 51.0,
+        "dps": 46.0
+      },
+      {
+        "level": 3,
+        "hp": 95.0,
+        "damage": 56.0,
+        "dps": 50.0
+      },
+      {
+        "level": 4,
+        "hp": 105.0,
+        "damage": 62.0,
+        "dps": 56.0
+      },
+      {
+        "level": 5,
+        "hp": 115.0,
+        "damage": 68.0,
+        "dps": 61.0
+      },
+      {
+        "level": 6,
+        "hp": 126.0,
+        "damage": 75.0,
+        "dps": 68.0
+      },
+      {
+        "level": 7,
+        "hp": 139.0,
+        "damage": 82.0,
+        "dps": 74.0
+      },
+      {
+        "level": 8,
+        "hp": 152.0,
+        "damage": 90.0,
+        "dps": 81.0
+      },
+      {
+        "level": 9,
+        "hp": 167.0,
+        "damage": 99.0,
+        "dps": 89.0
+      },
+      {
+        "level": 10,
+        "hp": 184.0,
+        "damage": 109.0,
+        "dps": 99.0
+      },
+      {
+        "level": 11,
+        "hp": 202.0,
+        "damage": 120.0,
+        "dps": 109.0
+      },
+      {
+        "level": 12,
+        "hp": 221.0,
+        "damage": 132.0,
+        "dps": 119.0
+      },
+      {
+        "level": 13,
+        "hp": 244.0,
+        "damage": 145.0,
+        "dps": 131.0
+      },
+      {
+        "level": 14,
+        "hp": 267.0,
+        "damage": 159.0,
+        "dps": 144.0
+      },
+      {
+        "level": 15,
+        "hp": 293.0,
+        "damage": 175.0,
+        "dps": 159.0
+      }
+    ]
+  },
+  {
+    "name": "Golem",
+    "url": "https://clashroyale.fandom.com/wiki/Golem",
+    "elixir_cost": 8.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 2.5,
+    "first_hit_speed": 1.0,
+    "movement_speed": "slow",
+    "movement_speed_value": 45.0,
+    "deploy_time": 3.0,
+    "range": 0.25,
+    "radius": 2.0,
+    "targets": [
+      "buildings"
+    ],
+    "count": 2,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 649.0,
+        "damage": 62.0,
+        "dps": 20.0
+      },
+      {
+        "level": 7,
+        "hp": 714.0,
+        "damage": 68.0,
+        "dps": 22.0
+      },
+      {
+        "level": 8,
+        "hp": 783.0,
+        "damage": 75.0,
+        "dps": 24.0
+      },
+      {
+        "level": 9,
+        "hp": 860.0,
+        "damage": 82.0,
+        "dps": 27.0
+      },
+      {
+        "level": 10,
+        "hp": 945.0,
+        "damage": 90.0,
+        "dps": 30.0
+      },
+      {
+        "level": 11,
+        "hp": 1039.0,
+        "damage": 99.0,
+        "dps": 33.0
+      },
+      {
+        "level": 12,
+        "hp": 1140.0,
+        "damage": 109.0,
+        "dps": 36.0
+      },
+      {
+        "level": 13,
+        "hp": 1254.0,
+        "damage": 120.0,
+        "dps": 40.0
+      },
+      {
+        "level": 14,
+        "hp": 1376.0,
+        "damage": 132.0,
+        "dps": 44.0
+      },
+      {
+        "level": 15,
+        "hp": 1510.0,
+        "damage": 145.0,
+        "dps": 49.0
+      }
+    ]
+  },
+  {
+    "name": "Guards",
+    "url": "https://clashroyale.fandom.com/wiki/Guards",
+    "elixir_cost": 3.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.0,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 1.6,
+    "targets": [
+      "ground"
+    ],
+    "count": 3,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 160.0,
+        "damage": 73.0,
+        "dps": 73.0
+      },
+      {
+        "level": 7,
+        "hp": 176.0,
+        "damage": 80.0,
+        "dps": 80.0
+      },
+      {
+        "level": 8,
+        "hp": 193.0,
+        "damage": 88.0,
+        "dps": 88.0
+      },
+      {
+        "level": 9,
+        "hp": 212.0,
+        "damage": 97.0,
+        "dps": 97.0
+      },
+      {
+        "level": 10,
+        "hp": 233.0,
+        "damage": 107.0,
+        "dps": 107.0
+      },
+      {
+        "level": 11,
+        "hp": 256.0,
+        "damage": 117.0,
+        "dps": 117.0
+      },
+      {
+        "level": 12,
+        "hp": 281.0,
+        "damage": 129.0,
+        "dps": 129.0
+      },
+      {
+        "level": 13,
+        "hp": 309.0,
+        "damage": 142.0,
+        "dps": 142.0
+      },
+      {
+        "level": 14,
+        "hp": 339.0,
+        "damage": 155.0,
+        "dps": 155.0
+      },
+      {
+        "level": 15,
+        "hp": 372.0,
+        "damage": 171.0,
+        "dps": 171.0
+      }
+    ],
+    "effects": [
+      "spawn",
+      "shield"
+    ]
+  },
+  {
+    "name": "Hog Rider",
+    "url": "https://clashroyale.fandom.com/wiki/Hog_Rider",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.6,
+    "first_hit_speed": 0.6,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 0.8,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 802.0,
+        "damage": 150.0,
+        "dps": 93.0
+      },
+      {
+        "level": 4,
+        "hp": 881.0,
+        "damage": 164.0,
+        "dps": 102.0
+      },
+      {
+        "level": 5,
+        "hp": 967.0,
+        "damage": 181.0,
+        "dps": 113.0
+      },
+      {
+        "level": 6,
+        "hp": 1060.0,
+        "damage": 198.0,
+        "dps": 123.0
+      },
+      {
+        "level": 7,
+        "hp": 1166.0,
+        "damage": 218.0,
+        "dps": 136.0
+      },
+      {
+        "level": 8,
+        "hp": 1279.0,
+        "damage": 239.0,
+        "dps": 149.0
+      },
+      {
+        "level": 9,
+        "hp": 1405.0,
+        "damage": 262.0,
+        "dps": 163.0
+      },
+      {
+        "level": 10,
+        "hp": 1544.0,
+        "damage": 288.0,
+        "dps": 180.0
+      },
+      {
+        "level": 11,
+        "hp": 1697.0,
+        "damage": 317.0,
+        "dps": 198.0
+      },
+      {
+        "level": 12,
+        "hp": 1863.0,
+        "damage": 348.0,
+        "dps": 217.0
+      },
+      {
+        "level": 13,
+        "hp": 2048.0,
+        "damage": 383.0,
+        "dps": 239.0
+      },
+      {
+        "level": 14,
+        "hp": 2247.0,
+        "damage": 420.0,
+        "dps": 262.0
+      },
+      {
+        "level": 15,
+        "hp": 2466.0,
+        "damage": 461.0,
+        "dps": 288.0
+      }
+    ]
+  },
+  {
+    "name": "Hunter",
+    "url": "https://clashroyale.fandom.com/wiki/Hunter",
+    "elixir_cost": 4.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 2.2,
+    "first_hit_speed": 0.7,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 6.5,
+    "projectile_speed": 550.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 553.0,
+        "damage": null,
+        "dps": 236.0
+      },
+      {
+        "level": 7,
+        "hp": 608.0,
+        "damage": null,
+        "dps": 263.0
+      },
+      {
+        "level": 8,
+        "hp": 667.0,
+        "damage": null,
+        "dps": 286.0
+      },
+      {
+        "level": 9,
+        "hp": 733.0,
+        "damage": null,
+        "dps": 313.0
+      },
+      {
+        "level": 10,
+        "hp": 806.0,
+        "damage": null,
+        "dps": 345.0
+      },
+      {
+        "level": 11,
+        "hp": 885.0,
+        "damage": null,
+        "dps": 381.0
+      },
+      {
+        "level": 12,
+        "hp": 972.0,
+        "damage": null,
+        "dps": 418.0
+      },
+      {
+        "level": 13,
+        "hp": 1069.0,
+        "damage": null,
+        "dps": 459.0
+      },
+      {
+        "level": 14,
+        "hp": 1172.0,
+        "damage": null,
+        "dps": 504.0
+      },
+      {
+        "level": 15,
+        "hp": 1287.0,
+        "damage": null,
+        "dps": 554.0
+      }
+    ]
+  },
+  {
+    "name": "Heal Spirit",
+    "url": "https://clashroyale.fandom.com/wiki/Heal_Spirit",
+    "elixir_cost": 1.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 2.5,
+    "radius": 1.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 108.0,
+        "area_damage": 52.0,
+        "healing": 189.0
+      },
+      {
+        "level": 4,
+        "hp": 119.0,
+        "area_damage": 57.0,
+        "healing": 208.0
+      },
+      {
+        "level": 5,
+        "hp": 131.0,
+        "area_damage": 62.0,
+        "healing": 229.0
+      },
+      {
+        "level": 6,
+        "hp": 144.0,
+        "area_damage": 68.0,
+        "healing": 251.0
+      },
+      {
+        "level": 7,
+        "hp": 158.0,
+        "area_damage": 75.0,
+        "healing": 276.0
+      },
+      {
+        "level": 8,
+        "hp": 173.0,
+        "area_damage": 82.0,
+        "healing": 303.0
+      },
+      {
+        "level": 9,
+        "hp": 190.0,
+        "area_damage": 91.0,
+        "healing": 332.0
+      },
+      {
+        "level": 10,
+        "hp": 209.0,
+        "area_damage": 100.0,
+        "healing": 364.0
+      },
+      {
+        "level": 11,
+        "hp": 230.0,
+        "area_damage": 110.0,
+        "healing": 401.0
+      },
+      {
+        "level": 12,
+        "hp": 252.0,
+        "area_damage": 120.0,
+        "healing": 401.0
+      },
+      {
+        "level": 13,
+        "hp": 278.0,
+        "area_damage": 132.0,
+        "healing": 485.0
+      },
+      {
+        "level": 14,
+        "hp": 305.0,
+        "area_damage": 145.0,
+        "healing": 532.0
+      },
+      {
+        "level": 15,
+        "hp": 334.0,
+        "area_damage": 159.0,
+        "healing": 584.0
+      }
+    ],
+    "effects": [
+      "heal",
+      "spawn",
+      "area"
+    ]
+  },
+  {
+    "name": "Ice Golem",
+    "url": "https://clashroyale.fandom.com/wiki/Ice_Golem",
+    "elixir_cost": 2.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 2.5,
+    "first_hit_speed": 1.0,
+    "movement_speed": "slow",
+    "movement_speed_value": 45.0,
+    "deploy_time": 1.0,
+    "range": 0.75,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 566.0,
+        "damage": 39.0,
+        "dps": 15.0
+      },
+      {
+        "level": 4,
+        "hp": 622.0,
+        "damage": 43.0,
+        "dps": 17.0
+      },
+      {
+        "level": 5,
+        "hp": 683.0,
+        "damage": 48.0,
+        "dps": 19.0
+      },
+      {
+        "level": 6,
+        "hp": 748.0,
+        "damage": 52.0,
+        "dps": 20.0
+      },
+      {
+        "level": 7,
+        "hp": 823.0,
+        "damage": 58.0,
+        "dps": 23.0
+      },
+      {
+        "level": 8,
+        "hp": 903.0,
+        "damage": 63.0,
+        "dps": 25.0
+      },
+      {
+        "level": 9,
+        "hp": 992.0,
+        "damage": 69.0,
+        "dps": 27.0
+      },
+      {
+        "level": 10,
+        "hp": 1090.0,
+        "damage": 76.0,
+        "dps": 30.0
+      },
+      {
+        "level": 11,
+        "hp": 1198.0,
+        "damage": 84.0,
+        "dps": 33.0
+      },
+      {
+        "level": 12,
+        "hp": 1315.0,
+        "damage": 92.0,
+        "dps": 36.0
+      },
+      {
+        "level": 13,
+        "hp": 1446.0,
+        "damage": 101.0,
+        "dps": 40.0
+      },
+      {
+        "level": 14,
+        "hp": 1586.0,
+        "damage": 111.0,
+        "dps": 44.0
+      },
+      {
+        "level": 15,
+        "hp": 1740.0,
+        "damage": 122.0,
+        "dps": 48.0
+      }
+    ]
+  },
+  {
+    "name": "Ice Spirit",
+    "url": "https://clashroyale.fandom.com/wiki/Ice_Spirit",
+    "elixir_cost": 1.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 2.5,
+    "radius": 1.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "duration": 1.2,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 90.0,
+        "area_damage": 43.0
+      },
+      {
+        "level": 2,
+        "hp": 99.0,
+        "area_damage": 47.0
+      },
+      {
+        "level": 3,
+        "hp": 108.0,
+        "area_damage": 52.0
+      },
+      {
+        "level": 4,
+        "hp": 119.0,
+        "area_damage": 57.0
+      },
+      {
+        "level": 5,
+        "hp": 131.0,
+        "area_damage": 62.0
+      },
+      {
+        "level": 6,
+        "hp": 144.0,
+        "area_damage": 68.0
+      },
+      {
+        "level": 7,
+        "hp": 158.0,
+        "area_damage": 75.0
+      },
+      {
+        "level": 8,
+        "hp": 173.0,
+        "area_damage": 82.0
+      },
+      {
+        "level": 9,
+        "hp": 190.0,
+        "area_damage": 91.0
+      },
+      {
+        "level": 10,
+        "hp": 209.0,
+        "area_damage": 100.0
+      },
+      {
+        "level": 11,
+        "hp": 230.0,
+        "area_damage": 110.0
+      },
+      {
+        "level": 12,
+        "hp": 252.0,
+        "area_damage": 120.0
+      },
+      {
+        "level": 13,
+        "hp": 278.0,
+        "area_damage": 132.0
+      },
+      {
+        "level": 14,
+        "hp": 305.0,
+        "area_damage": 145.0
+      },
+      {
+        "level": 15,
+        "hp": 334.0,
+        "area_damage": 159.0
+      }
+    ]
+  },
+  {
+    "name": "Ice Wizard",
+    "url": "https://clashroyale.fandom.com/wiki/Ice_Wizard",
+    "elixir_cost": 3.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.7,
+    "first_hit_speed": 0.5,
+    "duration": 2.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 5.5,
+    "radius": 1.5,
+    "projectile_speed": 700.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 570.0,
+        "area_damage": 74.0,
+        "damage": 69.0,
+        "dps": 43.0
+      },
+      {
+        "level": 10,
+        "hp": 626.0,
+        "area_damage": 81.0,
+        "damage": 76.0,
+        "dps": 47.0
+      },
+      {
+        "level": 11,
+        "hp": 688.0,
+        "area_damage": 89.0,
+        "damage": 84.0,
+        "dps": 52.0
+      },
+      {
+        "level": 12,
+        "hp": 755.0,
+        "area_damage": 98.0,
+        "damage": 92.0,
+        "dps": 57.0
+      },
+      {
+        "level": 13,
+        "hp": 831.0,
+        "area_damage": 108.0,
+        "damage": 101.0,
+        "dps": 63.0
+      },
+      {
+        "level": 14,
+        "hp": 911.0,
+        "area_damage": 118.0,
+        "damage": 110.0,
+        "dps": 69.0
+      },
+      {
+        "level": 15,
+        "hp": 1000.0,
+        "area_damage": 130.0,
+        "damage": 122.0,
+        "dps": 76.0
+      }
+    ]
+  },
+  {
+    "name": "Inferno Dragon",
+    "url": "https://clashroyale.fandom.com/wiki/Inferno_Dragon",
+    "elixir_cost": 4.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 0.4,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 3.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 1072.0,
+        "damage": 349.0,
+        "dps": 872.0
+      },
+      {
+        "level": 10,
+        "hp": 1178.0,
+        "damage": 384.0,
+        "dps": 960.0
+      },
+      {
+        "level": 11,
+        "hp": 1295.0,
+        "damage": 422.0,
+        "dps": 1055.0
+      },
+      {
+        "level": 12,
+        "hp": 1421.0,
+        "damage": 463.0,
+        "dps": 1157.0
+      },
+      {
+        "level": 13,
+        "hp": 1563.0,
+        "damage": 509.0,
+        "dps": 1272.0
+      },
+      {
+        "level": 14,
+        "hp": 1715.0,
+        "damage": 559.0,
+        "dps": 1397.0
+      },
+      {
+        "level": 15,
+        "hp": 1882.0,
+        "damage": 613.0,
+        "dps": 1532.0
+      }
+    ]
+  },
+  {
+    "name": "Knight",
+    "url": "https://clashroyale.fandom.com/wiki/Knight",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.2,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 690.0,
+        "damage": 79.0,
+        "dps": 65.0
+      },
+      {
+        "level": 2,
+        "hp": 759.0,
+        "damage": 86.0,
+        "dps": 71.0
+      },
+      {
+        "level": 3,
+        "hp": 834.0,
+        "damage": 95.0,
+        "dps": 79.0
+      },
+      {
+        "level": 4,
+        "hp": 917.0,
+        "damage": 105.0,
+        "dps": 87.0
+      },
+      {
+        "level": 5,
+        "hp": 1007.0,
+        "damage": 115.0,
+        "dps": 95.0
+      },
+      {
+        "level": 6,
+        "hp": 1104.0,
+        "damage": 126.0,
+        "dps": 105.0
+      },
+      {
+        "level": 7,
+        "hp": 1214.0,
+        "damage": 139.0,
+        "dps": 115.0
+      },
+      {
+        "level": 8,
+        "hp": 1331.0,
+        "damage": 152.0,
+        "dps": 126.0
+      },
+      {
+        "level": 9,
+        "hp": 1462.0,
+        "damage": 167.0,
+        "dps": 139.0
+      },
+      {
+        "level": 10,
+        "hp": 1607.0,
+        "damage": 184.0,
+        "dps": 153.0
+      },
+      {
+        "level": 11,
+        "hp": 1766.0,
+        "damage": 202.0,
+        "dps": 168.0
+      },
+      {
+        "level": 12,
+        "hp": 1938.0,
+        "damage": 221.0,
+        "dps": 184.0
+      },
+      {
+        "level": 13,
+        "hp": 2132.0,
+        "damage": 244.0,
+        "dps": 203.0
+      },
+      {
+        "level": 14,
+        "hp": 2339.0,
+        "damage": 267.0,
+        "dps": 222.0
+      },
+      {
+        "level": 15,
+        "hp": 2566.0,
+        "damage": 293.0,
+        "dps": 244.0
+      }
+    ]
+  },
+  {
+    "name": "Lava Hound",
+    "url": "https://clashroyale.fandom.com/wiki/Lava_Hound",
+    "elixir_cost": 7.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.7,
+    "first_hit_speed": 1.0,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 1.6,
+    "projectile_speed": 500.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 6,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 180.0,
+        "damage": 67.0,
+        "dps": 39.0
+      },
+      {
+        "level": 10,
+        "hp": 198.0,
+        "damage": 74.0,
+        "dps": 43.0
+      },
+      {
+        "level": 11,
+        "hp": 217.0,
+        "damage": 81.0,
+        "dps": 47.0
+      },
+      {
+        "level": 12,
+        "hp": 238.0,
+        "damage": 89.0,
+        "dps": 52.0
+      },
+      {
+        "level": 13,
+        "hp": 262.0,
+        "damage": 98.0,
+        "dps": 57.0
+      },
+      {
+        "level": 14,
+        "hp": 288.0,
+        "damage": 108.0,
+        "dps": 63.0
+      },
+      {
+        "level": 15,
+        "hp": 316.0,
+        "damage": 119.0,
+        "dps": 70.0
+      }
+    ]
+  },
+  {
+    "name": "Lumberjack",
+    "url": "https://clashroyale.fandom.com/wiki/Lumberjack",
+    "elixir_cost": 4.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 0.8,
+    "first_hit_speed": 0.4,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 0.7,
+    "targets": [
+      "ground"
+    ],
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 1060.0,
+        "damage": 44.0,
+        "dps": 265.0
+      },
+      {
+        "level": 10,
+        "hp": 1166.0,
+        "damage": 48.0,
+        "dps": 291.0
+      },
+      {
+        "level": 11,
+        "hp": 1282.0,
+        "damage": 54.0,
+        "dps": 320.0
+      },
+      {
+        "level": 12,
+        "hp": 1409.0,
+        "damage": 59.0,
+        "dps": 351.0
+      },
+      {
+        "level": 13,
+        "hp": 1547.0,
+        "damage": 65.0,
+        "dps": 386.0
+      },
+      {
+        "level": 14,
+        "hp": 1696.0,
+        "damage": 71.0,
+        "dps": 423.0
+      },
+      {
+        "level": 15,
+        "hp": 1865.0,
+        "damage": 79.0,
+        "dps": 466.0
+      }
+    ]
+  },
+  {
+    "name": "Magic Archer",
+    "url": "https://clashroyale.fandom.com/wiki/Magic_Archer",
+    "elixir_cost": 4.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.7,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 11.0,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 438.0,
+        "area_damage": 110.0,
+        "dps": 99.0
+      },
+      {
+        "level": 10,
+        "hp": 482.0,
+        "area_damage": 121.0,
+        "dps": 109.0
+      },
+      {
+        "level": 11,
+        "hp": 529.0,
+        "area_damage": 133.0,
+        "dps": 120.0
+      },
+      {
+        "level": 12,
+        "hp": 581.0,
+        "area_damage": 146.0,
+        "dps": 132.0
+      },
+      {
+        "level": 13,
+        "hp": 639.0,
+        "area_damage": 160.0,
+        "dps": 145.0
+      },
+      {
+        "level": 14,
+        "hp": 701.0,
+        "area_damage": 176.0,
+        "dps": 160.0
+      },
+      {
+        "level": 15,
+        "hp": 770.0,
+        "area_damage": 193.0,
+        "dps": 175.0
+      }
+    ],
+    "effects": [
+      "spawn",
+      "area"
+    ]
+  },
+  {
+    "name": "Mega Knight",
+    "url": "https://clashroyale.fandom.com/wiki/Mega_Knight",
+    "elixir_cost": 7.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.7,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 250.0,
+    "deploy_time": 1.0,
+    "range": 3.5,
+    "radius": 2.2,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 3307.0,
+        "area_damage": 222.0,
+        "damage": 445.0,
+        "dps": 130.0
+      },
+      {
+        "level": 10,
+        "hp": 3634.0,
+        "area_damage": 244.0,
+        "damage": 489.0,
+        "dps": 143.0
+      },
+      {
+        "level": 11,
+        "hp": 3993.0,
+        "area_damage": 268.0,
+        "damage": 537.0,
+        "dps": 157.0
+      },
+      {
+        "level": 12,
+        "hp": 4383.0,
+        "area_damage": 295.0,
+        "damage": 590.0,
+        "dps": 173.0
+      },
+      {
+        "level": 13,
+        "hp": 4820.0,
+        "area_damage": 324.0,
+        "damage": 648.0,
+        "dps": 190.0
+      },
+      {
+        "level": 14,
+        "hp": 5288.0,
+        "area_damage": 355.0,
+        "damage": 711.0,
+        "dps": 208.0
+      },
+      {
+        "level": 15,
+        "hp": 5803.0,
+        "area_damage": 390.0,
+        "damage": 781.0,
+        "dps": 229.0
+      }
+    ]
+  },
+  {
+    "name": "Mega Minion",
+    "url": "https://clashroyale.fandom.com/wiki/Mega_Minion",
+    "elixir_cost": 3.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.5,
+    "first_hit_speed": 0.4,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 1.6,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 395.0,
+        "damage": 147.0,
+        "dps": 98.0
+      },
+      {
+        "level": 4,
+        "hp": 434.0,
+        "damage": 162.0,
+        "dps": 108.0
+      },
+      {
+        "level": 5,
+        "hp": 477.0,
+        "damage": 178.0,
+        "dps": 118.0
+      },
+      {
+        "level": 6,
+        "hp": 523.0,
+        "damage": 195.0,
+        "dps": 130.0
+      },
+      {
+        "level": 7,
+        "hp": 575.0,
+        "damage": 214.0,
+        "dps": 142.0
+      },
+      {
+        "level": 8,
+        "hp": 631.0,
+        "damage": 235.0,
+        "dps": 156.0
+      },
+      {
+        "level": 9,
+        "hp": 693.0,
+        "damage": 258.0,
+        "dps": 172.0
+      },
+      {
+        "level": 10,
+        "hp": 761.0,
+        "damage": 284.0,
+        "dps": 189.0
+      },
+      {
+        "level": 11,
+        "hp": 837.0,
+        "damage": 312.0,
+        "dps": 208.0
+      },
+      {
+        "level": 12,
+        "hp": 918.0,
+        "damage": 342.0,
+        "dps": 228.0
+      },
+      {
+        "level": 13,
+        "hp": 1010.0,
+        "damage": 376.0,
+        "dps": 250.0
+      },
+      {
+        "level": 14,
+        "hp": 1108.0,
+        "damage": 413.0,
+        "dps": 275.0
+      },
+      {
+        "level": 15,
+        "hp": 1216.0,
+        "damage": 453.0,
+        "dps": 302.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Miner",
+    "url": "https://clashroyale.fandom.com/wiki/Miner",
+    "elixir_cost": 3.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 1002.0,
+        "damage": 40.0,
+        "dps": 30.0
+      },
+      {
+        "level": 10,
+        "hp": 1102.0,
+        "damage": 44.0,
+        "dps": 33.0
+      },
+      {
+        "level": 11,
+        "hp": 1210.0,
+        "damage": 48.0,
+        "dps": 36.0
+      },
+      {
+        "level": 12,
+        "hp": 1329.0,
+        "damage": 53.0,
+        "dps": 41.0
+      },
+      {
+        "level": 13,
+        "hp": 1461.0,
+        "damage": 58.0,
+        "dps": 44.0
+      },
+      {
+        "level": 14,
+        "hp": 1603.0,
+        "damage": 64.0,
+        "dps": 49.0
+      },
+      {
+        "level": 15,
+        "hp": 1759.0,
+        "damage": 70.0,
+        "dps": 53.0
+      }
+    ]
+  },
+  {
+    "name": "Mini P.E.K.K.A.",
+    "url": "https://clashroyale.fandom.com/wiki/Mini_P.E.K.K.A.",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.6,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 0.8,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 677.0,
+        "damage": 355.0,
+        "dps": 221.0
+      },
+      {
+        "level": 4,
+        "hp": 744.0,
+        "damage": 390.0,
+        "dps": 243.0
+      },
+      {
+        "level": 5,
+        "hp": 817.0,
+        "damage": 429.0,
+        "dps": 268.0
+      },
+      {
+        "level": 6,
+        "hp": 896.0,
+        "damage": 471.0,
+        "dps": 294.0
+      },
+      {
+        "level": 7,
+        "hp": 985.0,
+        "damage": 518.0,
+        "dps": 323.0
+      },
+      {
+        "level": 8,
+        "hp": 1080.0,
+        "damage": 569.0,
+        "dps": 355.0
+      },
+      {
+        "level": 9,
+        "hp": 1187.0,
+        "damage": 625.0,
+        "dps": 390.0
+      },
+      {
+        "level": 10,
+        "hp": 1304.0,
+        "damage": 687.0,
+        "dps": 429.0
+      },
+      {
+        "level": 11,
+        "hp": 1433.0,
+        "damage": 755.0,
+        "dps": 471.0
+      },
+      {
+        "level": 12,
+        "hp": 1573.0,
+        "damage": 828.0,
+        "dps": 517.0
+      },
+      {
+        "level": 13,
+        "hp": 1730.0,
+        "damage": 909.0,
+        "dps": 568.0
+      },
+      {
+        "level": 14,
+        "hp": 1898.0,
+        "damage": 1000.0,
+        "dps": 625.0
+      },
+      {
+        "level": 15,
+        "hp": 2083.0,
+        "damage": 1100.0,
+        "dps": 687.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Minion Horde",
+    "url": "https://clashroyale.fandom.com/wiki/Minion_Horde",
+    "elixir_cost": 5.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.0,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 2.5,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 6,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 90.0,
+        "damage": 46.0,
+        "dps": 46.0
+      },
+      {
+        "level": 2,
+        "hp": 99.0,
+        "damage": 50.0,
+        "dps": 50.0
+      },
+      {
+        "level": 3,
+        "hp": 108.0,
+        "damage": 55.0,
+        "dps": 55.0
+      },
+      {
+        "level": 4,
+        "hp": 119.0,
+        "damage": 61.0,
+        "dps": 61.0
+      },
+      {
+        "level": 5,
+        "hp": 131.0,
+        "damage": 67.0,
+        "dps": 67.0
+      },
+      {
+        "level": 6,
+        "hp": 144.0,
+        "damage": 73.0,
+        "dps": 73.0
+      },
+      {
+        "level": 7,
+        "hp": 158.0,
+        "damage": 80.0,
+        "dps": 80.0
+      },
+      {
+        "level": 8,
+        "hp": 173.0,
+        "damage": 88.0,
+        "dps": 88.0
+      },
+      {
+        "level": 9,
+        "hp": 190.0,
+        "damage": 97.0,
+        "dps": 97.0
+      },
+      {
+        "level": 10,
+        "hp": 209.0,
+        "damage": 107.0,
+        "dps": 107.0
+      },
+      {
+        "level": 11,
+        "hp": 230.0,
+        "damage": 117.0,
+        "dps": 117.0
+      },
+      {
+        "level": 12,
+        "hp": 252.0,
+        "damage": 129.0,
+        "dps": 129.0
+      },
+      {
+        "level": 13,
+        "hp": 278.0,
+        "damage": 142.0,
+        "dps": 142.0
+      },
+      {
+        "level": 14,
+        "hp": 305.0,
+        "damage": 155.0,
+        "dps": 155.0
+      },
+      {
+        "level": 15,
+        "hp": 334.0,
+        "damage": 171.0,
+        "dps": 171.0
+      }
+    ]
+  },
+  {
+    "name": "Minions",
+    "url": "https://clashroyale.fandom.com/wiki/Minions",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 2.5,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 3,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 90.0,
+        "damage": 46.0,
+        "dps": 41.0
+      },
+      {
+        "level": 2,
+        "hp": 99.0,
+        "damage": 50.0,
+        "dps": 45.0
+      },
+      {
+        "level": 3,
+        "hp": 108.0,
+        "damage": 55.0,
+        "dps": 49.0
+      },
+      {
+        "level": 4,
+        "hp": 119.0,
+        "damage": 61.0,
+        "dps": 55.0
+      },
+      {
+        "level": 5,
+        "hp": 131.0,
+        "damage": 67.0,
+        "dps": 60.0
+      },
+      {
+        "level": 6,
+        "hp": 144.0,
+        "damage": 73.0,
+        "dps": 66.0
+      },
+      {
+        "level": 7,
+        "hp": 158.0,
+        "damage": 80.0,
+        "dps": 72.0
+      },
+      {
+        "level": 8,
+        "hp": 173.0,
+        "damage": 88.0,
+        "dps": 80.0
+      },
+      {
+        "level": 9,
+        "hp": 190.0,
+        "damage": 97.0,
+        "dps": 88.0
+      },
+      {
+        "level": 10,
+        "hp": 209.0,
+        "damage": 107.0,
+        "dps": 97.0
+      },
+      {
+        "level": 11,
+        "hp": 230.0,
+        "damage": 117.0,
+        "dps": 106.0
+      },
+      {
+        "level": 12,
+        "hp": 252.0,
+        "damage": 129.0,
+        "dps": 117.0
+      },
+      {
+        "level": 13,
+        "hp": 278.0,
+        "damage": 142.0,
+        "dps": 129.0
+      },
+      {
+        "level": 14,
+        "hp": 305.0,
+        "damage": 155.0,
+        "dps": 140.0
+      },
+      {
+        "level": 15,
+        "hp": 334.0,
+        "damage": 171.0,
+        "dps": 155.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Musketeer",
+    "url": "https://clashroyale.fandom.com/wiki/Musketeer",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.0,
+    "first_hit_speed": 0.7,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 6.0,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 341.0,
+        "damage": 102.0,
+        "dps": 102.0
+      },
+      {
+        "level": 4,
+        "hp": 375.0,
+        "damage": 113.0,
+        "dps": 113.0
+      },
+      {
+        "level": 5,
+        "hp": 411.0,
+        "damage": 124.0,
+        "dps": 124.0
+      },
+      {
+        "level": 6,
+        "hp": 451.0,
+        "damage": 136.0,
+        "dps": 136.0
+      },
+      {
+        "level": 7,
+        "hp": 496.0,
+        "damage": 149.0,
+        "dps": 149.0
+      },
+      {
+        "level": 8,
+        "hp": 544.0,
+        "damage": 164.0,
+        "dps": 164.0
+      },
+      {
+        "level": 9,
+        "hp": 597.0,
+        "damage": 180.0,
+        "dps": 180.0
+      },
+      {
+        "level": 10,
+        "hp": 657.0,
+        "damage": 198.0,
+        "dps": 198.0
+      },
+      {
+        "level": 11,
+        "hp": 721.0,
+        "damage": 217.0,
+        "dps": 217.0
+      },
+      {
+        "level": 12,
+        "hp": 792.0,
+        "damage": 238.0,
+        "dps": 238.0
+      },
+      {
+        "level": 13,
+        "hp": 871.0,
+        "damage": 262.0,
+        "dps": 262.0
+      },
+      {
+        "level": 14,
+        "hp": 955.0,
+        "damage": 288.0,
+        "dps": 288.0
+      },
+      {
+        "level": 15,
+        "hp": 1049.0,
+        "damage": 316.0,
+        "dps": 316.0
+      }
+    ]
+  },
+  {
+    "name": "Night Witch",
+    "url": "https://clashroyale.fandom.com/wiki/Night_Witch",
+    "elixir_cost": 4.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.6,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 67.0,
+        "damage": 67.0,
+        "dps": 51.0
+      },
+      {
+        "level": 10,
+        "hp": 74.0,
+        "damage": 74.0,
+        "dps": 56.0
+      },
+      {
+        "level": 11,
+        "hp": 81.0,
+        "damage": 81.0,
+        "dps": 62.0
+      },
+      {
+        "level": 12,
+        "hp": 89.0,
+        "damage": 89.0,
+        "dps": 68.0
+      },
+      {
+        "level": 13,
+        "hp": 98.0,
+        "damage": 98.0,
+        "dps": 75.0
+      },
+      {
+        "level": 14,
+        "hp": 108.0,
+        "damage": 108.0,
+        "dps": 83.0
+      },
+      {
+        "level": 15,
+        "hp": 119.0,
+        "damage": 119.0,
+        "dps": 91.0
+      }
+    ]
+  },
+  {
+    "name": "P.E.K.K.A.",
+    "url": "https://clashroyale.fandom.com/wiki/P.E.K.K.A.",
+    "elixir_cost": 7.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.8,
+    "first_hit_speed": 0.5,
+    "movement_speed": "slow",
+    "movement_speed_value": 45.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 2350.0,
+        "damage": 510.0,
+        "dps": 283.0
+      },
+      {
+        "level": 7,
+        "hp": 2585.0,
+        "damage": 561.0,
+        "dps": 311.0
+      },
+      {
+        "level": 8,
+        "hp": 2835.0,
+        "damage": 615.0,
+        "dps": 341.0
+      },
+      {
+        "level": 9,
+        "hp": 3114.0,
+        "damage": 676.0,
+        "dps": 375.0
+      },
+      {
+        "level": 10,
+        "hp": 3422.0,
+        "damage": 743.0,
+        "dps": 412.0
+      },
+      {
+        "level": 11,
+        "hp": 3760.0,
+        "damage": 816.0,
+        "dps": 453.0
+      },
+      {
+        "level": 12,
+        "hp": 4127.0,
+        "damage": 896.0,
+        "dps": 497.0
+      },
+      {
+        "level": 13,
+        "hp": 4539.0,
+        "damage": 985.0,
+        "dps": 547.0
+      },
+      {
+        "level": 14,
+        "hp": 4979.0,
+        "damage": 1081.0,
+        "dps": 600.0
+      },
+      {
+        "level": 15,
+        "hp": 5464.0,
+        "damage": 1186.0,
+        "dps": 658.0
+      }
+    ]
+  },
+  {
+    "name": "Phoenix",
+    "url": "https://clashroyale.fandom.com/wiki/Phoenix",
+    "elixir_cost": 4.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.0,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 4.3,
+    "deploy_time": 1.0,
+    "range": 1.6,
+    "radius": 1.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 697.0,
+        "damage": 144.0,
+        "dps": 144.0
+      },
+      {
+        "level": 10,
+        "hp": 766.0,
+        "damage": 158.0,
+        "dps": 158.0
+      },
+      {
+        "level": 11,
+        "hp": 842.0,
+        "damage": 174.0,
+        "dps": 174.0
+      },
+      {
+        "level": 12,
+        "hp": 924.0,
+        "damage": 191.0,
+        "dps": 191.0
+      },
+      {
+        "level": 13,
+        "hp": 1016.0,
+        "damage": 210.0,
+        "dps": 210.0
+      },
+      {
+        "level": 14,
+        "hp": 1115.0,
+        "damage": 230.0,
+        "dps": 230.0
+      },
+      {
+        "level": 15,
+        "hp": 1223.0,
+        "damage": 252.0,
+        "dps": 253.0
+      }
+    ]
+  },
+  {
+    "name": "Prince",
+    "url": "https://clashroyale.fandom.com/wiki/Prince",
+    "elixir_cost": 5.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.4,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 1.6,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 1200.0,
+        "damage": 489.0,
+        "dps": 174.0
+      },
+      {
+        "level": 7,
+        "hp": 1320.0,
+        "damage": 538.0,
+        "dps": 192.0
+      },
+      {
+        "level": 8,
+        "hp": 1447.0,
+        "damage": 590.0,
+        "dps": 210.0
+      },
+      {
+        "level": 9,
+        "hp": 1590.0,
+        "damage": 648.0,
+        "dps": 231.0
+      },
+      {
+        "level": 10,
+        "hp": 1747.0,
+        "damage": 712.0,
+        "dps": 254.0
+      },
+      {
+        "level": 11,
+        "hp": 1920.0,
+        "damage": 783.0,
+        "dps": 279.0
+      },
+      {
+        "level": 12,
+        "hp": 2107.0,
+        "damage": 859.0,
+        "dps": 306.0
+      },
+      {
+        "level": 13,
+        "hp": 2317.0,
+        "damage": 945.0,
+        "dps": 337.0
+      },
+      {
+        "level": 14,
+        "hp": 2542.0,
+        "damage": 1037.0,
+        "dps": 370.0
+      },
+      {
+        "level": 15,
+        "hp": 2790.0,
+        "damage": 1138.0,
+        "dps": 406.0
+      }
+    ]
+  },
+  {
+    "name": "Princess",
+    "url": "https://clashroyale.fandom.com/wiki/Princess",
+    "elixir_cost": 3.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 3.0,
+    "first_hit_speed": 0.3,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.2,
+    "range": 9.0,
+    "radius": 2.0,
+    "projectile_speed": 600.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 216.0,
+        "area_damage": 139.0,
+        "dps": 46.0
+      },
+      {
+        "level": 10,
+        "hp": 237.0,
+        "area_damage": 153.0,
+        "dps": 51.0
+      },
+      {
+        "level": 11,
+        "hp": 261.0,
+        "area_damage": 168.0,
+        "dps": 56.0
+      },
+      {
+        "level": 12,
+        "hp": 286.0,
+        "area_damage": 185.0,
+        "dps": 61.0
+      },
+      {
+        "level": 13,
+        "hp": 315.0,
+        "area_damage": 203.0,
+        "dps": 67.0
+      },
+      {
+        "level": 14,
+        "hp": 345.0,
+        "area_damage": 223.0,
+        "dps": 74.0
+      },
+      {
+        "level": 15,
+        "hp": 379.0,
+        "area_damage": 245.0,
+        "dps": 81.0
+      }
+    ]
+  },
+  {
+    "name": "Ram Rider",
+    "url": "https://clashroyale.fandom.com/wiki/Ram_Rider",
+    "elixir_cost": 5.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.4,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 5.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "duration": 2.0,
+    "projectile_speed": 600.0,
+    "levels": [
+      {
+        "level": 9,
+        "hp": 1405.0,
+        "damage": 86.0,
+        "dps": 78.0
+      },
+      {
+        "level": 10,
+        "hp": 1544.0,
+        "damage": 95.0,
+        "dps": 86.0
+      },
+      {
+        "level": 11,
+        "hp": 1697.0,
+        "damage": 104.0,
+        "dps": 94.0
+      },
+      {
+        "level": 12,
+        "hp": 1863.0,
+        "damage": 115.0,
+        "dps": 104.0
+      },
+      {
+        "level": 13,
+        "hp": 2048.0,
+        "damage": 126.0,
+        "dps": 114.0
+      },
+      {
+        "level": 14,
+        "hp": 2247.0,
+        "damage": 138.0,
+        "dps": 125.0
+      },
+      {
+        "level": 15,
+        "hp": 2466.0,
+        "damage": 152.0,
+        "dps": 138.0
+      }
+    ]
+  },
+  {
+    "name": "Rascal Boy",
+    "url": "https://clashroyale.fandom.com/wiki/Rascals",
+    "elixir_cost": 5.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.0,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "range": 5.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 2,
+    "transport": "ground",
+    "projectile_speed": 800.0,
+    "levels": [
+      {
+        "level": 1,
+        "hp": 102.0,
+        "damage": 44.0,
+        "dps": 44.0
+      },
+      {
+        "level": 2,
+        "hp": 112.0,
+        "damage": 48.0,
+        "dps": 48.0
+      },
+      {
+        "level": 3,
+        "hp": 123.0,
+        "damage": 54.0,
+        "dps": 54.0
+      },
+      {
+        "level": 4,
+        "hp": 135.0,
+        "damage": 60.0,
+        "dps": 60.0
+      },
+      {
+        "level": 5,
+        "hp": 148.0,
+        "damage": 66.0,
+        "dps": 66.0
+      },
+      {
+        "level": 6,
+        "hp": 163.0,
+        "damage": 74.0,
+        "dps": 74.0
+      },
+      {
+        "level": 7,
+        "hp": 179.0,
+        "damage": 82.0,
+        "dps": 82.0
+      },
+      {
+        "level": 8,
+        "hp": 196.0,
+        "damage": 91.0,
+        "dps": 91.0
+      },
+      {
+        "level": 9,
+        "hp": 216.0,
+        "damage": 101.0,
+        "dps": 101.0
+      },
+      {
+        "level": 10,
+        "hp": 237.0,
+        "damage": 113.0,
+        "dps": 113.0
+      },
+      {
+        "level": 11,
+        "hp": 261.0,
+        "damage": 125.0,
+        "dps": 125.0
+      },
+      {
+        "level": 12,
+        "hp": 286.0,
+        "damage": 138.0,
+        "dps": 138.0
+      },
+      {
+        "level": 13,
+        "hp": 315.0,
+        "damage": 151.0,
+        "dps": 151.0
+      },
+      {
+        "level": 14,
+        "hp": 345.0,
+        "damage": 166.0,
+        "dps": 166.0
+      },
+      {
+        "level": 15,
+        "hp": 379.0,
+        "damage": 183.0,
+        "dps": 183.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Royal Ghost",
+    "url": "https://clashroyale.fandom.com/wiki/Royal_Ghost",
+    "elixir_cost": 3.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 1.8,
+    "first_hit_speed": 0.6,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 1002.0,
+        "area_damage": 216.0,
+        "dps": 120.0
+      },
+      {
+        "level": 10,
+        "hp": 1102.0,
+        "area_damage": 237.0,
+        "dps": 131.0
+      },
+      {
+        "level": 11,
+        "hp": 1210.0,
+        "area_damage": 261.0,
+        "dps": 145.0
+      },
+      {
+        "level": 12,
+        "hp": 1329.0,
+        "area_damage": 287.0,
+        "dps": 159.0
+      },
+      {
+        "level": 13,
+        "hp": 1461.0,
+        "area_damage": 315.0,
+        "dps": 175.0
+      },
+      {
+        "level": 14,
+        "hp": 1603.0,
+        "area_damage": 345.0,
+        "dps": 191.0
+      },
+      {
+        "level": 15,
+        "hp": 1759.0,
+        "area_damage": 380.0,
+        "dps": 211.0
+      }
+    ]
+  },
+  {
+    "name": "Royal Giant",
+    "url": "https://clashroyale.fandom.com/wiki/Royal_Giant",
+    "elixir_cost": 6.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.7,
+    "first_hit_speed": 0.9,
+    "movement_speed": "slow",
+    "movement_speed_value": 45.0,
+    "deploy_time": 1.0,
+    "range": 5.0,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 1236.0,
+        "damage": 120.0,
+        "dps": 70.0
+      },
+      {
+        "level": 2,
+        "hp": 1359.0,
+        "damage": 132.0,
+        "dps": 77.0
+      },
+      {
+        "level": 3,
+        "hp": 1495.0,
+        "damage": 145.0,
+        "dps": 85.0
+      },
+      {
+        "level": 4,
+        "hp": 1643.0,
+        "damage": 159.0,
+        "dps": 93.0
+      },
+      {
+        "level": 5,
+        "hp": 1804.0,
+        "damage": 175.0,
+        "dps": 102.0
+      },
+      {
+        "level": 6,
+        "hp": 1977.0,
+        "damage": 192.0,
+        "dps": 112.0
+      },
+      {
+        "level": 7,
+        "hp": 2175.0,
+        "damage": 211.0,
+        "dps": 124.0
+      },
+      {
+        "level": 8,
+        "hp": 2385.0,
+        "damage": 231.0,
+        "dps": 135.0
+      },
+      {
+        "level": 9,
+        "hp": 2620.0,
+        "damage": 254.0,
+        "dps": 149.0
+      },
+      {
+        "level": 10,
+        "hp": 2879.0,
+        "damage": 279.0,
+        "dps": 164.0
+      },
+      {
+        "level": 11,
+        "hp": 3164.0,
+        "damage": 307.0,
+        "dps": 180.0
+      },
+      {
+        "level": 12,
+        "hp": 3473.0,
+        "damage": 337.0,
+        "dps": 198.0
+      },
+      {
+        "level": 13,
+        "hp": 3819.0,
+        "damage": 370.0,
+        "dps": 217.0
+      },
+      {
+        "level": 14,
+        "hp": 4190.0,
+        "damage": 406.0,
+        "dps": 238.0
+      },
+      {
+        "level": 15,
+        "hp": 4597.0,
+        "damage": 446.0,
+        "dps": 262.0
+      }
+    ]
+  },
+  {
+    "name": "Royal Hogs",
+    "url": "https://clashroyale.fandom.com/wiki/Royal_Hogs",
+    "elixir_cost": 5.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.2,
+    "first_hit_speed": 0.4,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 0.7,
+    "targets": [
+      "buildings"
+    ],
+    "count": 4,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 395.0,
+        "damage": 35.0,
+        "dps": 29.0
+      },
+      {
+        "level": 4,
+        "hp": 434.0,
+        "damage": 38.0,
+        "dps": 31.0
+      },
+      {
+        "level": 5,
+        "hp": 477.0,
+        "damage": 42.0,
+        "dps": 35.0
+      },
+      {
+        "level": 6,
+        "hp": 523.0,
+        "damage": 46.0,
+        "dps": 38.0
+      },
+      {
+        "level": 7,
+        "hp": 575.0,
+        "damage": 51.0,
+        "dps": 42.0
+      },
+      {
+        "level": 8,
+        "hp": 631.0,
+        "damage": 55.0,
+        "dps": 45.0
+      },
+      {
+        "level": 9,
+        "hp": 693.0,
+        "damage": 61.0,
+        "dps": 50.0
+      },
+      {
+        "level": 10,
+        "hp": 761.0,
+        "damage": 67.0,
+        "dps": 55.0
+      },
+      {
+        "level": 11,
+        "hp": 837.0,
+        "damage": 74.0,
+        "dps": 61.0
+      },
+      {
+        "level": 12,
+        "hp": 918.0,
+        "damage": 81.0,
+        "dps": 67.0
+      },
+      {
+        "level": 13,
+        "hp": 1010.0,
+        "damage": 89.0,
+        "dps": 74.0
+      },
+      {
+        "level": 14,
+        "hp": 1108.0,
+        "damage": 98.0,
+        "dps": 81.0
+      },
+      {
+        "level": 15,
+        "hp": 1216.0,
+        "damage": 107.0,
+        "dps": 89.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Royal Recruits",
+    "url": "https://clashroyale.fandom.com/wiki/Royal_Recruits",
+    "elixir_cost": 7.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 1.6,
+    "targets": [
+      "ground"
+    ],
+    "count": 6,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 94.0,
+        "damage": 52.0,
+        "dps": 40.0
+      },
+      {
+        "level": 2,
+        "hp": 103.0,
+        "damage": 57.0,
+        "dps": 43.0
+      },
+      {
+        "level": 3,
+        "hp": 113.0,
+        "damage": 62.0,
+        "dps": 47.0
+      },
+      {
+        "level": 4,
+        "hp": 125.0,
+        "damage": 69.0,
+        "dps": 53.0
+      },
+      {
+        "level": 5,
+        "hp": 137.0,
+        "damage": 75.0,
+        "dps": 57.0
+      },
+      {
+        "level": 6,
+        "hp": 150.0,
+        "damage": 83.0,
+        "dps": 63.0
+      },
+      {
+        "level": 7,
+        "hp": 165.0,
+        "damage": 91.0,
+        "dps": 70.0
+      },
+      {
+        "level": 8,
+        "hp": 181.0,
+        "damage": 100.0,
+        "dps": 76.0
+      },
+      {
+        "level": 9,
+        "hp": 199.0,
+        "damage": 110.0,
+        "dps": 84.0
+      },
+      {
+        "level": 10,
+        "hp": 219.0,
+        "damage": 121.0,
+        "dps": 93.0
+      },
+      {
+        "level": 11,
+        "hp": 240.0,
+        "damage": 133.0,
+        "dps": 102.0
+      },
+      {
+        "level": 12,
+        "hp": 264.0,
+        "damage": 146.0,
+        "dps": 112.0
+      },
+      {
+        "level": 13,
+        "hp": 290.0,
+        "damage": 160.0,
+        "dps": 123.0
+      },
+      {
+        "level": 14,
+        "hp": 318.0,
+        "damage": 176.0,
+        "dps": 135.0
+      },
+      {
+        "level": 15,
+        "hp": 349.0,
+        "damage": 193.0,
+        "dps": 148.0
+      }
+    ]
+  },
+  {
+    "name": "Rune Giant",
+    "url": "https://clashroyale.fandom.com/wiki/Rune_Giant",
+    "elixir_cost": 4.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.5,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "targets": [
+      "buildings"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 1664.0,
+        "damage": 137.0,
+        "dps": 50.0
+      },
+      {
+        "level": 7,
+        "hp": 1830.0,
+        "damage": 151.0,
+        "dps": 54.0
+      },
+      {
+        "level": 8,
+        "hp": 2007.0,
+        "damage": 165.0,
+        "dps": 60.0
+      },
+      {
+        "level": 9,
+        "hp": 2204.0,
+        "damage": 182.0,
+        "dps": 66.0
+      },
+      {
+        "level": 10,
+        "hp": 2423.0,
+        "damage": 200.0,
+        "dps": 72.0
+      },
+      {
+        "level": 11,
+        "hp": 2662.0,
+        "damage": 220.0,
+        "dps": 80.0
+      },
+      {
+        "level": 12,
+        "hp": 2922.0,
+        "damage": 241.0,
+        "dps": 88.0
+      },
+      {
+        "level": 13,
+        "hp": 3213.0,
+        "damage": 265.0,
+        "dps": 96.0
+      },
+      {
+        "level": 14,
+        "hp": 3525.0,
+        "damage": 291.0,
+        "dps": 106.0
+      },
+      {
+        "level": 15,
+        "hp": 3868.0,
+        "damage": 319.0,
+        "dps": 116.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Skeleton Army",
+    "url": "https://clashroyale.fandom.com/wiki/Skeleton_Army",
+    "elixir_cost": 3.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "count": 15,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 51.0,
+        "damage": 51.0,
+        "dps": 51.0
+      },
+      {
+        "level": 7,
+        "hp": 56.0,
+        "damage": 56.0,
+        "dps": 56.0
+      },
+      {
+        "level": 8,
+        "hp": 61.0,
+        "damage": 61.0,
+        "dps": 61.0
+      },
+      {
+        "level": 9,
+        "hp": 67.0,
+        "damage": 67.0,
+        "dps": 67.0
+      },
+      {
+        "level": 10,
+        "hp": 74.0,
+        "damage": 74.0,
+        "dps": 74.0
+      },
+      {
+        "level": 11,
+        "hp": 81.0,
+        "damage": 81.0,
+        "dps": 81.0
+      },
+      {
+        "level": 12,
+        "hp": 89.0,
+        "damage": 89.0,
+        "dps": 89.0
+      },
+      {
+        "level": 13,
+        "hp": 98.0,
+        "damage": 98.0,
+        "dps": 98.0
+      },
+      {
+        "level": 14,
+        "hp": 108.0,
+        "damage": 108.0,
+        "dps": 108.0
+      },
+      {
+        "level": 15,
+        "hp": 119.0,
+        "damage": 119.0,
+        "dps": 119.0
+      }
+    ]
+  },
+  {
+    "name": "Skeleton Barrel",
+    "url": "https://clashroyale.fandom.com/wiki/Skeleton_Barrel",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "range": 0.5,
+    "deploy_time": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "transport": "ground",
+    "attack_speed": 1.1,
+    "count": 7,
+    "levels": [
+      {
+        "level": 1,
+        "hp": 32.0,
+        "damage": 32.0,
+        "dps": 32.0
+      },
+      {
+        "level": 2,
+        "hp": 35.0,
+        "damage": 35.0,
+        "dps": 35.0
+      },
+      {
+        "level": 3,
+        "hp": 38.0,
+        "damage": 38.0,
+        "dps": 38.0
+      },
+      {
+        "level": 4,
+        "hp": 42.0,
+        "damage": 42.0,
+        "dps": 42.0
+      },
+      {
+        "level": 5,
+        "hp": 46.0,
+        "damage": 46.0,
+        "dps": 46.0
+      },
+      {
+        "level": 6,
+        "hp": 51.0,
+        "damage": 51.0,
+        "dps": 51.0
+      },
+      {
+        "level": 7,
+        "hp": 56.0,
+        "damage": 56.0,
+        "dps": 56.0
+      },
+      {
+        "level": 8,
+        "hp": 61.0,
+        "damage": 61.0,
+        "dps": 61.0
+      },
+      {
+        "level": 9,
+        "hp": 67.0,
+        "damage": 67.0,
+        "dps": 67.0
+      },
+      {
+        "level": 10,
+        "hp": 74.0,
+        "damage": 74.0,
+        "dps": 74.0
+      },
+      {
+        "level": 11,
+        "hp": 81.0,
+        "damage": 81.0,
+        "dps": 81.0
+      },
+      {
+        "level": 12,
+        "hp": 89.0,
+        "damage": 89.0,
+        "dps": 89.0
+      },
+      {
+        "level": 13,
+        "hp": 98.0,
+        "damage": 98.0,
+        "dps": 98.0
+      },
+      {
+        "level": 14,
+        "hp": 108.0,
+        "damage": 108.0,
+        "dps": 108.0
+      },
+      {
+        "level": 15,
+        "hp": 119.0,
+        "damage": 119.0,
+        "dps": 119.0
+      }
+    ]
+  },
+  {
+    "name": "Skeleton Dragons",
+    "url": "https://clashroyale.fandom.com/wiki/Skeleton_Dragons",
+    "elixir_cost": 4.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.9,
+    "first_hit_speed": 0.4,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 3.5,
+    "radius": 0.8,
+    "projectile_speed": 500.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 2,
+    "transport": "air",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 219.0,
+        "area_damage": 63.0,
+        "dps": 33.0
+      },
+      {
+        "level": 2,
+        "hp": 240.0,
+        "area_damage": 69.0,
+        "dps": 36.0
+      },
+      {
+        "level": 3,
+        "hp": 264.0,
+        "area_damage": 76.0,
+        "dps": 40.0
+      },
+      {
+        "level": 4,
+        "hp": 291.0,
+        "area_damage": 83.0,
+        "dps": 43.0
+      },
+      {
+        "level": 5,
+        "hp": 319.0,
+        "area_damage": 91.0,
+        "dps": 47.0
+      },
+      {
+        "level": 6,
+        "hp": 350.0,
+        "area_damage": 100.0,
+        "dps": 52.0
+      },
+      {
+        "level": 7,
+        "hp": 385.0,
+        "area_damage": 110.0,
+        "dps": 57.0
+      },
+      {
+        "level": 8,
+        "hp": 422.0,
+        "area_damage": 121.0,
+        "dps": 63.0
+      },
+      {
+        "level": 9,
+        "hp": 464.0,
+        "area_damage": 133.0,
+        "dps": 70.0
+      },
+      {
+        "level": 10,
+        "hp": 510.0,
+        "area_damage": 146.0,
+        "dps": 76.0
+      },
+      {
+        "level": 11,
+        "hp": 560.0,
+        "area_damage": 161.0,
+        "dps": 84.0
+      },
+      {
+        "level": 12,
+        "hp": 615.0,
+        "area_damage": 177.0,
+        "dps": 93.0
+      },
+      {
+        "level": 13,
+        "hp": 676.0,
+        "area_damage": 194.0,
+        "dps": 102.0
+      },
+      {
+        "level": 14,
+        "hp": 742.0,
+        "area_damage": 213.0,
+        "dps": 112.0
+      },
+      {
+        "level": 15,
+        "hp": 814.0,
+        "area_damage": 234.0,
+        "dps": 123.0
+      }
+    ]
+  },
+  {
+    "name": "Skeletons",
+    "url": "https://clashroyale.fandom.com/wiki/Skeletons",
+    "elixir_cost": 1.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "count": 3,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 32.0,
+        "damage": 32.0,
+        "dps": 32.0
+      },
+      {
+        "level": 2,
+        "hp": 35.0,
+        "damage": 35.0,
+        "dps": 35.0
+      },
+      {
+        "level": 3,
+        "hp": 38.0,
+        "damage": 38.0,
+        "dps": 38.0
+      },
+      {
+        "level": 4,
+        "hp": 42.0,
+        "damage": 42.0,
+        "dps": 42.0
+      },
+      {
+        "level": 5,
+        "hp": 46.0,
+        "damage": 46.0,
+        "dps": 46.0
+      },
+      {
+        "level": 6,
+        "hp": 51.0,
+        "damage": 51.0,
+        "dps": 51.0
+      },
+      {
+        "level": 7,
+        "hp": 56.0,
+        "damage": 56.0,
+        "dps": 56.0
+      },
+      {
+        "level": 8,
+        "hp": 61.0,
+        "damage": 61.0,
+        "dps": 61.0
+      },
+      {
+        "level": 9,
+        "hp": 67.0,
+        "damage": 67.0,
+        "dps": 67.0
+      },
+      {
+        "level": 10,
+        "hp": 74.0,
+        "damage": 74.0,
+        "dps": 74.0
+      },
+      {
+        "level": 11,
+        "hp": 81.0,
+        "damage": 81.0,
+        "dps": 81.0
+      },
+      {
+        "level": 12,
+        "hp": 89.0,
+        "damage": 89.0,
+        "dps": 89.0
+      },
+      {
+        "level": 13,
+        "hp": 98.0,
+        "damage": 98.0,
+        "dps": 98.0
+      },
+      {
+        "level": 14,
+        "hp": 108.0,
+        "damage": 108.0,
+        "dps": 108.0
+      },
+      {
+        "level": 15,
+        "hp": 119.0,
+        "damage": 119.0,
+        "dps": 119.0
+      }
+    ]
+  },
+  {
+    "name": "Sparky",
+    "url": "https://clashroyale.fandom.com/wiki/Sparky",
+    "elixir_cost": 6.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "attack_speed": 4.0,
+    "first_hit_speed": 1.0,
+    "movement_speed": "slow",
+    "movement_speed_value": 45.0,
+    "deploy_time": 1.0,
+    "range": 5.0,
+    "radius": 1.8,
+    "projectile_speed": 1400.0,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 1202.0,
+        "area_damage": 1102.0,
+        "dps": 275.0
+      },
+      {
+        "level": 10,
+        "hp": 1321.0,
+        "area_damage": 1211.0,
+        "dps": 302.0
+      },
+      {
+        "level": 11,
+        "hp": 1451.0,
+        "area_damage": 1331.0,
+        "dps": 332.0
+      },
+      {
+        "level": 12,
+        "hp": 1593.0,
+        "area_damage": 1461.0,
+        "dps": 365.0
+      },
+      {
+        "level": 13,
+        "hp": 1752.0,
+        "area_damage": 1606.0,
+        "dps": 401.0
+      },
+      {
+        "level": 14,
+        "hp": 1922.0,
+        "area_damage": 1762.0,
+        "dps": 440.0
+      },
+      {
+        "level": 15,
+        "hp": 2109.0,
+        "area_damage": 1934.0,
+        "dps": 483.0
+      }
+    ],
+    "effects": [
+      "spawn",
+      "charge",
+      "area"
+    ]
+  },
+  {
+    "name": "Spear Goblins",
+    "url": "https://clashroyale.fandom.com/wiki/Spear_Goblins",
+    "elixir_cost": 2.0,
+    "rarity": "common",
+    "card_type": "troop",
+    "attack_speed": 1.7,
+    "first_hit_speed": 0.5,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 5.0,
+    "projectile_speed": 500.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 3,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "hp": 52.0,
+        "damage": 32.0,
+        "dps": 18.0
+      },
+      {
+        "level": 2,
+        "hp": 57.0,
+        "damage": 35.0,
+        "dps": 20.0
+      },
+      {
+        "level": 3,
+        "hp": 62.0,
+        "damage": 38.0,
+        "dps": 22.0
+      },
+      {
+        "level": 4,
+        "hp": 69.0,
+        "damage": 42.0,
+        "dps": 24.0
+      },
+      {
+        "level": 5,
+        "hp": 75.0,
+        "damage": 46.0,
+        "dps": 27.0
+      },
+      {
+        "level": 6,
+        "hp": 83.0,
+        "damage": 51.0,
+        "dps": 30.0
+      },
+      {
+        "level": 7,
+        "hp": 91.0,
+        "damage": 56.0,
+        "dps": 32.0
+      },
+      {
+        "level": 8,
+        "hp": 100.0,
+        "damage": 61.0,
+        "dps": 35.0
+      },
+      {
+        "level": 9,
+        "hp": 110.0,
+        "damage": 67.0,
+        "dps": 39.0
+      },
+      {
+        "level": 10,
+        "hp": 121.0,
+        "damage": 74.0,
+        "dps": 43.0
+      },
+      {
+        "level": 11,
+        "hp": 133.0,
+        "damage": 81.0,
+        "dps": 47.0
+      },
+      {
+        "level": 12,
+        "hp": 146.0,
+        "damage": 89.0,
+        "dps": 52.0
+      },
+      {
+        "level": 13,
+        "hp": 160.0,
+        "damage": 98.0,
+        "dps": 57.0
+      },
+      {
+        "level": 14,
+        "hp": 176.0,
+        "damage": 108.0,
+        "dps": 63.0
+      },
+      {
+        "level": 15,
+        "hp": 193.0,
+        "damage": 119.0,
+        "dps": 70.0
+      }
+    ]
+  },
+  {
+    "name": "Spirit Empress",
+    "url": "https://clashroyale.fandom.com/wiki/Spirit_Empress",
+    "elixir_cost": 3.0,
+    "rarity": "legendary",
+    "card_type": "troop",
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "count": 1,
+    "attack_speed": 1.1,
+    "range": null,
+    "targets": [
+      "ground"
+    ],
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 919.0,
+        "damage": 249.0,
+        "dps": 226.0
+      },
+      {
+        "level": 10,
+        "hp": 1.021,
+        "damage": 276.0,
+        "dps": 250.0
+      },
+      {
+        "level": 11,
+        "hp": 1.134,
+        "damage": 307.0,
+        "dps": 279.0
+      },
+      {
+        "level": 12,
+        "hp": 1.247,
+        "damage": 337.0,
+        "dps": 306.0
+      },
+      {
+        "level": 13,
+        "hp": 1.372,
+        "damage": 371.0,
+        "dps": 337.0
+      },
+      {
+        "level": 14,
+        "hp": 1.509,
+        "damage": 408.0,
+        "dps": 370.0
+      },
+      {
+        "level": 15,
+        "hp": 1.66,
+        "damage": 449.0,
+        "dps": 408.0
+      }
+    ]
+  },
+  {
+    "name": "Three Musketeers",
+    "url": "https://clashroyale.fandom.com/wiki/Three_Musketeers",
+    "elixir_cost": 9.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.0,
+    "first_hit_speed": 0.7,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 6.0,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 3,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 341.0,
+        "damage": 102.0,
+        "dps": 102.0
+      },
+      {
+        "level": 4,
+        "hp": 375.0,
+        "damage": 113.0,
+        "dps": 113.0
+      },
+      {
+        "level": 5,
+        "hp": 411.0,
+        "damage": 124.0,
+        "dps": 124.0
+      },
+      {
+        "level": 6,
+        "hp": 451.0,
+        "damage": 136.0,
+        "dps": 136.0
+      },
+      {
+        "level": 7,
+        "hp": 496.0,
+        "damage": 149.0,
+        "dps": 149.0
+      },
+      {
+        "level": 8,
+        "hp": 544.0,
+        "damage": 164.0,
+        "dps": 164.0
+      },
+      {
+        "level": 9,
+        "hp": 597.0,
+        "damage": 180.0,
+        "dps": 180.0
+      },
+      {
+        "level": 10,
+        "hp": 657.0,
+        "damage": 198.0,
+        "dps": 198.0
+      },
+      {
+        "level": 11,
+        "hp": 721.0,
+        "damage": 217.0,
+        "dps": 217.0
+      },
+      {
+        "level": 12,
+        "hp": 792.0,
+        "damage": 238.0,
+        "dps": 238.0
+      },
+      {
+        "level": 13,
+        "hp": 871.0,
+        "damage": 262.0,
+        "dps": 262.0
+      },
+      {
+        "level": 14,
+        "hp": 955.0,
+        "damage": 288.0,
+        "dps": 288.0
+      },
+      {
+        "level": 15,
+        "hp": 1049.0,
+        "damage": 316.0,
+        "dps": 316.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Valkyrie",
+    "url": "https://clashroyale.fandom.com/wiki/Valkyrie",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.5,
+    "first_hit_speed": 0.1,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 1.2,
+    "radius": 2.0,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 901.0,
+        "area_damage": 125.0,
+        "dps": 83.0
+      },
+      {
+        "level": 4,
+        "hp": 990.0,
+        "area_damage": 138.0,
+        "dps": 92.0
+      },
+      {
+        "level": 5,
+        "hp": 1087.0,
+        "area_damage": 151.0,
+        "dps": 100.0
+      },
+      {
+        "level": 6,
+        "hp": 1192.0,
+        "area_damage": 166.0,
+        "dps": 110.0
+      },
+      {
+        "level": 7,
+        "hp": 1311.0,
+        "area_damage": 183.0,
+        "dps": 122.0
+      },
+      {
+        "level": 8,
+        "hp": 1437.0,
+        "area_damage": 200.0,
+        "dps": 133.0
+      },
+      {
+        "level": 9,
+        "hp": 1579.0,
+        "area_damage": 220.0,
+        "dps": 146.0
+      },
+      {
+        "level": 10,
+        "hp": 1735.0,
+        "area_damage": 242.0,
+        "dps": 161.0
+      },
+      {
+        "level": 11,
+        "hp": 1907.0,
+        "area_damage": 266.0,
+        "dps": 177.0
+      },
+      {
+        "level": 12,
+        "hp": 2093.0,
+        "area_damage": 292.0,
+        "dps": 194.0
+      },
+      {
+        "level": 13,
+        "hp": 2302.0,
+        "area_damage": 321.0,
+        "dps": 214.0
+      },
+      {
+        "level": 14,
+        "hp": 2525.0,
+        "area_damage": 352.0,
+        "dps": 234.0
+      },
+      {
+        "level": 15,
+        "hp": 2771.0,
+        "area_damage": 386.0,
+        "dps": 257.0
+      }
+    ]
+  },
+  {
+    "name": "Wall Breakers",
+    "url": "https://clashroyale.fandom.com/wiki/Wall_Breakers",
+    "elixir_cost": 2.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "range": 0.5,
+    "radius": 1.5,
+    "targets": [
+      "buildings"
+    ],
+    "count": 2,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 206.0,
+        "area_damage": 244.0
+      },
+      {
+        "level": 7,
+        "hp": 227.0,
+        "area_damage": 269.0
+      },
+      {
+        "level": 8,
+        "hp": 248.0,
+        "area_damage": 295.0
+      },
+      {
+        "level": 9,
+        "hp": 273.0,
+        "area_damage": 324.0
+      },
+      {
+        "level": 10,
+        "hp": 300.0,
+        "area_damage": 356.0
+      },
+      {
+        "level": 11,
+        "hp": 330.0,
+        "area_damage": 391.0
+      },
+      {
+        "level": 12,
+        "hp": 362.0,
+        "area_damage": 429.0
+      },
+      {
+        "level": 13,
+        "hp": 398.0,
+        "area_damage": 472.0
+      },
+      {
+        "level": 14,
+        "hp": 437.0,
+        "area_damage": 518.0
+      },
+      {
+        "level": 15,
+        "hp": 479.0,
+        "area_damage": 569.0
+      }
+    ]
+  },
+  {
+    "name": "Witch",
+    "url": "https://clashroyale.fandom.com/wiki/Witch",
+    "elixir_cost": 5.0,
+    "rarity": "epic",
+    "card_type": "troop",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "range": 0.5,
+    "radius": 1.5,
+    "projectile_speed": 600.0,
+    "targets": [
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 51.0,
+        "area_damage": 84.0,
+        "dps": 51.0,
+        "damage": 51.0
+      },
+      {
+        "level": 7,
+        "hp": 56.0,
+        "area_damage": 93.0,
+        "dps": 56.0,
+        "damage": 56.0
+      },
+      {
+        "level": 8,
+        "hp": 61.0,
+        "area_damage": 102.0,
+        "dps": 61.0,
+        "damage": 61.0
+      },
+      {
+        "level": 9,
+        "hp": 67.0,
+        "area_damage": 112.0,
+        "dps": 67.0,
+        "damage": 67.0
+      },
+      {
+        "level": 10,
+        "hp": 74.0,
+        "area_damage": 123.0,
+        "dps": 74.0,
+        "damage": 74.0
+      },
+      {
+        "level": 11,
+        "hp": 81.0,
+        "area_damage": 135.0,
+        "dps": 81.0,
+        "damage": 81.0
+      },
+      {
+        "level": 12,
+        "hp": 89.0,
+        "area_damage": 148.0,
+        "dps": 89.0,
+        "damage": 89.0
+      },
+      {
+        "level": 13,
+        "hp": 98.0,
+        "area_damage": 163.0,
+        "dps": 98.0,
+        "damage": 98.0
+      },
+      {
+        "level": 14,
+        "hp": 108.0,
+        "area_damage": 179.0,
+        "dps": 108.0,
+        "damage": 108.0
+      },
+      {
+        "level": 15,
+        "hp": 119.0,
+        "area_damage": 197.0,
+        "dps": 119.0,
+        "damage": 119.0
+      }
+    ]
+  },
+  {
+    "name": "Wizard",
+    "url": "https://clashroyale.fandom.com/wiki/Wizard",
+    "elixir_cost": 5.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 1.4,
+    "first_hit_speed": 0.4,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 5.5,
+    "radius": 1.5,
+    "projectile_speed": 600.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 356.0,
+        "area_damage": 133.0,
+        "dps": 95.0
+      },
+      {
+        "level": 4,
+        "hp": 392.0,
+        "area_damage": 146.0,
+        "dps": 104.0
+      },
+      {
+        "level": 5,
+        "hp": 430.0,
+        "area_damage": 160.0,
+        "dps": 114.0
+      },
+      {
+        "level": 6,
+        "hp": 472.0,
+        "area_damage": 176.0,
+        "dps": 125.0
+      },
+      {
+        "level": 7,
+        "hp": 519.0,
+        "area_damage": 193.0,
+        "dps": 137.0
+      },
+      {
+        "level": 8,
+        "hp": 569.0,
+        "area_damage": 212.0,
+        "dps": 151.0
+      },
+      {
+        "level": 9,
+        "hp": 625.0,
+        "area_damage": 233.0,
+        "dps": 166.0
+      },
+      {
+        "level": 10,
+        "hp": 687.0,
+        "area_damage": 256.0,
+        "dps": 182.0
+      },
+      {
+        "level": 11,
+        "hp": 755.0,
+        "area_damage": 281.0,
+        "dps": 200.0
+      },
+      {
+        "level": 12,
+        "hp": 828.0,
+        "area_damage": 309.0,
+        "dps": 220.0
+      },
+      {
+        "level": 13,
+        "hp": 911.0,
+        "area_damage": 339.0,
+        "dps": 242.0
+      },
+      {
+        "level": 14,
+        "hp": 1000.0,
+        "area_damage": 372.0,
+        "dps": 265.0
+      },
+      {
+        "level": 15,
+        "hp": 1097.0,
+        "area_damage": 409.0,
+        "dps": 292.0
+      }
+    ]
+  },
+  {
+    "name": "Zappies",
+    "url": "https://clashroyale.fandom.com/wiki/Zappies",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "troop",
+    "attack_speed": 2.1,
+    "first_hit_speed": 0.8,
+    "duration": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "range": 4.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "count": 3,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 250.0,
+        "damage": 55.0,
+        "dps": 26.0
+      },
+      {
+        "level": 4,
+        "hp": 275.0,
+        "damage": 61.0,
+        "dps": 29.0
+      },
+      {
+        "level": 5,
+        "hp": 302.0,
+        "damage": 67.0,
+        "dps": 31.0
+      },
+      {
+        "level": 6,
+        "hp": 331.0,
+        "damage": 73.0,
+        "dps": 34.0
+      },
+      {
+        "level": 7,
+        "hp": 364.0,
+        "damage": 80.0,
+        "dps": 38.0
+      },
+      {
+        "level": 8,
+        "hp": 399.0,
+        "damage": 88.0,
+        "dps": 41.0
+      },
+      {
+        "level": 9,
+        "hp": 438.0,
+        "damage": 97.0,
+        "dps": 46.0
+      },
+      {
+        "level": 10,
+        "hp": 482.0,
+        "damage": 107.0,
+        "dps": 50.0
+      },
+      {
+        "level": 11,
+        "hp": 529.0,
+        "damage": 117.0,
+        "dps": 55.0
+      },
+      {
+        "level": 12,
+        "hp": 581.0,
+        "damage": 129.0,
+        "dps": 61.0
+      },
+      {
+        "level": 13,
+        "hp": 639.0,
+        "damage": 142.0,
+        "dps": 67.0
+      },
+      {
+        "level": 14,
+        "hp": 701.0,
+        "damage": 155.0,
+        "dps": 73.0
+      },
+      {
+        "level": 15,
+        "hp": 770.0,
+        "damage": 171.0,
+        "dps": 81.0
+      }
+    ]
+  },
+  {
+    "name": "Bomb Tower",
+    "url": "https://clashroyale.fandom.com/wiki/Bomb_Tower",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "building",
+    "attack_speed": 1.8,
+    "first_hit_speed": 0.5,
+    "deploy_time": 1.0,
+    "duration": 30.0,
+    "range": 6.0,
+    "radius": 1.5,
+    "projectile_speed": 500.0,
+    "targets": [
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 3,
+        "hp": 21.3,
+        "area_damage": 105.0,
+        "dps": 58.0,
+        "damage": 105.0
+      },
+      {
+        "level": 4,
+        "hp": 23.4,
+        "area_damage": 115.0,
+        "dps": 63.0,
+        "damage": 115.0
+      },
+      {
+        "level": 5,
+        "hp": 25.8,
+        "area_damage": 127.0,
+        "dps": 70.0,
+        "damage": 127.0
+      },
+      {
+        "level": 6,
+        "hp": 28.3,
+        "area_damage": 139.0,
+        "dps": 77.0,
+        "damage": 139.0
+      },
+      {
+        "level": 7,
+        "hp": 31.1,
+        "area_damage": 153.0,
+        "dps": 85.0,
+        "damage": 153.0
+      },
+      {
+        "level": 8,
+        "hp": 34.1,
+        "area_damage": 168.0,
+        "dps": 93.0,
+        "damage": 168.0
+      },
+      {
+        "level": 9,
+        "hp": 37.5,
+        "area_damage": 184.0,
+        "dps": 102.0,
+        "damage": 184.0
+      },
+      {
+        "level": 10,
+        "hp": 41.1,
+        "area_damage": 202.0,
+        "dps": 112.0,
+        "damage": 202.0
+      },
+      {
+        "level": 11,
+        "hp": 45.2,
+        "area_damage": 222.0,
+        "dps": 123.0,
+        "damage": 222.0
+      },
+      {
+        "level": 12,
+        "hp": 49.7,
+        "area_damage": 244.0,
+        "dps": 135.0,
+        "damage": 244.0
+      },
+      {
+        "level": 13,
+        "hp": 54.6,
+        "area_damage": 268.0,
+        "dps": 148.0,
+        "damage": 268.0
+      },
+      {
+        "level": 14,
+        "hp": 59.9,
+        "area_damage": 295.0,
+        "dps": 163.0,
+        "damage": 295.0
+      },
+      {
+        "level": 15,
+        "hp": 65.9,
+        "area_damage": 324.0,
+        "dps": 180.0,
+        "damage": 324.0
+      }
+    ]
+  },
+  {
+    "name": "Cannon",
+    "url": "https://clashroyale.fandom.com/wiki/Cannon",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "building",
+    "attack_speed": 1.0,
+    "first_hit_speed": 1.0,
+    "deploy_time": 1.0,
+    "duration": 30.0,
+    "range": 5.5,
+    "projectile_speed": 1000.0,
+    "targets": [
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "hp": 10.7,
+        "damage": 83.0,
+        "dps": 83.0
+      },
+      {
+        "level": 2,
+        "hp": 11.8,
+        "damage": 91.0,
+        "dps": 91.0
+      },
+      {
+        "level": 3,
+        "hp": 12.9,
+        "damage": 100.0,
+        "dps": 100.0
+      },
+      {
+        "level": 4,
+        "hp": 14.2,
+        "damage": 110.0,
+        "dps": 110.0
+      },
+      {
+        "level": 5,
+        "hp": 15.6,
+        "damage": 121.0,
+        "dps": 121.0
+      },
+      {
+        "level": 6,
+        "hp": 17.1,
+        "damage": 132.0,
+        "dps": 132.0
+      },
+      {
+        "level": 7,
+        "hp": 18.8,
+        "damage": 146.0,
+        "dps": 146.0
+      },
+      {
+        "level": 8,
+        "hp": 20.7,
+        "damage": 160.0,
+        "dps": 160.0
+      },
+      {
+        "level": 9,
+        "hp": 22.7,
+        "damage": 175.0,
+        "dps": 175.0
+      },
+      {
+        "level": 10,
+        "hp": 25.0,
+        "damage": 193.0,
+        "dps": 193.0
+      },
+      {
+        "level": 11,
+        "hp": 27.4,
+        "damage": 212.0,
+        "dps": 212.0
+      },
+      {
+        "level": 12,
+        "hp": 30.1,
+        "damage": 233.0,
+        "dps": 233.0
+      },
+      {
+        "level": 13,
+        "hp": 33.1,
+        "damage": 256.0,
+        "dps": 256.0
+      },
+      {
+        "level": 14,
+        "hp": 36.3,
+        "damage": 281.0,
+        "dps": 281.0
+      },
+      {
+        "level": 15,
+        "hp": 39.9,
+        "damage": 308.0,
+        "dps": 308.0
+      }
+    ]
+  },
+  {
+    "name": "Inferno Tower",
+    "url": "https://clashroyale.fandom.com/wiki/Inferno_Tower",
+    "elixir_cost": 5.0,
+    "rarity": "rare",
+    "card_type": "building",
+    "attack_speed": 0.4,
+    "deploy_time": 1.0,
+    "duration": 30.0,
+    "range": 6.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 3,
+        "hp": 27.5,
+        "damage": 400.0,
+        "dps": 1000.0
+      },
+      {
+        "level": 4,
+        "hp": 30.2,
+        "damage": 440.0,
+        "dps": 1100.0
+      },
+      {
+        "level": 5,
+        "hp": 33.2,
+        "damage": 483.0,
+        "dps": 1207.0
+      },
+      {
+        "level": 6,
+        "hp": 36.5,
+        "damage": 529.0,
+        "dps": 1322.0
+      },
+      {
+        "level": 7,
+        "hp": 40.1,
+        "damage": 582.0,
+        "dps": 1455.0
+      },
+      {
+        "level": 8,
+        "hp": 44.0,
+        "damage": 638.0,
+        "dps": 1595.0
+      },
+      {
+        "level": 9,
+        "hp": 48.4,
+        "damage": 701.0,
+        "dps": 1752.0
+      },
+      {
+        "level": 10,
+        "hp": 53.0,
+        "damage": 771.0,
+        "dps": 1927.0
+      },
+      {
+        "level": 11,
+        "hp": 58.3,
+        "damage": 847.0,
+        "dps": 2117.0
+      },
+      {
+        "level": 12,
+        "hp": 64.0,
+        "damage": 930.0,
+        "dps": 2325.0
+      },
+      {
+        "level": 13,
+        "hp": 70.4,
+        "damage": 1022.0,
+        "dps": 2555.0
+      },
+      {
+        "level": 14,
+        "hp": 77.2,
+        "damage": 1122.0,
+        "dps": 2805.0
+      },
+      {
+        "level": 15,
+        "hp": 84.9,
+        "damage": 1231.0,
+        "dps": 3077.0
+      }
+    ]
+  },
+  {
+    "name": "Mortar",
+    "url": "https://clashroyale.fandom.com/wiki/Mortar",
+    "elixir_cost": 4.0,
+    "rarity": "common",
+    "card_type": "building",
+    "attack_speed": 5.0,
+    "first_hit_speed": 1.0,
+    "deploy_time": 3.5,
+    "duration": 30.0,
+    "range": 3.5,
+    "radius": 2.0,
+    "projectile_speed": 300.0,
+    "targets": [
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "hp": 17.8,
+        "area_damage": 104.0,
+        "dps": 20.0
+      },
+      {
+        "level": 2,
+        "hp": 19.6,
+        "area_damage": 114.0,
+        "dps": 22.0
+      },
+      {
+        "level": 3,
+        "hp": 21.5,
+        "area_damage": 125.0,
+        "dps": 25.0
+      },
+      {
+        "level": 4,
+        "hp": 23.7,
+        "area_damage": 138.0,
+        "dps": 27.0
+      },
+      {
+        "level": 5,
+        "hp": 26.0,
+        "area_damage": 151.0,
+        "dps": 30.0
+      },
+      {
+        "level": 6,
+        "hp": 28.5,
+        "area_damage": 166.0,
+        "dps": 33.0
+      },
+      {
+        "level": 7,
+        "hp": 31.3,
+        "area_damage": 183.0,
+        "dps": 36.0
+      },
+      {
+        "level": 8,
+        "hp": 34.4,
+        "area_damage": 200.0,
+        "dps": 40.0
+      },
+      {
+        "level": 9,
+        "hp": 37.8,
+        "area_damage": 220.0,
+        "dps": 44.0
+      },
+      {
+        "level": 10,
+        "hp": 41.5,
+        "area_damage": 242.0,
+        "dps": 48.0
+      },
+      {
+        "level": 11,
+        "hp": 45.6,
+        "area_damage": 266.0,
+        "dps": 53.0
+      },
+      {
+        "level": 12,
+        "hp": 50.1,
+        "area_damage": 292.0,
+        "dps": 58.0
+      },
+      {
+        "level": 13,
+        "hp": 55.1,
+        "area_damage": 321.0,
+        "dps": 64.0
+      },
+      {
+        "level": 14,
+        "hp": 60.4,
+        "area_damage": 352.0,
+        "dps": 70.0
+      },
+      {
+        "level": 15,
+        "hp": 66.3,
+        "area_damage": 386.0,
+        "dps": 77.0
+      }
+    ]
+  },
+  {
+    "name": "Tesla",
+    "url": "https://clashroyale.fandom.com/wiki/Tesla",
+    "elixir_cost": 4.0,
+    "rarity": "common",
+    "card_type": "building",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.5,
+    "deploy_time": 1.0,
+    "duration": 30.0,
+    "range": 5.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "hp": 15.0,
+        "damage": 86.0,
+        "dps": 78.0
+      },
+      {
+        "level": 2,
+        "hp": 16.5,
+        "damage": 94.0,
+        "dps": 85.0
+      },
+      {
+        "level": 3,
+        "hp": 18.1,
+        "damage": 104.0,
+        "dps": 94.0
+      },
+      {
+        "level": 4,
+        "hp": 19.9,
+        "damage": 114.0,
+        "dps": 103.0
+      },
+      {
+        "level": 5,
+        "hp": 21.9,
+        "damage": 125.0,
+        "dps": 113.0
+      },
+      {
+        "level": 6,
+        "hp": 24.0,
+        "damage": 137.0,
+        "dps": 124.0
+      },
+      {
+        "level": 7,
+        "hp": 26.4,
+        "damage": 151.0,
+        "dps": 137.0
+      },
+      {
+        "level": 8,
+        "hp": 28.9,
+        "damage": 165.0,
+        "dps": 150.0
+      },
+      {
+        "level": 9,
+        "hp": 31.8,
+        "damage": 182.0,
+        "dps": 165.0
+      },
+      {
+        "level": 10,
+        "hp": 34.9,
+        "damage": 200.0,
+        "dps": 181.0
+      },
+      {
+        "level": 11,
+        "hp": 38.4,
+        "damage": 220.0,
+        "dps": 199.0
+      },
+      {
+        "level": 12,
+        "hp": 42.1,
+        "damage": 241.0,
+        "dps": 219.0
+      },
+      {
+        "level": 13,
+        "hp": 46.3,
+        "damage": 265.0,
+        "dps": 240.0
+      },
+      {
+        "level": 14,
+        "hp": 50.8,
+        "damage": 291.0,
+        "dps": 264.0
+      },
+      {
+        "level": 15,
+        "hp": 55.8,
+        "damage": 319.0,
+        "dps": 290.0
+      }
+    ]
+  },
+  {
+    "name": "X-Bow",
+    "url": "https://clashroyale.fandom.com/wiki/X-Bow",
+    "elixir_cost": 6.0,
+    "rarity": "epic",
+    "card_type": "building",
+    "attack_speed": 0.3,
+    "first_hit_speed": 0.3,
+    "deploy_time": 3.5,
+    "duration": 30.0,
+    "range": 11.5,
+    "targets": [
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 6,
+        "hp": 33.3,
+        "damage": 28.0,
+        "dps": 93.0
+      },
+      {
+        "level": 7,
+        "hp": 36.6,
+        "damage": 30.0,
+        "dps": 100.0
+      },
+      {
+        "level": 8,
+        "hp": 40.3,
+        "damage": 33.0,
+        "dps": 110.0
+      },
+      {
+        "level": 9,
+        "hp": 44.3,
+        "damage": 36.0,
+        "dps": 120.0
+      },
+      {
+        "level": 10,
+        "hp": 48.6,
+        "damage": 39.0,
+        "dps": 130.0
+      },
+      {
+        "level": 11,
+        "hp": 53.3,
+        "damage": 43.0,
+        "dps": 143.0
+      },
+      {
+        "level": 12,
+        "hp": 58.6,
+        "damage": 47.0,
+        "dps": 156.0
+      },
+      {
+        "level": 13,
+        "hp": 64.3,
+        "damage": 52.0,
+        "dps": 173.0
+      },
+      {
+        "level": 14,
+        "hp": 70.6,
+        "damage": 57.0,
+        "dps": 190.0
+      },
+      {
+        "level": 15,
+        "hp": 77.6,
+        "damage": 63.0,
+        "dps": 210.0
+      }
+    ]
+  },
+  {
+    "name": "Barbarian Hut",
+    "url": "https://clashroyale.fandom.com/wiki/Barbarian_Hut",
+    "elixir_cost": 6.0,
+    "rarity": "rare",
+    "card_type": "building",
+    "movement_speed_value": 60.0,
+    "deploy_time": 1.0,
+    "duration": 30.0,
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.4,
+    "movement_speed": "medium",
+    "range": 0.7,
+    "targets": [
+      "ground"
+    ],
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 317.0,
+        "damage": 90.0,
+        "dps": 69.0
+      },
+      {
+        "level": 4,
+        "hp": 348.0,
+        "damage": 99.0,
+        "dps": 76.0
+      },
+      {
+        "level": 5,
+        "hp": 382.0,
+        "damage": 109.0,
+        "dps": 83.0
+      },
+      {
+        "level": 6,
+        "hp": 419.0,
+        "damage": 120.0,
+        "dps": 92.0
+      },
+      {
+        "level": 7,
+        "hp": 461.0,
+        "damage": 132.0,
+        "dps": 101.0
+      },
+      {
+        "level": 8,
+        "hp": 505.0,
+        "damage": 144.0,
+        "dps": 110.0
+      },
+      {
+        "level": 9,
+        "hp": 555.0,
+        "damage": 159.0,
+        "dps": 122.0
+      },
+      {
+        "level": 10,
+        "hp": 610.0,
+        "damage": 174.0,
+        "dps": 133.0
+      },
+      {
+        "level": 11,
+        "hp": 670.0,
+        "damage": 192.0,
+        "dps": 147.0
+      },
+      {
+        "level": 12,
+        "hp": 736.0,
+        "damage": 210.0,
+        "dps": 161.0
+      },
+      {
+        "level": 13,
+        "hp": 809.0,
+        "damage": 231.0,
+        "dps": 177.0
+      },
+      {
+        "level": 14,
+        "hp": 888.0,
+        "damage": 254.0,
+        "dps": 195.0
+      },
+      {
+        "level": 15,
+        "hp": 974.0,
+        "damage": 279.0,
+        "dps": 214.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Elixir Collector",
+    "url": "https://clashroyale.fandom.com/wiki/Elixir_Collector",
+    "elixir_cost": 6.0,
+    "rarity": "rare",
+    "card_type": "building",
+    "movement_speed_value": 12.0,
+    "deploy_time": 1.0,
+    "duration": 1.0,
+    "levels": [
+      {
+        "level": 3,
+        "hp": 5.8
+      },
+      {
+        "level": 4,
+        "hp": 6.4
+      },
+      {
+        "level": 5,
+        "hp": 7.1
+      },
+      {
+        "level": 6,
+        "hp": 7.8
+      },
+      {
+        "level": 7,
+        "hp": 8.5
+      },
+      {
+        "level": 8,
+        "hp": 9.3
+      },
+      {
+        "level": 9,
+        "hp": 10.3
+      },
+      {
+        "level": 10,
+        "hp": 11.3
+      },
+      {
+        "level": 11,
+        "hp": 12.4
+      },
+      {
+        "level": 12,
+        "hp": 13.6
+      },
+      {
+        "level": 13,
+        "hp": 15.0
+      },
+      {
+        "level": 14,
+        "hp": 16.5
+      },
+      {
+        "level": 15,
+        "hp": 18.1
+      }
+    ]
+  },
+  {
+    "name": "Goblin Drill",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Drill",
+    "elixir_cost": 4.0,
+    "rarity": "epic",
+    "card_type": "building",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.0,
+    "duration": 10.0,
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.4,
+    "movement_speed": "very_fast",
+    "range": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 126.0,
+        "damage": 75.0,
+        "dps": 68.0
+      },
+      {
+        "level": 7,
+        "hp": 139.0,
+        "damage": 82.0,
+        "dps": 74.0
+      },
+      {
+        "level": 8,
+        "hp": 152.0,
+        "damage": 90.0,
+        "dps": 81.0
+      },
+      {
+        "level": 9,
+        "hp": 167.0,
+        "damage": 99.0,
+        "dps": 89.0
+      },
+      {
+        "level": 10,
+        "hp": 184.0,
+        "damage": 109.0,
+        "dps": 99.0
+      },
+      {
+        "level": 11,
+        "hp": 202.0,
+        "damage": 120.0,
+        "dps": 109.0
+      },
+      {
+        "level": 12,
+        "hp": 221.0,
+        "damage": 132.0,
+        "dps": 119.0
+      },
+      {
+        "level": 13,
+        "hp": 244.0,
+        "damage": 145.0,
+        "dps": 131.0
+      },
+      {
+        "level": 14,
+        "hp": 267.0,
+        "damage": 159.0,
+        "dps": 144.0
+      },
+      {
+        "level": 15,
+        "hp": 293.0,
+        "damage": 175.0,
+        "dps": 159.0
+      }
+    ]
+  },
+  {
+    "name": "Goblin Hut",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Hut",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "building",
+    "movement_speed_value": 120.0,
+    "range": 5.0,
+    "deploy_time": 1.0,
+    "duration": 30.0,
+    "attack_speed": 1.7,
+    "first_hit_speed": 0.5,
+    "movement_speed": "very_fast",
+    "projectile_speed": 500.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 62.0,
+        "damage": 38.0,
+        "dps": 22.0
+      },
+      {
+        "level": 4,
+        "hp": 69.0,
+        "damage": 42.0,
+        "dps": 24.0
+      },
+      {
+        "level": 5,
+        "hp": 75.0,
+        "damage": 46.0,
+        "dps": 27.0
+      },
+      {
+        "level": 6,
+        "hp": 83.0,
+        "damage": 51.0,
+        "dps": 30.0
+      },
+      {
+        "level": 7,
+        "hp": 91.0,
+        "damage": 56.0,
+        "dps": 32.0
+      },
+      {
+        "level": 8,
+        "hp": 100.0,
+        "damage": 61.0,
+        "dps": 35.0
+      },
+      {
+        "level": 9,
+        "hp": 110.0,
+        "damage": 67.0,
+        "dps": 39.0
+      },
+      {
+        "level": 10,
+        "hp": 121.0,
+        "damage": 74.0,
+        "dps": 43.0
+      },
+      {
+        "level": 11,
+        "hp": 133.0,
+        "damage": 81.0,
+        "dps": 47.0
+      },
+      {
+        "level": 12,
+        "hp": 146.0,
+        "damage": 89.0,
+        "dps": 52.0
+      },
+      {
+        "level": 13,
+        "hp": 160.0,
+        "damage": 98.0,
+        "dps": 57.0
+      },
+      {
+        "level": 14,
+        "hp": 176.0,
+        "damage": 108.0,
+        "dps": 63.0
+      },
+      {
+        "level": 15,
+        "hp": 193.0,
+        "damage": 119.0,
+        "dps": 70.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Tombstone",
+    "url": "https://clashroyale.fandom.com/wiki/Tombstone",
+    "elixir_cost": 3.0,
+    "rarity": "rare",
+    "card_type": "building",
+    "movement_speed_value": 90.0,
+    "deploy_time": 1.0,
+    "duration": 30.0,
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "range": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 3,
+        "hp": 38.0,
+        "damage": 38.0,
+        "dps": 38.0
+      },
+      {
+        "level": 4,
+        "hp": 42.0,
+        "damage": 42.0,
+        "dps": 42.0
+      },
+      {
+        "level": 5,
+        "hp": 46.0,
+        "damage": 46.0,
+        "dps": 46.0
+      },
+      {
+        "level": 6,
+        "hp": 51.0,
+        "damage": 51.0,
+        "dps": 51.0
+      },
+      {
+        "level": 7,
+        "hp": 56.0,
+        "damage": 56.0,
+        "dps": 56.0
+      },
+      {
+        "level": 8,
+        "hp": 61.0,
+        "damage": 61.0,
+        "dps": 61.0
+      },
+      {
+        "level": 9,
+        "hp": 67.0,
+        "damage": 67.0,
+        "dps": 67.0
+      },
+      {
+        "level": 10,
+        "hp": 74.0,
+        "damage": 74.0,
+        "dps": 74.0
+      },
+      {
+        "level": 11,
+        "hp": 81.0,
+        "damage": 81.0,
+        "dps": 81.0
+      },
+      {
+        "level": 12,
+        "hp": 89.0,
+        "damage": 89.0,
+        "dps": 89.0
+      },
+      {
+        "level": 13,
+        "hp": 98.0,
+        "damage": 98.0,
+        "dps": 98.0
+      },
+      {
+        "level": 14,
+        "hp": 108.0,
+        "damage": 108.0,
+        "dps": 108.0
+      },
+      {
+        "level": 15,
+        "hp": 119.0,
+        "damage": 119.0,
+        "dps": 119.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Arrows",
+    "url": "https://clashroyale.fandom.com/wiki/Arrows",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "spell",
+    "radius": 3.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 2,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 3,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 4,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 5,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 6,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 7,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 8,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 9,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 10,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 11,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 12,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 13,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 14,
+        "area_damage": null,
+        "damage": null
+      },
+      {
+        "level": 15,
+        "area_damage": null,
+        "damage": null
+      }
+    ],
+    "effects": [
+      "area"
+    ]
+  },
+  {
+    "name": "Barbarian Barrel",
+    "url": "https://clashroyale.fandom.com/wiki/Barbarian_Barrel",
+    "elixir_cost": 2.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "range": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.4,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "deploy_time": 0.5,
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "area_damage": 150.0,
+        "hp": 419.0,
+        "damage": 120.0,
+        "dps": 92.0
+      },
+      {
+        "level": 7,
+        "area_damage": 165.0,
+        "hp": 461.0,
+        "damage": 132.0,
+        "dps": 101.0
+      },
+      {
+        "level": 8,
+        "area_damage": 181.0,
+        "hp": 505.0,
+        "damage": 144.0,
+        "dps": 110.0
+      },
+      {
+        "level": 9,
+        "area_damage": 199.0,
+        "hp": 555.0,
+        "damage": 159.0,
+        "dps": 122.0
+      },
+      {
+        "level": 10,
+        "area_damage": 219.0,
+        "hp": 610.0,
+        "damage": 174.0,
+        "dps": 133.0
+      },
+      {
+        "level": 11,
+        "area_damage": 240.0,
+        "hp": 670.0,
+        "damage": 192.0,
+        "dps": 147.0
+      },
+      {
+        "level": 12,
+        "area_damage": 264.0,
+        "hp": 736.0,
+        "damage": 210.0,
+        "dps": 161.0
+      },
+      {
+        "level": 13,
+        "area_damage": 290.0,
+        "hp": 809.0,
+        "damage": 231.0,
+        "dps": 177.0
+      },
+      {
+        "level": 14,
+        "area_damage": 318.0,
+        "hp": 888.0,
+        "damage": 254.0,
+        "dps": 195.0
+      },
+      {
+        "level": 15,
+        "area_damage": 349.0,
+        "hp": 974.0,
+        "damage": 279.0,
+        "dps": 214.0
+      }
+    ],
+    "effects": [
+      "spawn",
+      "area"
+    ]
+  },
+  {
+    "name": "Earthquake",
+    "url": "https://clashroyale.fandom.com/wiki/Earthquake",
+    "elixir_cost": 3.0,
+    "rarity": "rare",
+    "card_type": "spell",
+    "radius": 3.5,
+    "duration": 3.0,
+    "targets": [
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 3,
+        "damage": null
+      },
+      {
+        "level": 4,
+        "damage": null
+      },
+      {
+        "level": 5,
+        "damage": null
+      },
+      {
+        "level": 6,
+        "damage": null
+      },
+      {
+        "level": 7,
+        "damage": null
+      },
+      {
+        "level": 8,
+        "damage": null
+      },
+      {
+        "level": 9,
+        "damage": null
+      },
+      {
+        "level": 10,
+        "damage": null
+      },
+      {
+        "level": 11,
+        "damage": null
+      },
+      {
+        "level": 12,
+        "damage": null
+      },
+      {
+        "level": 13,
+        "damage": null
+      },
+      {
+        "level": 14,
+        "damage": null
+      },
+      {
+        "level": 15,
+        "damage": null
+      }
+    ]
+  },
+  {
+    "name": "Fireball",
+    "url": "https://clashroyale.fandom.com/wiki/Fireball",
+    "elixir_cost": 4.0,
+    "rarity": "rare",
+    "card_type": "spell",
+    "radius": 2.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 3,
+        "area_damage": 325.0,
+        "damage": 98.0
+      },
+      {
+        "level": 4,
+        "area_damage": 357.0,
+        "damage": 108.0
+      },
+      {
+        "level": 5,
+        "area_damage": 392.0,
+        "damage": 118.0
+      },
+      {
+        "level": 6,
+        "area_damage": 430.0,
+        "damage": 130.0
+      },
+      {
+        "level": 7,
+        "area_damage": 473.0,
+        "damage": 143.0
+      },
+      {
+        "level": 8,
+        "area_damage": 519.0,
+        "damage": 156.0
+      },
+      {
+        "level": 9,
+        "area_damage": 570.0,
+        "damage": 172.0
+      },
+      {
+        "level": 10,
+        "area_damage": 626.0,
+        "damage": 189.0
+      },
+      {
+        "level": 11,
+        "area_damage": 688.0,
+        "damage": 207.0
+      },
+      {
+        "level": 12,
+        "area_damage": 755.0,
+        "damage": 228.0
+      },
+      {
+        "level": 13,
+        "area_damage": 831.0,
+        "damage": 250.0
+      },
+      {
+        "level": 14,
+        "area_damage": 911.0,
+        "damage": 274.0
+      },
+      {
+        "level": 15,
+        "area_damage": 1000.0,
+        "damage": 300.0
+      }
+    ],
+    "effects": [
+      "knockback",
+      "area"
+    ]
+  },
+  {
+    "name": "Freeze",
+    "url": "https://clashroyale.fandom.com/wiki/Freeze",
+    "elixir_cost": 4.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "radius": 3.0,
+    "duration": 4.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 6,
+        "area_damage": 72.0,
+        "damage": 22.0
+      },
+      {
+        "level": 7,
+        "area_damage": 79.0,
+        "damage": 24.0
+      },
+      {
+        "level": 8,
+        "area_damage": 86.0,
+        "damage": 27.0
+      },
+      {
+        "level": 9,
+        "area_damage": 95.0,
+        "damage": 29.0
+      },
+      {
+        "level": 10,
+        "area_damage": 104.0,
+        "damage": 32.0
+      },
+      {
+        "level": 11,
+        "area_damage": 115.0,
+        "damage": 35.0
+      },
+      {
+        "level": 12,
+        "area_damage": 126.0,
+        "damage": 38.0
+      },
+      {
+        "level": 13,
+        "area_damage": 139.0,
+        "damage": 42.0
+      },
+      {
+        "level": 14,
+        "area_damage": 152.0,
+        "damage": 46.0
+      },
+      {
+        "level": 15,
+        "area_damage": 167.0,
+        "damage": 51.0
+      }
+    ],
+    "effects": [
+      "freeze"
+    ]
+  },
+  {
+    "name": "Giant Snowball",
+    "url": "https://clashroyale.fandom.com/wiki/Giant_Snowball",
+    "elixir_cost": 2.0,
+    "rarity": "common",
+    "card_type": "spell",
+    "radius": 2.5,
+    "duration": 3.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "area_damage": 70.0,
+        "damage": 21.0
+      },
+      {
+        "level": 2,
+        "area_damage": 77.0,
+        "damage": 24.0
+      },
+      {
+        "level": 3,
+        "area_damage": 84.0,
+        "damage": 26.0
+      },
+      {
+        "level": 4,
+        "area_damage": 93.0,
+        "damage": 28.0
+      },
+      {
+        "level": 5,
+        "area_damage": 102.0,
+        "damage": 31.0
+      },
+      {
+        "level": 6,
+        "area_damage": 112.0,
+        "damage": 34.0
+      },
+      {
+        "level": 7,
+        "area_damage": 123.0,
+        "damage": 37.0
+      },
+      {
+        "level": 8,
+        "area_damage": 135.0,
+        "damage": 41.0
+      },
+      {
+        "level": 9,
+        "area_damage": 148.0,
+        "damage": 45.0
+      },
+      {
+        "level": 10,
+        "area_damage": 163.0,
+        "damage": 49.0
+      },
+      {
+        "level": 11,
+        "area_damage": 179.0,
+        "damage": 54.0
+      },
+      {
+        "level": 12,
+        "area_damage": 196.0,
+        "damage": 59.0
+      },
+      {
+        "level": 13,
+        "area_damage": 216.0,
+        "damage": 65.0
+      },
+      {
+        "level": 14,
+        "area_damage": 237.0,
+        "damage": 72.0
+      },
+      {
+        "level": 15,
+        "area_damage": 260.0,
+        "damage": 78.0
+      }
+    ]
+  },
+  {
+    "name": "Goblin Curse",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Curse",
+    "elixir_cost": 2.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "radius": 3.0,
+    "duration": 6.0,
+    "targets": [
+      "ground"
+    ],
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.4,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "range": 0.5,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "dps": 68.0,
+        "damage": 75.0,
+        "hp": 126.0
+      },
+      {
+        "level": 7,
+        "dps": 74.0,
+        "damage": 82.0,
+        "hp": 139.0
+      },
+      {
+        "level": 8,
+        "dps": 81.0,
+        "damage": 90.0,
+        "hp": 152.0
+      },
+      {
+        "level": 9,
+        "dps": 89.0,
+        "damage": 99.0,
+        "hp": 167.0
+      },
+      {
+        "level": 10,
+        "dps": 99.0,
+        "damage": 109.0,
+        "hp": 184.0
+      },
+      {
+        "level": 11,
+        "dps": 109.0,
+        "damage": 120.0,
+        "hp": 202.0
+      },
+      {
+        "level": 12,
+        "dps": 119.0,
+        "damage": 132.0,
+        "hp": 221.0
+      },
+      {
+        "level": 13,
+        "dps": 131.0,
+        "damage": 145.0,
+        "hp": 244.0
+      },
+      {
+        "level": 14,
+        "dps": 144.0,
+        "damage": 159.0,
+        "hp": 267.0
+      },
+      {
+        "level": 15,
+        "dps": 159.0,
+        "damage": 175.0,
+        "hp": 293.0
+      }
+    ],
+    "effects": [
+      "area"
+    ]
+  },
+  {
+    "name": "Lightning",
+    "url": "https://clashroyale.fandom.com/wiki/Lightning",
+    "elixir_cost": 6.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "radius": 3.5,
+    "duration": 0.5,
+    "count": 3,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 6,
+        "damage": 179.0
+      },
+      {
+        "level": 7,
+        "damage": 197.0
+      },
+      {
+        "level": 8,
+        "damage": 216.0
+      },
+      {
+        "level": 9,
+        "damage": 237.0
+      },
+      {
+        "level": 10,
+        "damage": 260.0
+      },
+      {
+        "level": 11,
+        "damage": 286.0
+      },
+      {
+        "level": 12,
+        "damage": 314.0
+      },
+      {
+        "level": 13,
+        "damage": 345.0
+      },
+      {
+        "level": 14,
+        "damage": 378.0
+      },
+      {
+        "level": 15,
+        "damage": 415.0
+      }
+    ]
+  },
+  {
+    "name": "Poison",
+    "url": "https://clashroyale.fandom.com/wiki/Poison",
+    "elixir_cost": 4.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "radius": 3.5,
+    "duration": 8.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 6,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 7,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 8,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 9,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 10,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 11,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 12,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 13,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 14,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 15,
+        "dps": null,
+        "damage": null
+      }
+    ]
+  },
+  {
+    "name": "Rage",
+    "url": "https://clashroyale.fandom.com/wiki/Rage",
+    "elixir_cost": 2.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "radius": 3.0,
+    "deploy_time": 0.5,
+    "duration": 4.5,
+    "targets": [
+      "buildings"
+    ],
+    "levels": [
+      {
+        "level": 6,
+        "area_damage": 106.0,
+        "damage": 32.0
+      },
+      {
+        "level": 7,
+        "area_damage": 117.0,
+        "damage": 35.0
+      },
+      {
+        "level": 8,
+        "area_damage": 130.0,
+        "damage": 39.0
+      },
+      {
+        "level": 9,
+        "area_damage": 145.0,
+        "damage": 44.0
+      },
+      {
+        "level": 10,
+        "area_damage": 161.0,
+        "damage": 48.0
+      },
+      {
+        "level": 11,
+        "area_damage": 179.0,
+        "damage": 54.0
+      },
+      {
+        "level": 12,
+        "area_damage": 197.0,
+        "damage": 59.0
+      },
+      {
+        "level": 13,
+        "area_damage": 217.0,
+        "damage": 65.0
+      },
+      {
+        "level": 14,
+        "area_damage": 238.0,
+        "damage": 71.0
+      },
+      {
+        "level": 15,
+        "area_damage": 262.0,
+        "damage": 79.0
+      }
+    ],
+    "effects": [
+      "rage"
+    ]
+  },
+  {
+    "name": "Rocket",
+    "url": "https://clashroyale.fandom.com/wiki/Rocket",
+    "elixir_cost": 6.0,
+    "rarity": "rare",
+    "card_type": "spell",
+    "radius": 2.0,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 3,
+        "area_damage": 701.0,
+        "damage": 175.0
+      },
+      {
+        "level": 4,
+        "area_damage": 771.0,
+        "damage": 193.0
+      },
+      {
+        "level": 5,
+        "area_damage": 846.0,
+        "damage": 212.0
+      },
+      {
+        "level": 6,
+        "area_damage": 928.0,
+        "damage": 233.0
+      },
+      {
+        "level": 7,
+        "area_damage": 1020.0,
+        "damage": 256.0
+      },
+      {
+        "level": 8,
+        "area_damage": 1119.0,
+        "damage": 280.0
+      },
+      {
+        "level": 9,
+        "area_damage": 1229.0,
+        "damage": 308.0
+      },
+      {
+        "level": 10,
+        "area_damage": 1351.0,
+        "damage": 338.0
+      },
+      {
+        "level": 11,
+        "area_damage": 1484.0,
+        "damage": 371.0
+      },
+      {
+        "level": 12,
+        "area_damage": 1629.0,
+        "damage": 408.0
+      },
+      {
+        "level": 13,
+        "area_damage": 1792.0,
+        "damage": 448.0
+      },
+      {
+        "level": 14,
+        "area_damage": 1966.0,
+        "damage": 492.0
+      },
+      {
+        "level": 15,
+        "area_damage": 2157.0,
+        "damage": 541.0
+      }
+    ],
+    "effects": [
+      "knockback",
+      "area"
+    ]
+  },
+  {
+    "name": "Royal Delivery",
+    "url": "https://clashroyale.fandom.com/wiki/Royal_Delivery",
+    "elixir_cost": 3.0,
+    "rarity": "common",
+    "card_type": "spell",
+    "radius": 3.0,
+    "deploy_time": 0.25,
+    "targets": [
+      "ground"
+    ],
+    "attack_speed": 1.3,
+    "first_hit_speed": 0.5,
+    "movement_speed": "medium",
+    "movement_speed_value": 60.0,
+    "range": 1.6,
+    "count": 1,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 1,
+        "area_damage": 171.0,
+        "hp": 94.0,
+        "damage": 52.0,
+        "dps": 40.0
+      },
+      {
+        "level": 2,
+        "area_damage": 188.0,
+        "hp": 103.0,
+        "damage": 57.0,
+        "dps": 43.0
+      },
+      {
+        "level": 3,
+        "area_damage": 206.0,
+        "hp": 113.0,
+        "damage": 62.0,
+        "dps": 47.0
+      },
+      {
+        "level": 4,
+        "area_damage": 227.0,
+        "hp": 125.0,
+        "damage": 69.0,
+        "dps": 52.0
+      },
+      {
+        "level": 5,
+        "area_damage": 249.0,
+        "hp": 137.0,
+        "damage": 75.0,
+        "dps": 57.0
+      },
+      {
+        "level": 6,
+        "area_damage": 273.0,
+        "hp": 150.0,
+        "damage": 83.0,
+        "dps": 63.0
+      },
+      {
+        "level": 7,
+        "area_damage": 300.0,
+        "hp": 165.0,
+        "damage": 91.0,
+        "dps": 70.0
+      },
+      {
+        "level": 8,
+        "area_damage": 330.0,
+        "hp": 181.0,
+        "damage": 100.0,
+        "dps": 76.0
+      },
+      {
+        "level": 9,
+        "area_damage": 362.0,
+        "hp": 199.0,
+        "damage": 110.0,
+        "dps": 84.0
+      },
+      {
+        "level": 10,
+        "area_damage": 398.0,
+        "hp": 219.0,
+        "damage": 121.0,
+        "dps": 93.0
+      },
+      {
+        "level": 11,
+        "area_damage": 437.0,
+        "hp": 240.0,
+        "damage": 133.0,
+        "dps": 102.0
+      },
+      {
+        "level": 12,
+        "area_damage": 480.0,
+        "hp": 264.0,
+        "damage": 146.0,
+        "dps": 112.0
+      },
+      {
+        "level": 13,
+        "area_damage": 528.0,
+        "hp": 290.0,
+        "damage": 160.0,
+        "dps": 123.0
+      },
+      {
+        "level": 14,
+        "area_damage": 579.0,
+        "hp": 318.0,
+        "damage": 176.0,
+        "dps": 135.0
+      },
+      {
+        "level": 15,
+        "area_damage": 636.0,
+        "hp": 349.0,
+        "damage": 193.0,
+        "dps": 148.0
+      }
+    ],
+    "effects": [
+      "spawn",
+      "area"
+    ]
+  },
+  {
+    "name": "The Log",
+    "url": "https://clashroyale.fandom.com/wiki/The_Log",
+    "elixir_cost": 2.0,
+    "rarity": "legendary",
+    "card_type": "spell",
+    "range": 10.1,
+    "targets": [
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 9,
+        "area_damage": 220.0,
+        "damage": 33.0
+      },
+      {
+        "level": 10,
+        "area_damage": 242.0,
+        "damage": 37.0
+      },
+      {
+        "level": 11,
+        "area_damage": 266.0,
+        "damage": 40.0
+      },
+      {
+        "level": 12,
+        "area_damage": 292.0,
+        "damage": 44.0
+      },
+      {
+        "level": 13,
+        "area_damage": 321.0,
+        "damage": 49.0
+      },
+      {
+        "level": 14,
+        "area_damage": 352.0,
+        "damage": 53.0
+      },
+      {
+        "level": 15,
+        "area_damage": 387.0,
+        "damage": 59.0
+      }
+    ],
+    "effects": [
+      "knockback",
+      "area"
+    ]
+  },
+  {
+    "name": "Tornado",
+    "url": "https://clashroyale.fandom.com/wiki/Tornado",
+    "elixir_cost": 3.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "radius": 5.5,
+    "duration": 1.05,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 6,
+        "damage": 19.0
+      },
+      {
+        "level": 7,
+        "damage": 20.0
+      },
+      {
+        "level": 8,
+        "damage": 22.0
+      },
+      {
+        "level": 9,
+        "damage": 24.0
+      },
+      {
+        "level": 10,
+        "damage": 27.0
+      },
+      {
+        "level": 11,
+        "damage": 29.0
+      },
+      {
+        "level": 12,
+        "damage": 32.0
+      },
+      {
+        "level": 13,
+        "damage": 35.0
+      },
+      {
+        "level": 14,
+        "damage": 39.0
+      },
+      {
+        "level": 15,
+        "damage": 42.0
+      }
+    ],
+    "effects": [
+      "area"
+    ]
+  },
+  {
+    "name": "Vines",
+    "url": "https://clashroyale.fandom.com/wiki/Vines",
+    "elixir_cost": 3.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "radius": 2.5,
+    "duration": 2.0,
+    "count": 3,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 11,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 12,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 13,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 14,
+        "dps": null,
+        "damage": null
+      },
+      {
+        "level": 15,
+        "dps": null,
+        "damage": null
+      }
+    ],
+    "effects": [
+      "freeze"
+    ]
+  },
+  {
+    "name": "Void",
+    "url": "https://clashroyale.fandom.com/wiki/Void",
+    "elixir_cost": 3.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "radius": 2.5,
+    "duration": 4.0,
+    "targets": [
+      "11 x3 (33)"
+    ],
+    "levels": [
+      {
+        "level": 6,
+        "damage": null
+      },
+      {
+        "level": 7,
+        "damage": null
+      },
+      {
+        "level": 8,
+        "damage": null
+      },
+      {
+        "level": 9,
+        "damage": null
+      },
+      {
+        "level": 10,
+        "damage": null
+      },
+      {
+        "level": 11,
+        "damage": null
+      },
+      {
+        "level": 12,
+        "damage": null
+      },
+      {
+        "level": 13,
+        "damage": null
+      },
+      {
+        "level": 14,
+        "damage": null
+      },
+      {
+        "level": 15,
+        "damage": null
+      }
+    ]
+  },
+  {
+    "name": "Zap",
+    "url": "https://clashroyale.fandom.com/wiki/Zap",
+    "elixir_cost": 2.0,
+    "rarity": "common",
+    "card_type": "spell",
+    "radius": 2.5,
+    "duration": 0.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "area_damage": 75.0,
+        "damage": 23.0
+      },
+      {
+        "level": 2,
+        "area_damage": 82.0,
+        "damage": 25.0
+      },
+      {
+        "level": 3,
+        "area_damage": 90.0,
+        "damage": 27.0
+      },
+      {
+        "level": 4,
+        "area_damage": 99.0,
+        "damage": 30.0
+      },
+      {
+        "level": 5,
+        "area_damage": 109.0,
+        "damage": 33.0
+      },
+      {
+        "level": 6,
+        "area_damage": 120.0,
+        "damage": 36.0
+      },
+      {
+        "level": 7,
+        "area_damage": 132.0,
+        "damage": 40.0
+      },
+      {
+        "level": 8,
+        "area_damage": 144.0,
+        "damage": 44.0
+      },
+      {
+        "level": 9,
+        "area_damage": 159.0,
+        "damage": 48.0
+      },
+      {
+        "level": 10,
+        "area_damage": 174.0,
+        "damage": 53.0
+      },
+      {
+        "level": 11,
+        "area_damage": 192.0,
+        "damage": 58.0
+      },
+      {
+        "level": 12,
+        "area_damage": 210.0,
+        "damage": 63.0
+      },
+      {
+        "level": 13,
+        "area_damage": 231.0,
+        "damage": 70.0
+      },
+      {
+        "level": 14,
+        "area_damage": 254.0,
+        "damage": 77.0
+      },
+      {
+        "level": 15,
+        "area_damage": 279.0,
+        "damage": 84.0
+      }
+    ]
+  },
+  {
+    "name": "Goblin Barrel",
+    "url": "https://clashroyale.fandom.com/wiki/Goblin_Barrel",
+    "elixir_cost": 3.0,
+    "rarity": "epic",
+    "card_type": "spell",
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.4,
+    "movement_speed": "very_fast",
+    "movement_speed_value": 120.0,
+    "deploy_time": 1.1,
+    "range": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "count": 3,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 6,
+        "hp": 126.0,
+        "damage": 75.0,
+        "dps": 68.0
+      },
+      {
+        "level": 7,
+        "hp": 139.0,
+        "damage": 82.0,
+        "dps": 74.0
+      },
+      {
+        "level": 8,
+        "hp": 152.0,
+        "damage": 90.0,
+        "dps": 81.0
+      },
+      {
+        "level": 9,
+        "hp": 167.0,
+        "damage": 99.0,
+        "dps": 90.0
+      },
+      {
+        "level": 10,
+        "hp": 184.0,
+        "damage": 109.0,
+        "dps": 99.0
+      },
+      {
+        "level": 11,
+        "hp": 202.0,
+        "damage": 120.0,
+        "dps": 109.0
+      },
+      {
+        "level": 12,
+        "hp": 221.0,
+        "damage": 132.0,
+        "dps": 120.0
+      },
+      {
+        "level": 13,
+        "hp": 244.0,
+        "damage": 145.0,
+        "dps": 131.0
+      },
+      {
+        "level": 14,
+        "hp": 267.0,
+        "damage": 159.0,
+        "dps": 144.0
+      },
+      {
+        "level": 15,
+        "hp": 293.0,
+        "damage": 175.0,
+        "dps": 159.0
+      }
+    ]
+  },
+  {
+    "name": "Graveyard",
+    "url": "https://clashroyale.fandom.com/wiki/Graveyard",
+    "elixir_cost": 5.0,
+    "rarity": "legendary",
+    "card_type": "spell",
+    "radius": 4.0,
+    "duration": 9.0,
+    "movement_speed_value": 90.0,
+    "attack_speed": 1.1,
+    "first_hit_speed": 0.5,
+    "movement_speed": "fast",
+    "deploy_time": 2.2,
+    "range": 0.5,
+    "targets": [
+      "ground"
+    ],
+    "count": 13,
+    "transport": "ground",
+    "levels": [
+      {
+        "level": 9,
+        "hp": 67.0,
+        "damage": 67.0,
+        "dps": 67.0
+      },
+      {
+        "level": 10,
+        "hp": 74.0,
+        "damage": 74.0,
+        "dps": 74.0
+      },
+      {
+        "level": 11,
+        "hp": 81.0,
+        "damage": 81.0,
+        "dps": 81.0
+      },
+      {
+        "level": 12,
+        "hp": 89.0,
+        "damage": 89.0,
+        "dps": 89.0
+      },
+      {
+        "level": 13,
+        "hp": 98.0,
+        "damage": 98.0,
+        "dps": 98.0
+      },
+      {
+        "level": 14,
+        "hp": 108.0,
+        "damage": 108.0,
+        "dps": 108.0
+      },
+      {
+        "level": 15,
+        "hp": 119.0,
+        "damage": 119.0,
+        "dps": 119.0
+      }
+    ],
+    "effects": [
+      "spawn"
+    ]
+  },
+  {
+    "name": "Tower Princess",
+    "url": "https://clashroyale.fandom.com/wiki/Tower_Princess",
+    "rarity": "common",
+    "card_type": "tower troop",
+    "attack_speed": 0.8,
+    "first_hit_speed": 0.8,
+    "range": 7.5,
+    "targets": [
+      "air",
+      "ground"
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "hp": 1400.0,
+        "damage": 50.0,
+        "dps": 62.0
+      },
+      {
+        "level": 2,
+        "hp": 1512.0,
+        "damage": 54.0,
+        "dps": 67.0
+      },
+      {
+        "level": 3,
+        "hp": 1624.0,
+        "damage": 58.0,
+        "dps": 72.0
+      },
+      {
+        "level": 4,
+        "hp": 1750.0,
+        "damage": 62.0,
+        "dps": 77.0
+      },
+      {
+        "level": 5,
+        "hp": 1890.0,
+        "damage": 67.0,
+        "dps": 83.0
+      },
+      {
+        "level": 6,
+        "hp": 2030.0,
+        "damage": 72.0,
+        "dps": 90.0
+      },
+      {
+        "level": 7,
+        "hp": 2184.0,
+        "damage": 78.0,
+        "dps": 97.0
+      },
+      {
+        "level": 8,
+        "hp": 2352.0,
+        "damage": 84.0,
+        "dps": 105.0
+      },
+      {
+        "level": 9,
+        "hp": 2534.0,
+        "damage": 90.0,
+        "dps": 112.0
+      },
+      {
+        "level": 10,
+        "hp": 2786.0,
+        "damage": 99.0,
+        "dps": 123.0
+      },
+      {
+        "level": 11,
+        "hp": 3052.0,
+        "damage": 109.0,
+        "dps": 136.0
+      },
+      {
+        "level": 12,
+        "hp": 3346.0,
+        "damage": 119.0,
+        "dps": 148.0
+      },
+      {
+        "level": 13,
+        "hp": 3668.0,
+        "damage": 131.0,
+        "dps": 163.0
+      },
+      {
+        "level": 14,
+        "hp": 4032.0,
+        "damage": 144.0,
+        "dps": 180.0
+      },
+      {
+        "level": 15,
+        "hp": 4424.0,
+        "damage": 158.0,
+        "dps": 197.0
+      }
+    ]
+  }
+]

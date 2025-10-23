@@ -2,6 +2,7 @@
 members = [
     "engine",
     "shared",
+    "viewer",
 ]
 resolver = "2"
 
