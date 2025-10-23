@@ -122,50 +122,66 @@ fn main() {
         step(&mut state, &[]).unwrap();
     }
 
-    // Combat test: Position units close enough to fight
-    println!("\n=== Combat Test ===");
-    println!("Spawning opposing Knight vs Archers...\n");
+    // Movement test: Position units far apart to test movement AI
+    println!("\n=== Movement AI Test ===");
+    println!("Spawning Knight and Archers 10 tiles apart...\n");
 
-    // Clear existing entities for clean combat test
+    // Clear existing entities for clean movement test
     state.entities.clear();
 
-    // Player 1: Knight at position (16, 10)
+    // Player 1: Knight at position (10, 10)
     step(
         &mut state,
         &[Action::PlayCard {
             player: PlayerId::Player1,
             card_name: "Knight".to_string(),
             level: 11,
-            position: Position::new(16.0, 10.0),
+            position: Position::new(10.0, 10.0),
         }],
     )
     .unwrap();
 
-    // Player 2: Archers at position (16, 11) - within melee AND ranged range
-    // Knight range: 1.2, Archer range: 5.0, Distance: 1.0
+    // Player 2: Archers at position (20, 10) - 10 tiles away (far out of melee range)
+    // Knight range: 1.2, Archer range: 5.0, Distance: 10.0
     step(
         &mut state,
         &[Action::PlayCard {
             player: PlayerId::Player2,
             card_name: "Archers".to_string(),
             level: 11,
-            position: Position::new(16.0, 11.0),
+            position: Position::new(20.0, 10.0),
         }],
     )
     .unwrap();
 
-    println!("[Tick {}] Knight (P1) spawned at (16, 10)", state.tick);
-    println!("           HP: 1452, Range: 1.2, Damage: 167, Attack Speed: 1.2s");
-    println!("[Tick {}] Archers (P2) spawned at (16, 11)", state.tick);
-    println!("           HP: 252 each (x2), Range: 5.0, Damage: 100, Attack Speed: 1.2s");
-    println!("           Distance: 1.0 tiles (within both ranges)\n");
+    println!("[Tick {}] Knight (P1) spawned at (10, 10)", state.tick);
+    println!("           HP: 1452, Range: 1.2, Damage: 167, Move Speed: 1.0 tiles/s");
+    println!("[Tick {}] Archers (P2) spawned at (20, 10)", state.tick);
+    println!("           HP: 252 each (x2), Range: 5.0, Damage: 100, Move Speed: 1.0 tiles/s");
+    println!("           Initial distance: 10.0 tiles\n");
+    println!("Expected: Knight should walk toward Archers, stop at ~1.2 range, then fight\n");
 
-    // Run combat for 300 ticks (5 seconds)
+    // Find the Knight entity (Player1's troop)
+    let knight_id = state.entities.iter()
+        .find(|(_, e)| e.owner == PlayerId::Player1)
+        .map(|(id, _)| *id)
+        .expect("Knight not found");
+
+    let mut position_samples = Vec::new();
+
+    // Run simulation for 600 ticks (10 seconds)
     let mut last_entity_count = state.entities.len();
     let mut combat_events = Vec::new();
 
-    for _ in 0..300 {
+    for i in 0..600 {
         step(&mut state, &[]).unwrap();
+
+        // Sample positions every 60 ticks (1 second)
+        if i % 60 == 0 {
+            if let Some(knight) = state.entities.get(&knight_id) {
+                position_samples.push((state.tick, knight.position.x, knight.position.y));
+            }
+        }
 
         // Track when entities die
         if state.entities.len() < last_entity_count {
@@ -174,8 +190,15 @@ fn main() {
         }
     }
 
+    // Report movement
+    println!("=== Knight Movement (sampled every 1s) ===");
+    for (tick, x, y) in &position_samples {
+        let distance_to_target = ((20.0 - x) * (20.0 - x) + (10.0 - y) * (10.0 - y)).sqrt();
+        println!("[Tick {}] Position: ({:.2}, {:.2}), Distance to Archers: {:.2}", tick, x, y, distance_to_target);
+    }
+
     // Report combat events
-    println!("=== Combat Events ===");
+    println!("\n=== Combat Events ===");
     for (tick, count) in combat_events {
         println!("[Tick {}] Entity died ({} remaining)", tick, count);
     }

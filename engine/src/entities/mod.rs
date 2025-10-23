@@ -83,6 +83,19 @@ impl Entity {
             _ => None,
         }
     }
+
+    /// Returns the movement speed (tiles per second).
+    pub fn movement_speed(&self) -> f32 {
+        match &self.kind {
+            EntityKind::Troop(data) => data.movement_speed,
+            _ => 0.0, // Towers and projectiles don't move
+        }
+    }
+
+    /// Returns true if this entity can move.
+    pub fn can_move(&self) -> bool {
+        matches!(self.kind, EntityKind::Troop(_))
+    }
 }
 
 /// Different types of entities in the game.

@@ -13,12 +13,12 @@ pub fn update(state: &mut GameState, dt: f32) {
         }
     }
 
-    // Collect attack actions (to avoid borrowing issues)
-    let mut attacks = Vec::new();
+    // First pass: Assign targets to all entities that can attack
+    let mut target_assignments = Vec::new();
 
     for (attacker_id, attacker) in &state.entities {
-        // Skip if entity can't attack or is on cooldown
-        if !attacker.can_attack() || attacker.attack_cooldown > 0.0 {
+        // Skip if entity can't attack
+        if !attacker.can_attack() {
             continue;
         }
 
@@ -37,13 +37,34 @@ pub fn update(state: &mut GameState, dt: f32) {
         };
 
         if let Some(target_id) = target_id {
-            let target = &state.entities[&target_id];
-            let distance = attacker.position.distance_to(&target.position);
+            target_assignments.push((*attacker_id, target_id));
+        }
+    }
 
-            // Check if target is in range
-            if distance <= attacker.attack_range() {
-                attacks.push((*attacker_id, target_id, attacker.damage(), attacker.attack_speed()));
-            }
+    // Apply target assignments
+    for (attacker_id, target_id) in &target_assignments {
+        if let Some(attacker) = state.entities.get_mut(attacker_id) {
+            attacker.target = Some(target_id.as_u32());
+        }
+    }
+
+    // Second pass: Execute attacks for entities that are ready and in range
+    let mut attacks = Vec::new();
+
+    for (attacker_id, target_id) in target_assignments {
+        let attacker = &state.entities[&attacker_id];
+
+        // Skip if on cooldown
+        if attacker.attack_cooldown > 0.0 {
+            continue;
+        }
+
+        let target = &state.entities[&target_id];
+        let distance = attacker.position.distance_to(&target.position);
+
+        // Check if target is in range
+        if distance <= attacker.attack_range() {
+            attacks.push((attacker_id, target_id, attacker.damage(), attacker.attack_speed()));
         }
     }
 
@@ -54,15 +75,15 @@ pub fn update(state: &mut GameState, dt: f32) {
             target.take_damage(damage);
         }
 
-        // Set cooldown and update target
+        // Set cooldown
         if let Some(attacker) = state.entities.get_mut(&attacker_id) {
             attacker.attack_cooldown = attack_speed;
-            attacker.target = Some(target_id.as_u32());
         }
     }
 }
 
 /// Finds the best target for an attacker.
+/// Returns the nearest valid enemy, regardless of range (for movement purposes).
 fn find_target(
     state: &GameState,
     attacker_id: EntityId,
@@ -70,7 +91,6 @@ fn find_target(
     target_type: Option<TargetType>,
 ) -> Option<EntityId> {
     let attacker = &state.entities[&attacker_id];
-    let attack_range = attacker.attack_range();
 
     let mut best_target: Option<(EntityId, f32)> = None;
 
@@ -99,7 +119,7 @@ fn find_target(
 
         let distance = attacker.position.distance_to(&entity.position);
 
-        // Prioritize targets in range, then by distance
+        // Prioritize targets by distance (closest first)
         match best_target {
             None => {
                 best_target = Some((*id, distance));
@@ -113,14 +133,9 @@ fn find_target(
         }
     }
 
-    // Only return target if it's within attack range
-    best_target.and_then(|(id, dist)| {
-        if dist <= attack_range {
-            Some(id)
-        } else {
-            None
-        }
-    })
+    // Return the nearest target (even if out of range)
+    // Movement system will move toward it, combat system will attack when in range
+    best_target.map(|(id, _)| id)
 }
 
 /// Checks if a target is still valid (alive and enemy).

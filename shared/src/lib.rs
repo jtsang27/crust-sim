@@ -19,6 +19,20 @@ impl Position {
         let dy = self.y - other.y;
         (dx * dx + dy * dy).sqrt()
     }
+
+    /// Returns the direction vector (normalized) from this position to another.
+    /// Returns (0, 0) if positions are the same.
+    pub fn direction_to(&self, other: &Position) -> (f32, f32) {
+        let dx = other.x - self.x;
+        let dy = other.y - self.y;
+        let distance = (dx * dx + dy * dy).sqrt();
+
+        if distance < 0.001 {
+            (0.0, 0.0)
+        } else {
+            (dx / distance, dy / distance)
+        }
+    }
 }
 
 /// Represents a 2D velocity vector.
