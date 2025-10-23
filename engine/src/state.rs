@@ -145,6 +145,10 @@ impl EntityId {
     pub fn as_u32(&self) -> u32 {
         self.0
     }
+
+    pub fn from_u32(id: u32) -> Self {
+        EntityId(id)
+    }
 }
 
 /// Player-specific state.

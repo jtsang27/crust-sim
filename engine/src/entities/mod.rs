@@ -12,6 +12,12 @@ pub struct Entity {
     pub hp: f32,
     pub max_hp: f32,
     pub kind: EntityKind,
+
+    /// Time until next attack (in seconds). 0 = ready to attack.
+    pub attack_cooldown: f32,
+
+    /// Current target entity ID (if any).
+    pub target: Option<u32>,
 }
 
 impl Entity {
@@ -24,6 +30,8 @@ impl Entity {
             hp: max_hp,
             max_hp,
             kind,
+            attack_cooldown: 0.0,
+            target: None,
         }
     }
 
@@ -33,6 +41,47 @@ impl Entity {
 
     pub fn take_damage(&mut self, amount: f32) {
         self.hp = (self.hp - amount).max(0.0);
+    }
+
+    /// Returns the attack range for this entity.
+    pub fn attack_range(&self) -> f32 {
+        match &self.kind {
+            EntityKind::Tower(data) => data.range,
+            EntityKind::Troop(data) => data.range,
+            _ => 0.0,
+        }
+    }
+
+    /// Returns the damage this entity deals.
+    pub fn damage(&self) -> f32 {
+        match &self.kind {
+            EntityKind::Tower(data) => data.damage,
+            EntityKind::Troop(data) => data.damage,
+            EntityKind::Projectile(data) => data.damage,
+            EntityKind::Spell(data) => data.damage,
+        }
+    }
+
+    /// Returns the attack speed (seconds between attacks).
+    pub fn attack_speed(&self) -> f32 {
+        match &self.kind {
+            EntityKind::Tower(data) => data.attack_speed,
+            EntityKind::Troop(data) => data.attack_speed,
+            _ => 1.0,
+        }
+    }
+
+    /// Returns true if this entity can attack (troops and towers).
+    pub fn can_attack(&self) -> bool {
+        matches!(self.kind, EntityKind::Tower(_) | EntityKind::Troop(_))
+    }
+
+    /// Returns the target type for this entity.
+    pub fn target_type(&self) -> Option<TargetType> {
+        match &self.kind {
+            EntityKind::Troop(data) => Some(data.target_type),
+            _ => None,
+        }
     }
 }
 
